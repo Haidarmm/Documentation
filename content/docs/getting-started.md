@@ -26,5 +26,5 @@ Let's discover OpenVQE package
 
 {{< cards >}}
   {{< card url="../guide/project-structure" title="Project Structure" icon="document-duplicate" >}}
-  {{< card url="../guide/configuration" title="Configuration" icon="adjustments-vertical" >}}
+  {{< card url="../guide/configuration" title="Citation" icon="adjustments-vertical" >}}
 {{< /cards >}}

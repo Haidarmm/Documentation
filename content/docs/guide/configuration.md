@@ -1,54 +1,31 @@
 ---
-title: Configuration
+title: Citing
 weight: 2
 ---
 
-The configuration of your site can be found in `config/_default/`.
-
+If OpenVQE has been helpful in your research, please consider citing our relevant software papers. Your support enables us to continue dedicating time and resources to the development of OpenVQE.
 <!--more-->
 
-## Full Documentation
+The current version of OpenVQE is described in our [WIREs Computational Molecular Science](https://wires.onlinelibrary.wiley.com/doi/10.1002/wcms.1664).
 
-See https://docs.hugoblox.com/getting-started/customize/
 
-## Navigation
 
-### Menu
 
-See https://docs.hugoblox.com/getting-started/customize/#menu-items
+##  BibTeX Citation
 
-## Left Sidebar
-
-Links are automatically generated from the structure of your content directory. Simply add a folder to nest a page.
-
-### Extra Links
-
-Additional links can be added under the `sidebar` section of your `config/_default/menus.yaml`:
-
-```yaml
-menu:
-  sidebar:
-    - name: "Need help?"
-      params:
-        type: separator
-      weight: 1
-    - name: "A page"
-      pageRef: "/page-filename-here"
-      weight: 2
-    - name: "An external link ↗"
-      url: "https://hugoblox.com"
-      weight: 3
-```
-
-## Right Sidebar
-
-A table of contents is automatically generated from the headings your Markdown file.
-
-It can optionally be disabled by setting `toc: false` in the front matter of a page:
+Below are BibTeX entry for the paper:
 
 ```yaml
 ---
-title: My Page
-toc: false
+@article{haidar2023open,
+  title={Open source variational quantum eigensolver extension of the quantum learning machine for quantum chemistry},
+  author={Haidar, Mohammad and Ran{\v{c}}i{\'c}, Marko J and Ayral, Thomas and Maday, Yvon and Piquemal, Jean-Philip},
+  journal={Wiley Interdisciplinary Reviews: Computational Molecular Science},
+  volume={13},
+  number={5},
+  pages={e1664},
+  year={2023},
+  publisher={Wiley Online Library}
+}
 ---
 ```

@@ -216,146 +216,14 @@ plt.savefig("fidelity_H4_.pdf")
 plt.show()
 ```
 
+
+
 ![image](/uploads/sstack8.png)
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-where h and g are the tensors ℎ_pq and ℎ_pqrs. Such an object also describes cluster operators 
-
-
-```python {class="my-class" id="my-codeblock" lineNos=inline tabWidth=2}
-from qat . fermion import get_cluster_ops
-cluster_ops = get_cluster_ops ( n_electrons , nqbits = nqbits )
-
-```
-
-creates the list containing the sets of single excitations and double excitations wnich can be readily converted to a spin (or qubit) representation using various fermion-spin transforms:
-
-```python {class="my-class" id="my-codeblock" lineNos=inline tabWidth=2}
-
- # Jordan - Wigner
- from qat . fermion . transforms import transform_to_jw_basis
- hamiltonian_jw = transform_to_jw_basis ( hamiltonian )
- cluster_ops_jw = [ transform_to_jw_basis ( t_o ) for t_o in cluster_ops ]
-
- # Bravyi - Kitaev
- from qat . fermion . transforms import transform_to_bk_basis
- hamiltonian_bk = transform_to_bk_basis ( hamiltonian )
- cluster_ops_bk = [ transform_to_bk_basis ( t_o ) for t_o in cluster_ops ]
-
-
-```
- With these qubit operators, one can then easily contruct a imple UCCSD ansatz via trotterization  of the exponential of the parametric cluster operator defined as cluster_ops_jw
-
-
-```python {class="my-class" id="my-codeblock" lineNos=inline tabWidth=2}
-from qat . lang . AQASM import Program , X
-from qat . fermion . trotterisation import make_trotterisation_routine
-
-prog = Program ()
-reg = prog . qalloc ( nqbits )
-# Create Hartree - Fock state ( assuming JW representation )
-
-for qb in range ( n_electrons ) :
-prog . apply (X , reg [ qb ])
-
- # Define the full cluster operator with its parameters
-theta_list = [ prog . new_var (float , "\\ theta_ {%s}" % i) for i in range (len ( cluster_ops_jw ) )]
-cluster_op = sum ([ theta * T for theta , T in zip( theta_list , cluster_ops_jw ) ])
-
-# Trotterize the Hamiltonian ( with 1 trotter step )
-qrout = make_trotterisation_routine ( cluster_op , n_trotter_steps =1 , final_time =1)
-prog . apply ( qrout , reg )
-circ = prog . to_circ ()
-
-```
-
-The circuit we constructed, circ, is a variational circuit that creates a variational wavefunction.  Its parameters can be
-optimized to minimize the variational energy which can be done by a simple VQE loop with the UCC method 
-
-![image](/uploads/slack4.png)
-
-1. A simulation starts by constructing a fermionic Hamiltonian with particularly straightforward initialization as a classical mean-field state; most often as a HF product state {{< math >}}
-   $$
-   \ket{\psi_{HF}}
-   $$
-   {{< /math >}}. This is required as the reference preparation for the UCC-chemically-inspired ansatz.
-
-2. The fermionic Hamiltonian is mapped into a qubit Hamiltonian, represented as a sum of Pauli strings:
-   {{< math >}}
-   $$
-   H = \sum_j \alpha_j \prod_i \sigma_i^j,
-   $$
-   {{< /math >}}
-   where {{< math >}}
-   $$
-   \sigma_i^j \in \{ \text{I}, X, Y, Z \}
-   $$
-   {{< /math >}}.
-
-3. A quantum circuit implementing the unitary operator {{< math >}}
-   $$
-   U(\vec{{\bm{\theta}} })
-   $$
-   {{< /math >}} is applied to {{< math >}}
-   $$
-   \ket{\psi_{HF}}
-   $$
-   {{< /math >}}, mapping the initial state to a parameterized "Ansatz" state:
-   {{< math >}}
-   $$
-   |\psi(\vec{{\bm{\theta}}}) \rangle = U(\vec{{\bm{\theta}}}) |\psi_{HF} \rangle.
-   $$
-   {{< /math >}}
-   Thus, the trial state is prepared on a quantum computer as a quantum circuit consisting of parameterized gates.
-
-4. One measures the expectation value of the energy:
-   {{< math >}}
-   $$
-   \langle H \rangle = \langle \psi_{HF}(\vec{{\bm{\theta}}}_0) | H | \psi_{HF}(\vec{{\bm{\theta}}}_0) \rangle.
-   $$
-   {{< /math >}}
-   At iteration {{< math >}}
-   $$
-   k
-   $$
-   {{< /math >}}, the energy of the Hamiltonian is computed by measuring every Hamiltonian term:
-   {{< math >}}
-   $$
-   \langle \psi(\vec{{\bm{\theta}}_k}) | P_j | \psi(\vec{{\bm{\theta}}_k}) \rangle
-   $$
-   {{< /math >}}
-   on a quantum computer and adding them on a classical computer.
-
-5. The energy {{< math >}}
-   $$
-   E(\vec{{\bm{\theta}}_k})
-   $$
-   {{< /math >}} is fed into the classical algorithm that updates parameters for the next step of optimization {{< math >}}
-   $$
-   \vec{{\bm{\theta}}}_{k+1}
-   $$
-   {{< /math >}} according to the chosen optimization algorithm.
+The energy {{< math >}}{{< /math >}} according to the chosen optimization algorithm.
 
 
 

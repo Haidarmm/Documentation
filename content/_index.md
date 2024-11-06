@@ -10,7 +10,7 @@ design:
 sections:
   - block: hero
     content:
-      title: Open NISQ
+      title: OpenVQE
       text: The easy, well- structured code technical documentation solution your users to learn Quantum Computing for Quantum Chemistry
       primary_action:
         text: Get Started
@@ -83,7 +83,7 @@ sections:
   - block: cta-card
     content:
       title: "Start Exploring with the OpenNISQ Package"
-      text: OpenNISQ is an Open Source Variational Quantum Eigensolver package. It is an extension of the Quantum Learning Machine to Quantum Chemistry based on the tools provided in myQLM-fermion package.
+      text: OpenVQE is an Open Source Variational Quantum Eigensolver package. It is an extension of the Quantum Learning Machine to Quantum Chemistry based on the tools provided in myQLM-fermion package.
       button:
         text: Get Started
         url: https://github.com/OpenVQE/OpenVQE
