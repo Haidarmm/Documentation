@@ -1,59 +1,41 @@
 ---
-title: Project Structure
+title: Package Structure
 weight: 1
 ---
 
 ## Folder Structure
 
-There are **4 main folders for Hugo-based sites**:
+OpenVQE consists of **two main modules that are inside the "openvqe" folder:**:
 
-- `content/` for your Markdown-formatted content files (homepage, etc.)
-  - `_index.md` the homepage (**Hugo requires that the homepage and archive pages have an underscore prefix**)
-- `assets/`
-  - `media/` for your media files (images, videos)
-    - `icons/custom/` upload any custom SVG icons you want to use
-- `config/_default/` for your site configuration files
-  - `hugo.yaml` to configure Hugo (site title, URL, Hugo options, setup per-folder page features)
-  - `module.yaml` to install or uninstall Hugo themes and plugins
-  - `params.yaml` to configure Hugo Blox options (SEO, analytics, site features)
-  - `menus.yaml` to configure your menu links (if the menu is enabled in `params.yaml`)
-  - `languages.yaml` to configure your site's language or to set language-specific options in a multilingual site
-- `static/uploads/` for any files you want visitors to download, such as a PDF
-- `go.mod` sets the version of Hugo themes/plugins which your site uses
+- `UCC Family/`: This module includes different classes and functions to generate the fermionic cluster operators (fermionic pool) and the qubit pools, and to get the VQE optimized energies in the cases of active and non-active orbital selections.
+- `adapt/` includes two sub-modules:
+  - `Fermionic-ADAPT/`: containing functions performing the fermionic-ADAPT-VQE algorithmic steps in the active and non-active space selections;
+  - `Qubit-ADAPT/`: containing functions that perform the qubit-ADAPT-VQE algorithmic steps calculation in the active and non-active space orbital selections.
+
+## SubFolder Structure
+
+- `common_files/`: stores all the internal functions needed to be imported for executing the two modules.
+- `notebooks`: allows the user to run and test the above two modules: `UCC Family/` and `adapt/`.
+
+![image](/uploads/output.jpg)
 
 
-## Hugo File Naming Convention
+## Import folder / subfolder
 
-Hugo gives us two options to name standard page files: as `TITLE/index.md` or `TITLE.md` where `TITLE` is your page name.
+Page `Check the import`:
 
-The page name should be lowercase and using hyphens (`-`) instead of spaces.
 
-Both approaches result in the same output, so you can choose your preferred approach to naming and organizing files. A benefit to the folder-based approach is that all your page's files (such as images) are self-contained within the page's folder, so it's more portable if you wish to share the original Markdown page with someone.
 
-The homepage is a special case as **Hugo requires the homepage and listing pages to be named** `_index.md`.
+```python {class="my-class" id="my-codeblock" lineNos=inline tabWidth=2}
+from openvqe.ucc import ...
+from openvqe.common_files.qubit_pool import QubitPool
 
-## Docs Navigation
-
-The docs navigation is automatically generated based on the content in the `docs/` folder and is sorted alphabetically.
-
-The order of pages can be changed by adding the `weight` parameter in the front matter of your Markdown files.
-
-In the example below, the `example.md` page will appear before the `test.md` page as it has a lower `weight`:
-
-Page `example.md`:
-
-```yaml
----
-title: My Example
-weight: 1
----
 ```
 
-Page `test.md`:
+{{< math >}}
+$$
+\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}
+$$
+{{< /math >}}
 
-```yaml
----
-title: My Test
-weight: 2
----
-```
+

@@ -10,11 +10,11 @@ design:
 sections:
   - block: hero
     content:
-      title: Write Docs Fast, Focus on Your Content
-      text: The easy, no-code technical documentation solution your users will love 🎉
+      title: Open NISQ
+      text: The easy, well- structured code technical documentation solution your users to learn Quantum Computing for Quantum Chemistry
       primary_action:
         text: Get Started
-        url: https://hugoblox.com/templates/details/docs/
+        url: https://github.com/OpenVQE/OpenVQE
         icon: rocket-launch
       secondary_action:
         text: Read the docs
@@ -40,18 +40,16 @@ sections:
   - block: stats
     content:
       items:
-        - statistic: "1M+"
+        - statistic: "1"
           description: |
-            Websites built  
-            with Hugo Blox
-        - statistic: "10k+"
+              Open Source specified for Quantum Computing for Quantum Chemistry
+        - statistic: "2"
           description: |
             GitHub stars  
-            since 2016
-        - statistic: "3k+"
+            since 2021
+        - statistic: "3"
           description: |
-            Discord community  
-            for support
+            3 published papers
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-800"
@@ -62,33 +60,33 @@ sections:
     id: features
     content:
       title: Features
-      text: Collaborate, publish, and maintain technical knowledge with an all-in-one documentation site. Used by 100,000+ startups, enterprises, and researchers.
+      text: Collaborate, publish, and maintain technical knowledge with an all-in-one documentation site. Used by startups, enterprises, and researchers.
       items:
-        - name: Optimized SEO
+        - name: Optimized search
           icon: magnifying-glass
-          description: Automatic sitemaps, RSS feeds, and rich metadata take the pain out of SEO and syndication.
+          description: Automatic sitemaps, easy to find the function 
         - name: Fast
           icon: bolt
-          description: Super fast page load with Tailwind CSS and super fast site building with Hugo.
+          description: Super fast download with git-based platform 
         - name: Easy
           icon: sparkles
-          description: One-click deployment to GitHub Pages. Have your new website live within 5 minutes!
-        - name: No-Code
+          description: Easy for people who want to learn quantum computing with the background in Chemistry
+        - name: Code Structure
           icon: code-bracket
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.
+          description: Well-structured code, people are highly advice to contribute to the package
         - name: Highly Rated
           icon: star
           description: Rated 5-stars by the community.
-        - name: Swappable Blocks
+        - name: Interprobability
           icon: rectangle-group
-          description: Build your pages with blocks - no coding required!
+          description: Code with myQLM language can swap with Qiskit, Pennylane, ...
   - block: cta-card
     content:
-      title: "Start Writing with the #1 Effortless Documentation Platform"
-      text: Hugo Blox Docs Theme brings all your technical knowledge together in a single, centralized knowledge base. Easily search and edit it with the tools you use every day!
+      title: "Start Exploring with the OpenNISQ Package"
+      text: OpenNISQ is an Open Source Variational Quantum Eigensolver package. It is an extension of the Quantum Learning Machine to Quantum Chemistry based on the tools provided in myQLM-fermion package.
       button:
         text: Get Started
-        url: https://hugoblox.com/templates/details/docs/
+        url: https://github.com/OpenVQE/OpenVQE
     design:
       card:
         # Card background color (CSS class)

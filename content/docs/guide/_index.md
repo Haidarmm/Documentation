@@ -1,5 +1,5 @@
 ---
-title: Guide
+title: Quantum Program
 weight: 2
 sidebar:
   open: true

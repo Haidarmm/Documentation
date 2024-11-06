@@ -1,12 +1,12 @@
 ---
-title: Shortcodes
+title: Qaptiva Quantum Program
 ---
 
-Build the best docs with re-usable components, referred to as Hugo shortcodes:
+Writing quantum programs with Qaptiva machine
 
 {{< cards >}}
-  {{< card url="callout" title="Callout" icon="warning" >}}
+  {{< card url="callout" title="Circuit-based quantum programming  " icon="warning" >}}
   {{< card url="cards" title="Cards" icon="card" >}}
-  {{< card url="toggle" title="Spoiler" icon="chevron-right" >}}
-  {{< card url="steps" title="Steps" icon="one" >}}
+  {{< card url="toggle" title="VQE-Fermion" icon="chevron-right" >}}
+  {{< card url="steps" title="OpenVQE interface" icon="one" >}}
 {{< /cards >}}

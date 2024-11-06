@@ -1,32 +1,73 @@
-# [Hugo Docs Theme](https://github.com/HugoBlox/theme-documentation)
+OpenVQE: README
+=======================
 
-[![Screenshot](https://raw.githubusercontent.com/HugoBlox/theme-documentation/main/.github/preview.png)](https://hugoblox.com/templates/details/docs/)
+`OpenVQE` is an Open Source Variational Quantum Eigensolver extension of the Quantum Learning Machine to  Quantum Chemistry. It was developed based on the tools of `myqlm-fermion` 
 
-The Hugo **Documentation Template** empowers with everything you need to build a beautiful documentation website, including a customizable block-based homepage and blog. It's ultra-fast and easy, letting you focus on your content. It's also no-code by default, so no JavaScript knowledge is required unlike other templates!
 
-️**Trusted by 250,000+ creators, teams, and organizations.** Highly customizable via the integrated **no-code, block-based website builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+It consists of two main modules as follows:
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/templates/details/docs/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/GetResearchDev)
+- UCC Family: this module consists of different classes and functions to generate the fermionic cluster operators (fermionic pool) and the  qubit pools and to get the optimized energies from VQE in the case of active and non-active orbital selections. For example, UCCSD, QUCCSD, UCCGSD, K-UpCCGSD, spin-complemented pair, singlet and doublet generalized single and double excitations, etc.
 
-[Check out the latest demo](https://hugo-docs-theme.netlify.app/) of what you'll get in less than 10 minutes, or [view the showcase](https://hugoblox.com/creators/).
+- ADAPT: consists of two sub-modules which are: 
+    - Fermionic-ADAPT: it contains functions that performs the fermionic ADAPT-VQE algorthmic steps  in the active and non-active space selections.
+    - Qubit-ADAPT: it  contains functions that perform the Qubit ADAPT-VQE algorithmic steps calculation in the active and non-active space orbital selections.
 
-The integrated [**Hugo Blox**](https://hugoblox.com) website builder and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
 
-- 👉 [**Get Started**](https://hugoblox.com/templates/details/docs/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Hugo Blox Builder community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- ⬇️ **Automatically import citations from BibTeX** with the [Academic File Converter](https://github.com/GetRD/academic-file-converter)
-- 🐦 Share your new site with the community: [@GetResearchDev](https://twitter.com/GetResearchDev) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithHugoBlox](https://twitter.com/search?q=%23MadeWithHugoBlox&src=typed_query)
-- 🗳 [Take the survey and help us improve #OpenSource](https://forms.gle/NioD9VhUg7PNmdCAA)
-- 🚀 [Contribute improvements](https://github.com/HugoBlox/hugo-blox-builder/blob/main/CONTRIBUTING.md) or [suggest improvements](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/reference/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+Installation
+--------------
+### Prerequisites:
+#### Install myqlm-fermion:
 
-## We ask you, humbly, to support this open source movement
+install myqlm-fermion 1.7.1 from source:
 
-Today we ask you to defend the open source independence of the Hugo Blox Builder and themes 🐧
+```shell
+git clone https://github.com/myQLM/myqlm-fermion.git
+cd myqlm-fermion
+git checkout 1.7.1
+pip install -r requirements.txt
+pip install .
+```
+### Install OpenVQE
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+install OpenVQE from source:
+```shell
+git clone https://github.com/OpenVQE/OpenVQE.git
+cd OpenVQE
+pip install -r requirements.txt
+pip install .
+```
+Move to the next section for getting started!
 
-### [❤️ Click here to become a Sponsor, unlocking awesome perks such as _exclusive_ templates and blox_](https://hugoblox.com/sponsor/)
+
+Getting started
+----------------
+### Notebooks
+
+Jupyter notebooks are available in the "notebooks" folder.
+
+### Hello world example
+
+
+```shell
+from openvqe.ucc import ...
+
+```
+
+Documentation
+---------------
+The code is based on the well documented code of `myqlm-fermion` framework [link](https://myqlm.github.io/).
+The main functions are documented in the code base.
+For more information, please refer to our paper that wil be published soon (the link to be provided).
+
+License
+-----------
+The code is published under MIT LICENSE.
+
+References
+-----------
+* Nooijen, Marcel. "Can the eigenstates of a many-body hamiltonian be represented exactly using a general two-body cluster expansion?." Physical review letters 84.10 (2000): 2108.
+* Lee, Joonho, et al. "Generalized unitary coupled cluster wave functions for quantum computation." Journal of chemical theory and computation 15.1 (2018): 311-324.
+* Grimsley, Harper R., et al. "An adaptive variational algorithm for exact molecular simulations on a quantum computer." Nature communications 10.1 (2019): 1-9.
+* Tang, Ho Lun, et al. "qubit-adapt-vqe: An adaptive algorithm for constructing hardware-efficient ansätze on a quantum processor." PRX Quantum 2.2 (2021): 020310.
+* Xia, Rongxin, and Sabre Kais. "Qubit coupled cluster singles and doubles variational quantum eigensolver ansatz for electronic structure calculations." Quantum Science and Technology 6.1 (2020): 015001.
+* Shkolnikov, V. O., et al. "Avoiding symmetry roadblocks and minimizing the measurement overhead of adaptive variational quantum eigensolvers." arXiv preprint arXiv:2109.05340 (2021).
