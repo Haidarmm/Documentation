@@ -1,6 +1,6 @@
 ---
-title: Circuit-based quantum programming 
-linkTitle: Circuit-based quantum programming 
+title:  Circuit-based quantum programming 
+linkTitle: 1- Circuit-based quantum programming 
 ---
 
 This is the training session for the preliminary understanding about QLM language

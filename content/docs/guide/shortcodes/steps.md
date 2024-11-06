@@ -1,5 +1,6 @@
 ---
 title: Parameter-Shift Rule
+linkTitle: 5- Parameter-Shift Rule
 ---
 
 ![image](/uploads/sstack5.png)

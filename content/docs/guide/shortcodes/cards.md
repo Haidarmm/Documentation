@@ -1,6 +1,6 @@
 ---
-title: Cards Shortcode
-linkTitle: Cards
+title: OpenVQE Overall
+linkTitle: 3- OpenVQE Overall
 ---
 
 A Openvqe extension to create cards. Cards can be shown as links or as plain text.
@@ -8,18 +8,9 @@ A Openvqe extension to create cards. Cards can be shown as links or as plain tex
 ## Usage
 
 {{< cards >}}
-  {{< card url="../" title="Learn Shortcodes" icon="academic-cap" >}}
-  {{< card url="" title="A card without an icon or link" >}}
+  {{< card url="../" title="Shortcodes Table" icon="academic-cap" >}}
 {{< /cards >}}
 
-is rendered by:
-
-```
-{{</* cards */>}}
-  {{</* card url="../callout" title="Callout" icon="academic-cap" */>}}
-  {{</* card url="" title="A card without an icon" */>}}
-{{</* /cards */>}}
-```
 
 ## Options
 

@@ -1,5 +1,6 @@
 ---
 title: Subspace-search variational quantum eigensolver for excited states
+linkTitle: 6- SSVQE
 ---
 
 ![image](/uploads/sstack9.png)

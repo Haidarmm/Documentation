@@ -1,6 +1,6 @@
 ---
 title: Observables 
-linkTitle: Observables  
+linkTitle: 2a-Observables  
 ---
 
 This is the training session for the preliminary understanding about QLM language for mostly in Quantum Chemistry 

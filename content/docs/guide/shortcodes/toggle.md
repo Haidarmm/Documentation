@@ -1,5 +1,6 @@
 ---
 title: MyQLM-Fermion
+linkTitle: 2- MyQLM-Fermion
 ---
 
 
@@ -277,6 +278,3 @@ plt.show()
 ```
 ![image](/uploads/sstack4.png)
 
-$$
-U\left(x;\bm{\theta}\right)=U_N\left(\bm{\theta}_N\right)U_{N-1}\left(\bm{\theta}_{N-1}\right)\cdots U_i\left(\bm{\theta}_i\right) \cdots U_1\left(\bm{\theta}_1\right)U_0\left(x\right)
-$$
