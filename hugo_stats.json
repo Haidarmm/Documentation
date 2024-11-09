@@ -44,6 +44,7 @@
       "span",
       "strong",
       "style",
+      "sub",
       "svg",
       "table",
       "tbody",
@@ -537,6 +538,7 @@
       "z-30"
     ],
     "ids": [
+      "about-the-author",
       "active-space-selection",
       "algorithm-steps",
       "applying-for-hardware-efficient-anazt",
@@ -569,6 +571,7 @@
       "options",
       "page-bg",
       "quantum-routines",
+      "references",
       "search",
       "search_toggle",
       "section-collection",

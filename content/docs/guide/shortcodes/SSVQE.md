@@ -6,6 +6,8 @@ linkTitle: 6- SSVQE
 ![image](/uploads/sstack9.png)
 
 
+
+
 <!--more-->
 
 In Variational Quantum Eigensolver (VQE), the real parameters $\theta$ for the ansatz states $|\psi \left( \theta  \right) \rangle $ are classically optimised with respect to the expectation value of the Hamiltonian in the equation ; it is computed using a lowdepth quantum circuit. As a result of the variational
@@ -151,6 +153,24 @@ The energy levels of the Hamiltonian of H$_2$ in the STO-3g basis set: four qubi
 computed VQE state at each optimization step $j$ and the theoretical ground (or excited)
 state $|\Psi_{k}\rangle$ of Hamiltonian $H$,  where  $|\Psi_{k}\rangle$ is obtained through diagonalization.
 
+### **References**
+
+<a href="https://arxiv.org/pdf/1810.09434" style="color:#1E90FF;">
+Nakanishi, Ken M., Kosuke Mitarai, and Keisuke Fujii. "Subspace-search variational quantum eigensolver for excited states." Physical Review Research 1.3 (2019): 033062.
+</a>
+
+### **About the Author**
+
+
+<div align="center">
+  <img src="/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+  <br>
+  <strong>Huy Binh TRAN</strong>
+  <br>
+  <em>Master 2 Quantum Devices at Institute Paris Polytechnic, France</em>
+  <br>
+  <a href="https://www.linkedin.com/in/huybinhtran/" style="color:#1E90FF;">LinkedIn</a>
+</div>
 
 {{< math >}}
 {{< /math >}} 

@@ -1,5 +1,5 @@
 ---
-title: Adapt-VQE
+title: Adapt-VQE 
 linkTitle: 4- Adapt-VQE
 ---
 
@@ -122,21 +122,6 @@ We make an analysed plot for the converged energy and the fidelity. It took 5 fe
 
 
 ![image](/uploads/skack1.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
