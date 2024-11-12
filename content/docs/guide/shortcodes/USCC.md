@@ -18,7 +18,7 @@ The ansatz generation starts with the reference Hartree–Fock state, with no in
 
 
 
-**UsCCSDTQ-VQE Algorithm**
+### UsCCSDTQ-VQE Algorithm
 
 
 1.   Generate single and double excitations for a given molecule.
@@ -46,10 +46,11 @@ For all single (S) and double (D) excitations \([i, p]\) and \([i, j, p, q]\) in
 
 4.  For each excitation, if the absolute value of the largest coefficient computed in step 3 is larger than $\epsilon_n$ on iteration $n$, add this excitation to ansatz.
 
+### Code Source Implementation
 
 {{% steps %}}
 
-### Step 1: 
+### Step 1
 **Import necessary library and define the fucntions**
 
 ```python {class="my-class" id="my-codeblock" lineNos=inline tabWidth=2}
@@ -296,7 +297,7 @@ class EnergyUCC:
 
 ```
 
-### Step 2: 
+### Step 2
 **Callout the function and excecute the program**
 ```python {class="my-class" id="my-codeblock" lineNos=inline tabWidth=2}
 from openvqe.common_files.molecule_factory import MoleculeFactory
@@ -561,6 +562,8 @@ for exc in current_excitations:
 
 {{% /steps %}}
 
+### Analytical Results
+
 We test UsCCSDTQ-VQE on H$_4$ and LiH molecules using PMRS method (described in the previous section). We emulate 8  qubits in STO-3G basis set. Numerical results are shown in **Figure 1** for H$_4$  and **2** LiH for  as below: 
 
 <p align="center">
@@ -625,7 +628,18 @@ We observe that only three iterations are needed to reach $10^{-9}$ Hartee for  
 Fedorov, Dmitry A., et al. "Unitary selective coupled-cluster method." Quantum 6 (2022): 703.
 </a>
 
-### **About the Author**
+<br>
+
+<a href="https://arxiv.org/pdf/2206.08798" style="color:#1E90FF;">
+Haidar, Mohammad, et al. "Open source variational quantum eigensolver extension of the quantum learning machine for quantum chemistry." Wiley Interdisciplinary Reviews: Computational Molecular Science 13.5 (2023): e1664.
+</a>
+
+
+
+
+
+
+### **About the author**
 
 
 

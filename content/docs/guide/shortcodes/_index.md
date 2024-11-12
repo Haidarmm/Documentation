@@ -12,4 +12,5 @@ Writing quantum programs with Qaptiva machine
   {{< card url="steps" title="Parameter Shift Rules" icon="chevron-right" >}}
   {{< card url="SSVQE" title="Subspace-search variational quantum eigensolver for excited states" icon="chevron-right" >}}
   {{< card url="USCC" title="Unitary Selective Coupled Cluster" icon="chevron-right" >}}
+  {{< card url="battery" title="Simulating lithium-ion batteries on quantum computers" icon="chevron-right" >}}
 {{< /cards >}}
