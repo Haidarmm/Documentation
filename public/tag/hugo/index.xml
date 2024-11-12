@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo | Open NISQ</title><link>http://localhost:1313/tag/hugo/</link><atom:link href="http://localhost:1313/tag/hugo/index.xml" rel="self" type="application/rss+xml"/><description>Hugo</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 15 Mar 2023 00:00:00 +0000</lastBuildDate><image><url>http://localhost:1313/media/logo.svg</url><title>Hugo</title><link>http://localhost:1313/tag/hugo/</link></image><item><title>WIREs Computational Molecular ScienceVolume 13, Issue 5 e1664</title><link>http://localhost:1313/blog/v1.0.0/</link><pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/v1.0.0/</guid><description>&lt;p>The reasearch paper &amp;ldquo;pen source variational quantum eigensolver extension of the quantum learning machine for quantum chemistry&amp;rdquo; is now available on Wiley Journal! This release grants some following highlights include:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>The paper introduces the OpenVQE open-source package, which extends the Atos Quantum Learning Machine (QLM) to provide advanced tools for using and developing variational quantum eigensolver (VQE) algorithms for quantum chemistry applications.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Present quantum processing units (QPUs) have limited qubit counts and circuit depths due to large errors, and VQE algorithms can potentially overcome such issues.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The OpenVQE package is designed to work synergistically with the myQLM-fermion open-source module, which provides key QLM resources important for quantum chemistry developments.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>OpenVQE focuses on giving access to modules enabling the use of the unitary coupled cluster (UCC) family of methods and adaptive ansatz algorithms like ADAPT-VQE.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The UCC family modules in OpenVQE include various features such as different types of UCC generators, including UCCSD, k-UpCCGSD, and QUCCSD.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The adaptive VQE algorithms include fermionic-ADAPT-VQE and qubit-ADAPT-VQE, with different operator pools.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The paper presents extensive benchmarks using the OpenVQE/myQLM-fermion package on a range of molecules from 4 to 24 qubits, demonstrating the use of active space selection, MP2 pre-screening initial guesses, and comparing the fermionic and qubit-ADAPT-VQE results.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The paper compares the &amp;ldquo;fixed-length&amp;rdquo; UCC methods to the ADAPT-VQE approach, showing that ADAPT-VQE can achieve higher accuracy with fewer parameters and gates, depending on the chosen convergence threshold.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The paper emphasizes the open-source nature of the OpenVQE/myQLM-fermion packages, facilitating their use and contribution by the broader community, and provides perspectives for developing new types of UCC ansätze and/or new variational algorithms within OpenVQE.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction-to-openvqe-package">Introduction to OpenVQE package&lt;/h2>
+&lt;p>This paper introduces the OpenVQE open-source package, which extends the Atos Quantum Learning Machine (QLM) to provide advanced tools for using and developing variational quantum eigensolver (VQE) algorithms for quantum chemistry applications. The paper highlights that present quantum processing units (QPUs) have limited qubit counts and circuit depths due to large errors, and that VQE algorithms can potentially overcome such issues.&lt;/p>
+&lt;h2 id="design-of-the-openvqe-package">Design of the OpenVQE package&lt;/h2>
+&lt;p>The UCC family modules in OpenVQE include various features such as different types of UCC generators (truncated to single and double excitations), including unitary coupled cluster singles and doubles (UCCSD), unitary pair CC with generalized singles and doubles product (k-UpCCGSD), and qubit unitary coupled cluster singles and doubles (QUCCSD). The adaptive VQE algorithms include fermionic-ADAPT-VQE and qubit-ADAPT-VQE, with different operator pools.&lt;/p>
+&lt;h2 id="benchmarking-using-openvqemyqlm-fermion-package">Benchmarking using OpenVQE/myQLM-fermion package&lt;/h2>
+&lt;p>The paper presents extensive benchmarks using the OpenVQE/myQLM-fermion package on a range of molecules from 4 to 24 qubits. It first shows the properties of the QLM simulator, including the timings for applying the UCCSD ansatz and measuring the Hamiltonian expectation value. It then demonstrates the use of active space selection and MP2 pre-screening initial guesses for different test molecules. Using the ADAPT-VQE module, it compares the fermionic and qubit-ADAPT-VQE results in terms of chemical accuracy, number of variational parameters, operators, and quantum gates. Finally, it compares the &amp;ldquo;fixed-length&amp;rdquo; UCC methods to the ADAPT-VQE approach, showing that ADAPT-VQE can achieve higher accuracy with fewer parameters and gates, depending on the chosen convergence threshold.&lt;/p></description></item></channel></rss>
