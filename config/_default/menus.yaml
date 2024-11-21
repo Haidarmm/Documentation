@@ -28,7 +28,4 @@ sidebar:
     name: "Community"
     pageRef: "/community"
     weight: 2
-  - identifier: hugoDocs
-    name: "Hugo Docs ↗"
-    url: "https://docs.hugoblox.com"
-    weight: 3
+

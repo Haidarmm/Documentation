@@ -5,8 +5,8 @@
 
 # Appearance
 appearance:
-  mode: light
-  color: blue
+  mode: dark
+  color: green
 
 # SEO
 marketing:
@@ -38,7 +38,7 @@ header:
     logo:
       text: ""
       # Logo filename in `assets/media/` folder
-      filename: "logo.svg"
+      filename: "icon.png"
     button:
       enable: true
       text: "Get Started"
