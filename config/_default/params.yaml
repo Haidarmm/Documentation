@@ -38,7 +38,7 @@ header:
     logo:
       text: ""
       # Logo filename in `assets/media/` folder
-      filename: "icon.png"
+      filename: "Openvqe.svg"
     button:
       enable: true
       text: "Get Started"

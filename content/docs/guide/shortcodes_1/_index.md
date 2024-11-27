@@ -2,7 +2,7 @@
 title: B -  Applications
 ---
 
-Writing quantum programs with Qaptiva machine
+Application for quantum programs with Qaptiva machine
 
 {{< cards >}}
   {{< card url="battery" title="Simulating lithium-ion batteries on quantum computers" icon="chevron-right" >}}
