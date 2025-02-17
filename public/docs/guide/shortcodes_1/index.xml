@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>B - Applications | OpenVQE</title><link>http://localhost:64478/docs/guide/shortcodes_1/</link><atom:link href="http://localhost:64478/docs/guide/shortcodes_1/index.xml" rel="self" type="application/rss+xml"/><description>B - Applications</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>http://localhost:64478/media/logo.svg</url><title>B - Applications</title><link>http://localhost:64478/docs/guide/shortcodes_1/</link></image><item><title>Simulating lithium-ion batteries on quantum computers</title><link>http://localhost:64478/docs/guide/shortcodes_1/battery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:64478/docs/guide/shortcodes_1/battery/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>B - Applications | OpenVQE</title><link>http://localhost:1313/docs/guide/shortcodes_1/</link><atom:link href="http://localhost:1313/docs/guide/shortcodes_1/index.xml" rel="self" type="application/rss+xml"/><description>B - Applications</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>http://localhost:1313/media/logo.svg</url><title>B - Applications</title><link>http://localhost:1313/docs/guide/shortcodes_1/</link></image><item><title>Simulating lithium-ion batteries on quantum computers</title><link>http://localhost:1313/docs/guide/shortcodes_1/battery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/shortcodes_1/battery/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Quantum computing provides a promising approach to simulate the ground state energy of battery materials, which is essential for improving battery efficiency. In this tutorial, we simulate the ground state energy of Li$_2$FeSiO$_4$, a lithium-ion battery cathode material, using Variational Quantum Eigensolver (VQE) and its variants. The structure of Li$_2$FeSiO$_4$ is shown below.&lt;/p>
 &lt;p>Conventional unit cell.
-&lt;img src="http://localhost:64478/images/unit_cell.png" alt="unit cell">&lt;/p>
+&lt;img src="http://localhost:1313/images/unit_cell.png" alt="unit cell">&lt;/p>
 &lt;p>Crystal Structure (Monoclinic)&lt;/p>
-&lt;p>&lt;img src="http://localhost:64478/images/Li2FeSiO4--crystal-toolkit.png" alt="Li2FeSiO4">&lt;/p>
+&lt;p>&lt;img src="http://localhost:1313/images/Li2FeSiO4--crystal-toolkit.png" alt="Li2FeSiO4">&lt;/p>
 &lt;h2 id="methodology">Methodology&lt;/h2>
 &lt;p>We employ the following algorithms:&lt;/p>
 &lt;ul>
@@ -84,7 +84,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">energy&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">params&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cudaq&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">vqe&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">kernel&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">ham&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">optimizer&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">parameter_count&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">num_layers&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">n_qubits&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">rel_err&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ccsd_energy&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">energy&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:64478/images/cs_vqe.png" alt="CS-VQE">&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:1313/images/cs_vqe.png" alt="CS-VQE">&lt;/p>
 &lt;h2 id="cs-adapt-vqe">CS-ADAPT-VQE&lt;/h2>
 &lt;p>CS-ADAPT-VQE adaptively selects excitations based on parameter gradients. We select excitations with the highest gradients and perform VQE with selected excitations:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Calulate the singles and doubles excitations&lt;/span>
@@ -149,8 +149,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">energy&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">params&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cudaq&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">vqe&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">kernel&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">ham&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">optimizer&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">parameter_count&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">parameter_count&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:64478/images/adapt_circuit.png" alt="CS-ADAPT-VQE-circuit">
-&lt;img src="http://localhost:64478/images/adapt.png" alt="CS-ADAPT-VQE">&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:1313/images/adapt_circuit.png" alt="CS-ADAPT-VQE-circuit">
+&lt;img src="http://localhost:1313/images/adapt.png" alt="CS-ADAPT-VQE">&lt;/p>
 &lt;h2 id="cs-vqe-with-rotoselect-optimization">CS-VQE with Rotoselect Optimization&lt;/h2>
 &lt;p>Rotoselect dynamically selects the optimal rotation gates (X, Y, Z) for each parameter to minimize energy:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">rotoselect_cycle&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">cost&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">params&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">generators&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n_qubits&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">hamiltonian&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">hf&lt;/span>&lt;span class="p">):&lt;/span>
@@ -165,9 +165,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">n_steps&lt;/span>&lt;span class="p">):&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">params&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">generators&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">rotoselect_cycle&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">cost_fn&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">params&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">generators&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n_qubits&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">ham&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">hf&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">energy&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cost_fn&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">params&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">generators&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n_qubits&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">ham&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">hf&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:64478/images/rotoselect_orig_circuit.png" alt="Rotoselect-orig-circuit">
-&lt;img src="http://localhost:64478/images/rotoselect_circuit.png" alt="Rotoselect-circuit">
-&lt;img src="http://localhost:64478/images/rotoselect.png" alt="Rotoselect">&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:1313/images/rotoselect_orig_circuit.png" alt="Rotoselect-orig-circuit">
+&lt;img src="http://localhost:1313/images/rotoselect_circuit.png" alt="Rotoselect-circuit">
+&lt;img src="http://localhost:1313/images/rotoselect.png" alt="Rotoselect">&lt;/p>
 &lt;h2 id="conclusion-and-future-directions">Conclusion and Future Directions&lt;/h2>
 &lt;p>This tutorial demonstrated how CS-VQE, ADAPT-VQE, and Rotoselect optimize battery material simulations using quantum computing. Each approach uniquely balances qubit requirements and accuracy, and future work could explore combining these methods with error mitigation techniques to improve results further.&lt;/p>
 &lt;h2 id="references">References&lt;/h2>
@@ -180,14 +180,14 @@
 &lt;/ol>
 &lt;h3 id="about-the-author">&lt;strong>About the author&lt;/strong>&lt;/h3>
 &lt;div align="center">
-&lt;img src="http://localhost:64478/images/gopal.jpeg" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:1313/images/gopal.jpeg" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
 &lt;strong>Gopal Ramesh Dahale&lt;/strong>
 &lt;br>
 &lt;em>Master's student in Quantum Science and Engineering at EPFL&lt;/em>
 &lt;br>
 &lt;a href="https://www.linkedin.com/in/gopald27" style="color:#1E90FF;">LinkedIn&lt;/a>
-&lt;/div></description></item><item><title>Maxcut by Quantum annealing</title><link>http://localhost:64478/docs/guide/shortcodes_1/maxcut/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:64478/docs/guide/shortcodes_1/maxcut/</guid><description>&lt;h1 id="1-graph-definition">1. Graph definition&lt;/h1>
+&lt;/div></description></item><item><title>Maxcut by Quantum annealing</title><link>http://localhost:1313/docs/guide/shortcodes_1/maxcut/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/shortcodes_1/maxcut/</guid><description>&lt;h1 id="1-graph-definition">1. Graph definition&lt;/h1>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">networkx&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">nx&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">itertools&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">chain&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">combinations&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">matplotlib.pyplot&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">plt&lt;/span>
@@ -224,7 +224,7 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:64478/images/42d8e6221f9dc8947c4033331fcef141a48e39d7.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:1313/images/42d8e6221f9dc8947c4033331fcef141a48e39d7.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h1 id="2-classical-calculation">2. Classical calculation&lt;/h1>
@@ -433,7 +433,7 @@ third execution that I obtain results.keep the largest one.&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:64478/images/07008f6d0fa11958622abb7d543a23382f45f330.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:1313/images/07008f6d0fa11958622abb7d543a23382f45f330.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">U_c&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">J&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">t&lt;/span>&lt;span class="p">):&lt;/span>
@@ -485,7 +485,7 @@ third execution that I obtain results.keep the largest one.&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:64478/images/a3f9a71ff42147a5a68c072a98a04608c1b8add0.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:1313/images/a3f9a71ff42147a5a68c072a98a04608c1b8add0.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h2 id="33-build-u_eta">3.3 Build $U_{\eta}$&lt;/h2>
@@ -516,7 +516,7 @@ third execution that I obtain results.keep the largest one.&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:64478/images/a2369cd3ceda15300d055f3755478d5e11d1fe19.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:1313/images/a2369cd3ceda15300d055f3755478d5e11d1fe19.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h1 id="4-post-processing-and-formatting">4 Post-processing and formatting&lt;/h1>
@@ -588,7 +588,7 @@ Set 2: []
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:64478/images/27efae2cfc94edd0f08ea62e66371a91f8ac3005.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:1313/images/27efae2cfc94edd0f08ea62e66371a91f8ac3005.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;pre>&lt;code>bits string: 00011
@@ -610,7 +610,7 @@ Set 2: [0, 2, 4]
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:64478/images/4a34eba6e8c42c814bda7ba6aef24d837c86cc99.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:1313/images/4a34eba6e8c42c814bda7ba6aef24d837c86cc99.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;pre>&lt;code>bits string: 100101
@@ -632,7 +632,7 @@ Set 2: [2, 5]
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:64478/images/dfa257ec8121153ddb343cc9de11e87c2c5402c8.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:1313/images/dfa257ec8121153ddb343cc9de11e87c2c5402c8.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;pre>&lt;code>bits string: 1101000
@@ -654,7 +654,7 @@ Set 2: [0, 2, 3, 5, 6]
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:64478/images/34db132e6978526d746d393076fe3a5d46b916ba.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:1313/images/34db132e6978526d746d393076fe3a5d46b916ba.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h3 id="references">&lt;strong>References&lt;/strong>&lt;/h3>
@@ -663,7 +663,7 @@ Edward Farhi, Jeffrey Goldstone,Joshua Lapan, Andrew Lundgren, Daniel Preda. "A 
 &lt;/a>
 &lt;h3 id="about-the-author">&lt;strong>About the author&lt;/strong>&lt;/h3>
 &lt;div align="center">
-&lt;img src="http://localhost:64478/images/isaac.JPG" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:1313/images/isaac.JPG" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
 &lt;strong>Isaac Christ Donchi Kamga&lt;/strong>
 &lt;br>

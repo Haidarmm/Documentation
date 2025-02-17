@@ -10,7 +10,7 @@ design:
 sections:
   - block: hero
     content:
-      title: OpenVQE
+      title: OpenVQA
       text: The easy, well- structured code technical documentation solution your users to learn Quantum Computing for Quantum Chemistry
       primary_action:
         text: Get Started
@@ -82,7 +82,7 @@ sections:
           description: Code with myQLM language can swap with Qiskit, Pennylane, ...
   - block: cta-card
     content:
-      title: "Start Exploring with the OpenNISQ Package"
+      title: "Start Exploring with the OpenVQE Package"
       text: OpenVQE is an Open Source Variational Quantum Eigensolver package. It is an extension of the Quantum Learning Machine to Quantum Chemistry based on the tools provided in myQLM-fermion package.
       button:
         text: Get Started

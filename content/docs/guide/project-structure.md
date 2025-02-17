@@ -24,6 +24,8 @@ OpenVQE consists of **two main modules that are inside the "openvqe" folder:**:
 ![image](/uploads/output.jpg)
 
 
+## Updated second version package
 
+![image](/uploads/sketch.png)
 
 

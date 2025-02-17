@@ -124,8 +124,91 @@ We make an analysed plot for the converged energy and the fidelity. It took 5 fe
 ![image](/uploads/skack1.png)
 
 
+## Second version of OpenVQE (Updated code)
+
+### Parameters
+
+- **Molecule Symbol:** `H2`
+- **Type of Generator:** `spin_complement_gsd`
+- **Transformation:** `JW`
+- **Active:** `False`
+
+### Workflow
+
+1. **Initialization**: Initialize the VQE algorithm with the specified parameters.
+2. **Execution**: Execute the VQE algorithm to find the ground state energy.
+3. **Results**: Plot the energy results and error results obtained from the VQE execution.
 
 
+```python {class="my-class" id="my-codeblock" lineNos=inline tabWidth=2}
+from openvqe.vqe import VQE
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+molecule_symbol = 'H2'
+type_of_generator = 'spin_complement_gsd'
+transform = 'JW'
+algorithm = 'fermionic_adapt'
+
+opts = {
+        'n_max_grads': 1,
+        'optimizer': 'COBYLA',
+        'tolerance': 10**(-6),
+        'type_conver': 'norm',
+        'threshold_needed': 1e-2,
+        'max_external_iterations': 35
+    }
+
+
+vqe_non_active = VQE.algorithm(algorithm, molecule_symbol, type_of_generator, transform, False, opts)
+vqe_non_active.execute()
+```
+
+Make the plot
+
+```python {class="my-class" id="my-codeblock" lineNos=inline tabWidth=2}
+
+energies_1, energies_2 = vqe_non_active.iterations['energies'], vqe_active.iterations['energies']
+# Plot results with custom styles
+plt.figure(figsize=(14, 8))  # Larger plot size
+plt.plot(
+    energies_1,
+    "-o",  # Line style with circle markers
+    color="orange",  # Use custom color
+    label=f"Non active space"
+)
+plt.plot(
+    energies_2,
+    "-o",  # Line style with circle markers
+    color="red",  # Use custom color
+    label=f"Active space"
+)
+plt.plot(
+    [vqe_non_active.info['FCI']] * max([len(energies_1), len(energies_2)]), 
+    "k--", 
+    label="True ground state energy(FCI)"
+)
+plt.xlabel("Optimization step", fontsize=20)
+plt.ylabel("Energy (Ha)", fontsize=20)
+
+plt.xticks(fontsize=16)  # Set font size for x-axis tick labels
+plt.yticks(fontsize=16) 
+
+# Move the legend box outside the plot
+plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', borderaxespad=0., fontsize=12)
+plt.grid()
+plt.title(f"VQE {algorithm} energy evolution for {molecule_symbol} molecule", fontsize=20)
+plt.tight_layout()  # Adjust layout to prevent clipping
+
+plt.show()
+
+
+```
+
+![image](/uploads/x1.png)
+
+You can go to the git repo for more detail at [GitHub](https://github.com/OpenVQE/OpenVQE/blob/main/notebooks/demo_fermionic_adapt.ipynb)
 
 {{< math >}}
 {{< /math >}} 
