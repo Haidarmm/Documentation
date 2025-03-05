@@ -5,7 +5,7 @@ reading_time: false
 pager: false
 ---
 
-- **[Mohammad Haidar](https://www.linkedin.com/in/mohammad-haidar)** – Lead, OpenVQA Hub Community  
+- **[Mohammad Haidar](https://www.linkedin.com/in/mohammad-haidar-phd-quantum-3930041a4/)** – Lead, OpenVQA Hub Community  
 - **[Huy Binh Tran](https://www.linkedin.com/in/huybinhtran)** – Director of Documentation  
 - **[Mohammad-Tazmil Ziavoudine](https://www.linkedin.com/in/mohammad-tazmil-ziavoudine)** – Management & Organization  
 - **[El Mehdi Karim](https://www.linkedin.com/in/el-mehdi-karim)** – Developer of Drug Discovery Quantum Computing Applications  
