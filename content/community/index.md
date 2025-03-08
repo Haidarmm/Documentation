@@ -5,6 +5,11 @@ reading_time: false
 pager: false
 ---
 
+## Community Introduction
+Watch our community introduction video to learn more about OpenVQA and our mission:
+
+{{< youtube fenVTKUNLdQ >}}
+
 - **[Mohammad Haidar](https://www.linkedin.com/in/mohammad-haidar-phd-quantum-3930041a4/)** – Lead, OpenVQA Hub Community  
 - **[Huy Binh Tran](https://www.linkedin.com/in/huybinhtran)** – Director of Documentation  
 - **[Mohammad-Tazmil Ziavoudine](https://www.linkedin.com/in/mohammad-tazmil-ziavoudine)** – Management & Organization  
@@ -25,3 +30,5 @@ pager: false
 - **[Alex Khan](https://www.linkedin.com/in/alexkhanmba/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)** 
 - **[Mourad Telmini](https://www.linkedin.com/in/mourad-telmini-77646130/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)**
 - **[Renaud Béchade](https://www.linkedin.com/in/renaudbechade/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)**
+
+
