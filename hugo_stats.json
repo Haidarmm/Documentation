@@ -112,6 +112,7 @@
       "contrast-more:text-gray-800",
       "cursor-default",
       "cursor-pointer",
+      "dark",
       "dark:[&.active]:text-white",
       "dark:bg-black/80",
       "dark:bg-gray-800",

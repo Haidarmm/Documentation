@@ -569,3 +569,16 @@ plt.grid()
 
 ![image](/uploads/stack7.png)
 
+### **About the author**
+
+
+
+<div align="center">
+  <img src="/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+  <br>
+  <strong>Huy Binh TRAN</strong>
+  <br>
+  <em>Master 2 Quantum Devices at Institute Paris Polytechnic, France</em>
+  <br>
+  <a href="https://www.linkedin.com/in/huybinhtran/" style="color:#1E90FF;">LinkedIn</a>
+</div>
