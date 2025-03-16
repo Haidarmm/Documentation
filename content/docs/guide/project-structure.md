@@ -25,7 +25,11 @@ OpenVQE consists of **two main modules that are inside the "openvqe" folder:**:
 
 
 ## Updated second version package
+1. OpenVQE main diagram showing the <span style="color:red">folder structure</span> of the package
+   
+![image](/uploads/sketch_.png)
 
-![image](/uploads/sketch.png)
-
+1. OpenVQE code diagram showing the <span style="color:red"> main structure</span> of the code and their involvement when executing VQE.
+  
+![image](/uploads/sketch.png) 
 
