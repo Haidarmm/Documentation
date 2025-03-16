@@ -32,4 +32,5 @@ Watch our community introduction video to learn more about OpenVQA and our missi
 - **[Renaud Béchade](https://www.linkedin.com/in/renaudbechade/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)**
 
 ## Roadmap
+Please find our road map as below:
 ![image](/uploads/rmap.png)
