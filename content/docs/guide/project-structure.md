@@ -33,3 +33,14 @@ OpenVQE consists of **two main modules that are inside the "openvqe" folder:**:
   
 ![image](/uploads/sketch.png) 
 
+The refactoring part for [<span style="color:red">the second version of OpenVQE</span>](https://github.com/OpenVQE/OpenVQE)  is collabrated amongst Nathan Vaneberg and Huy Binh Tran under the guidance of Mohammad Haidar
+
+<div align="center">
+  <img src="/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+  <br>
+  <strong>Huy Binh TRAN</strong>
+  <br>
+  <em>Master 2 Quantum Devices at Institute Paris Polytechnic, France</em>
+  <br>
+  <a href="https://www.linkedin.com/in/huybinhtran/" style="color:#1E90FF;">LinkedIn</a>
+</div>

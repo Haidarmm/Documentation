@@ -214,6 +214,14 @@ You can go to the git repo for more detail at [GitHub](https://github.com/OpenVQ
 {{< /math >}} 
 
 
+
+### **References**
+
+<a href="https://www.nature.com/articles/s41467-019-10988-2" style="color:#1E90FF;">
+Harper R. Grimsley, Sophia E. Economou, Edwin Barnes, Nicholas J. Mayhall. "An adaptive variational algorithm for exact molecular simulations on a quantum computer." Nature communications, 10(1), 3007.
+</a>
+
+
 ### **About the author**
 
 

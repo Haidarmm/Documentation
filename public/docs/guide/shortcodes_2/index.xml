@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C- Machine Learning Application | OpenVQE</title><link>http://localhost:52309/docs/guide/shortcodes_2/</link><atom:link href="http://localhost:52309/docs/guide/shortcodes_2/index.xml" rel="self" type="application/rss+xml"/><description>C- Machine Learning Application</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>http://localhost:52309/media/logo.svg</url><title>C- Machine Learning Application</title><link>http://localhost:52309/docs/guide/shortcodes_2/</link></image><item><title>Classical Machine Learning Tutorial 1</title><link>http://localhost:52309/docs/guide/shortcodes_2/machine_learning_tutorial_1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:52309/docs/guide/shortcodes_2/machine_learning_tutorial_1/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C- Machine Learning Application | OpenVQE</title><link>http://localhost:54897/docs/guide/shortcodes_2/</link><atom:link href="http://localhost:54897/docs/guide/shortcodes_2/index.xml" rel="self" type="application/rss+xml"/><description>C- Machine Learning Application</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>http://localhost:54897/media/logo.svg</url><title>C- Machine Learning Application</title><link>http://localhost:54897/docs/guide/shortcodes_2/</link></image><item><title>Classical Machine Learning Tutorial 1</title><link>http://localhost:54897/docs/guide/shortcodes_2/machine_learning_tutorial_1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:54897/docs/guide/shortcodes_2/machine_learning_tutorial_1/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Welcome to this introductory course on &lt;strong>Machine Learning (ML)&lt;/strong>, where we will explore the fundamental concepts and techniques that are the building blocks for more advanced fields, such as &lt;strong>Quantum Machine Learning&lt;/strong>. This course is designed with a hands-on approach, offering you the opportunity to engage with real code and solve two simple classification problems.&lt;/p>
 &lt;p>The purpose of this course is to provide a foundation in classical machine learning methods, using tools and libraries that are widely applied in the field. One such tool we&amp;rsquo;ll be using is the &lt;strong>scikit-learn&lt;/strong> library, particularly the &lt;code>PolynomialFeatures&lt;/code> class from &lt;code>sklearn.preprocessing&lt;/code>, which allows us to easily transform input data by adding polynomial features to our models. This technique is pivotal for handling non-linear relationships in data and will help us tackle problems more effectively.&lt;/p>
 &lt;p>By the end of this course, you will have gained practical experience with popular ML algorithms and tools such as &lt;strong>logistic regression&lt;/strong>, &lt;strong>SVMs&lt;/strong>, &lt;strong>polynomial classification&lt;/strong>, and &lt;strong>kernel methods&lt;/strong>, and a deeper understanding of the underlying principles that power these techniques. This knowledge will serve as a stepping stone for your journey into &lt;strong>Quantum Machine Learning&lt;/strong>, where quantum computers are used to process data in fundamentally different ways.&lt;/p>
@@ -58,7 +58,7 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:52309/imageML/1.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:54897/imageML/1.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h3 id="a-construction-of-a-machine-learning-algoritm-by-hand">A construction of a machine learning algoritm by hand&lt;/h3>
@@ -175,7 +175,7 @@ $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:52309/imageML/2.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:54897/imageML/2.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>The Python library scikit-learn (sklearn) provides the LinearRegression function, which allows you to find the best-fit line without the need to manually derive the formulas.&lt;/p>
@@ -212,7 +212,7 @@ $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:52309/imageML/3.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:54897/imageML/3.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>Now, we draw a perpendicular line that effectively separates the toxic and non-toxic plants.&lt;/p>
@@ -263,7 +263,7 @@ $$ \alpha = \beta_0 + \beta_1 \cdot \text{midwidth} + \frac{\text{midwidth}}{\be
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:52309/imageML/4.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:54897/imageML/4.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>Step by step, we have separated the plants based on their toxicity. The perpendicular separator we defined is called the decision boundary.
@@ -397,7 +397,7 @@ $$
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:52309/imageML/5.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:54897/imageML/5.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>The decision boundary we obtained is slightly different from the one generated by our custom algorithm. This algorithm is known as Support Vector Machine (SVM), as the decision boundary is determined by only a few key data points, called support vectors. These support vectors are highlighted with circles in the figure above.&lt;/p>
@@ -425,7 +425,7 @@ $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:52309/imageML/6.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:54897/imageML/6.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>Because of the data distribution, a reasonable and effective hypothesis would be the following:&lt;/p>
@@ -554,7 +554,7 @@ $$ \sigma(x) = \frac{1}{1 + e^{-x}}. $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:52309/imageML/7.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:54897/imageML/7.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>The sigmoid function maps any real-valued input to the interval $[0, 1]$, which is useful for interpreting the output as a probability. By applying the sigmoid function to the linear expression $(2y_i - 1)(w \cdot x_i + b)$, we can smoothly approximate the classification probability of each sample.
@@ -627,7 +627,7 @@ $$
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:52309/imageML/8.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:54897/imageML/8.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>There are four steps in the alogorithm:&lt;/p>
@@ -700,7 +700,7 @@ Actual Test Labels: [0. 1. 0. 1. 0. 1. 0. 1.]
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:52309/imageML/9.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:54897/imageML/9.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>After training our logistic regression model on the training dataset, we evaluate its performance using a &lt;strong>test dataset&lt;/strong>. This evaluation is crucial as it helps us understand how well the model generalizes to new, unseen data—something that is essential for ensuring its real-world applicability. Below is an overview of the key results:&lt;/p>
@@ -762,7 +762,7 @@ Actual Test Labels: [0. 1. 0. 1. 0. 1. 0. 1.]
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:52309/imageML/10.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:54897/imageML/10.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>To solve this problem using machine learning, we can leverage what we&amp;rsquo;ve learned about linear classification. However, in this case, it&amp;rsquo;s clear that no simple straight line can separate the decimated colonies (red) from the thriving colonies (blue). To overcome this, we can transform the dataset in a way that makes it linearly separable while preserving its inherent structure.&lt;/p>
@@ -812,7 +812,7 @@ $$ \Phi(x_1,x_2) = \left( x_1, x_2, 4(x_1^2 + x_2^2) \right) $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:52309/imageML/11.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:54897/imageML/11.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h3 id="support-vector-classifier-in-transformed-space">Support vector classifier in transformed space&lt;/h3>
@@ -868,7 +868,7 @@ $$ \Phi(x_1,x_2) = \left( x_1, x_2, 4(x_1^2 + x_2^2) \right) $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:52309/imageML/12.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:54897/imageML/12.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h3 id="achieving-a-nonlinear-boundary-using-a-linear-approach">Achieving a nonlinear boundary using a linear approach&lt;/h3>
@@ -957,7 +957,7 @@ $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:52309/imageML/13.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:54897/imageML/13.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>The classification results in the transformed feature space are highly successful. By mapping the data to a higher-dimensional space, we were able to achieve a clear separation between the decimated and thriving colonies. The SVM classifier identified a linear hyperplane in this new space, which corresponds to a non-linear decision boundary in the original feature space. This process showcases the effectiveness of &lt;strong>feature engineering&lt;/strong> in simplifying complex classification tasks.&lt;/p>
@@ -1018,7 +1018,7 @@ $$ K(x, y) = \exp\left(-\frac{\|x - y\|^2}{2\sigma^2}\right) $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:52309/imageML/14.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:54897/imageML/14.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>The decision boundary obtained using the polynomial kernel method exhibits slight differences compared to the one derived from the explicit feature mapping and linear classification. These differences stem from the nature of kernel methods and their underlying computations.&lt;/p>
@@ -1070,7 +1070,7 @@ $$ \mathcal{B}: \alpha_1 x_1^2 + \alpha_2 x_2^2 + \alpha_3 x_1 x_2 + \alpha_4 x_
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:52309/imageML/15.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:54897/imageML/15.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>As we can see, the decision boundary derived using the logistic regression model is very similar to the one obtained with the Support Vector Machine (SVM). Despite the differences in the underlying methods, both approaches successfully capture the separation between the two classes in the feature space. This is especially evident given the high accuracy achieved by the logistic regression model, which indicates that the quadratic form of the decision boundary effectively classifies the data points with a high degree of precision. The similarity between the boundaries reflects how well the quadratic separation hypothesis aligns with the true structure of the data, confirming that this method is capable of capturing the underlying patterns in a way that is comparable to more complex methods like SVMs.&lt;/p>
@@ -1115,7 +1115,7 @@ $$ \mathcal{B}: \alpha_1 x_1^2 + \alpha_2 x_2^2 + \alpha_3 x_1 x_2 + \alpha_4 x_
 &lt;/ul>
 &lt;p>The core takeaway from this exploration is not just the mastery of techniques but the underlying philosophy of machine learning. At its core, machine learning is about extracting knowledge from data. The ultimate question it addresses is how we can leverage the computational power of modern systems to uncover patterns, insights, and relationships within vast datasets, enabling us to make more informed decisions and solve complex problems that were once out of reach.&lt;/p>
 &lt;div align="center">
-&lt;img src="http://localhost:52309/imageML/Guillhem Artis.jpg" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:54897/imageML/Guillhem Artis.jpg" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
 &lt;strong>Guillhem Artis&lt;/strong>
 &lt;br>

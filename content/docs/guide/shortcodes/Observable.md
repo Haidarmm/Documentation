@@ -133,6 +133,14 @@ E_gs = eigval[0]
 ```
 eigenvalues with scipy sparse:  [5.11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.60390825]
 
+
+### **Reference**
+
+<a href="https://myqlm.github.io/" style="color:#1E90FF;">
+Made by Eviden "myQLM – Quantum Python Package"
+</a>
+
+
 ### **About the author**
 
 

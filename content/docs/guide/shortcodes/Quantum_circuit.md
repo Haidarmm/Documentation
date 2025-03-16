@@ -569,6 +569,13 @@ plt.grid()
 
 ![image](/uploads/stack7.png)
 
+### **Reference**
+
+<a href="https://myqlm.github.io/" style="color:#1E90FF;">
+Made by Eviden "myQLM – Quantum Python Package"
+</a>
+
+
 ### **About the author**
 
 

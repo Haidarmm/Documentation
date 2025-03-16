@@ -374,6 +374,15 @@ Convergence is done
 {{% /steps %}}
 
 
+### **References**
+
+<a href="https://arxiv.org/pdf/2206.08798" style="color:#1E90FF;">
+Haidar, Mohammad, et al. "Open source variational quantum eigensolver extension of the quantum learning machine for quantum chemistry." Wiley Interdisciplinary Reviews: Computational Molecular Science 13.5 (2023): e1664.
+</a>
+
+
+
+
 ### **About the author**
 
 
