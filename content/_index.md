@@ -11,7 +11,7 @@ sections:
   - block: hero
     content:
       title: OpenVQA
-      text: The easy, well- structured code technical documentation solution your users to learn Quantum Computing for Quantum Chemistry
+      text: The easy, well-structured code technical documentation solution your users to learn Quantum Computing for Quantum Chemistry
       primary_action:
         text: Get Started
         url: https://github.com/OpenVQE/OpenVQE
@@ -73,7 +73,7 @@ sections:
           description: Easy for people who want to learn quantum computing with the background in Chemistry
         - name: Code Structure
           icon: code-bracket
-          description: Well-structured code, people are highly advice to contribute to the package
+          description: Well-structured code, people are highly advised to contribute to the package
         - name: Highly Rated
           icon: star
           description: Rated 5-stars by the community.
@@ -91,5 +91,17 @@ sections:
       card:
         # Card background color (CSS class)
         css_class: "bg-primary-700"
+        css_style: ""
+  - block: cta-card
+    content:
+      title: "Road Map"
+      text: "Please find our road map as below:"
+      image:
+        src: "/uploads/rmap.png"
+        alt: "Road Map"
+    design:
+      card:
+        # Card background color (CSS class)
+        css_class: "bg-gray-100"
         css_style: ""
 ---
