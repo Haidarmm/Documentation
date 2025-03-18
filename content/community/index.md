@@ -30,3 +30,31 @@ Watch our community introduction video to learn more about OpenVQA and our missi
 - **[Alex Khan](https://www.linkedin.com/in/alexkhanmba/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)** 
 - **[Mourad Telmini](https://www.linkedin.com/in/mourad-telmini-77646130/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)**
 - **[Renaud Béchade](https://www.linkedin.com/in/renaudbechade/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)**
+
+## Group Activities
+
+<div class="gallery">
+  <img src="/uploads/ev7.jpeg" alt="Event 7">
+  <img src="/uploads/ev6.jpeg" alt="Event 6">
+  <img src="/uploads/ev5.jpeg" alt="Event 5">
+  <img src="/uploads/ev4.jpeg" alt="Event 4">
+  <img src="/uploads/ev3.jpeg" alt="Event 3">
+  <img src="/uploads/ev2.jpeg" alt="Event 2">
+  <img src="/uploads/ev1.jpeg" alt="Event 1">
+  <img src="/uploads/ev8.jpeg" alt="Event 8">
+  <img src="/uploads/ev9.jpeg" alt="Event 9">
+</div>
+
+<style>
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.gallery img {
+  width: calc(33.333% - 12px);
+  height: auto;
+  border-radius: 7px;
+  object-fit: cover;
+}
+</style>

@@ -4259,43 +4259,40 @@ Edward Farhi, Jeffrey Goldstone,Joshua Lapan, Andrew Lundgren, Daniel Preda. "A 
 &lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/alexkhanmba/?utm_source=share&amp;amp;utm_campaign=share_via&amp;amp;utm_content=profile&amp;amp;utm_medium=android_app">Alex Khan&lt;/a>&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/mourad-telmini-77646130/?utm_source=share&amp;amp;utm_campaign=share_via&amp;amp;utm_content=profile&amp;amp;utm_medium=android_app">Mourad Telmini&lt;/a>&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/renaudbechade/?utm_source=share&amp;amp;utm_campaign=share_via&amp;amp;utm_content=profile&amp;amp;utm_medium=android_app">Renaud Béchade&lt;/a>&lt;/strong>&lt;/li>
-&lt;/ul></description></item><item><title>Sponsorship &amp; Roadmap</title><link>http://localhost:1313/sponsorship/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/sponsorship/</guid><description>&lt;h2 id="roadmap">Roadmap&lt;/h2>
-&lt;p>Please find our road map as below:
-&lt;img src="http://localhost:1313/uploads/rmap.png" alt="image">&lt;/p>
-&lt;h2 id="sponsorship">Sponsorship&lt;/h2>
-&lt;p>&lt;a href="https://eviden.com/fr-fr/">Eviden Company&lt;/a> fully support our community : access to Qaptiva systems for events and hackathons, subject to case-by-case discussion.&lt;/p>
-&lt;p>&lt;img src="http://localhost:1313/uploads/Logotype_Eviden_RGB_Black.png" alt="image">&lt;/p></description></item><item><title>Sponsorship and Roadmap</title><link>http://localhost:1313/community_copy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/community_copy/</guid><description>&lt;h2 id="community-introduction">Community Introduction&lt;/h2>
+&lt;/ul>
+&lt;h2 id="group-activities">Group Activities&lt;/h2>
+&lt;div class="gallery">
+&lt;img src="http://localhost:1313/uploads/ev7.jpeg" alt="Event 7">
+&lt;img src="http://localhost:1313/uploads/ev6.jpeg" alt="Event 6">
+&lt;img src="http://localhost:1313/uploads/ev5.jpeg" alt="Event 5">
+&lt;img src="http://localhost:1313/uploads/ev4.jpeg" alt="Event 4">
+&lt;img src="http://localhost:1313/uploads/ev3.jpeg" alt="Event 3">
+&lt;img src="http://localhost:1313/uploads/ev2.jpeg" alt="Event 2">
+&lt;img src="http://localhost:1313/uploads/ev1.jpeg" alt="Event 1">
+&lt;img src="http://localhost:1313/uploads/ev8.jpeg" alt="Event 8">
+&lt;img src="http://localhost:1313/uploads/ev9.jpeg" alt="Event 9">
+&lt;/div>
+&lt;style>
+.gallery {
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
+}
+.gallery img {
+width: calc(33.333% - 12px);
+height: auto;
+border-radius: 7px;
+object-fit: cover;
+}
+&lt;/style></description></item><item><title>Sponsorship and Roadmap</title><link>http://localhost:1313/community_copy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/community_copy/</guid><description>&lt;h2 id="community-introduction">Community Introduction&lt;/h2>
 &lt;p>Watch our community introduction video to learn more about OpenVQA and our mission:&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/fenVTKUNLdQ?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
 >&lt;/iframe>
 &lt;/div>
-&lt;ul>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/mohammad-haidar-phd-quantum-3930041a4/">Mohammad Haidar&lt;/a>&lt;/strong> – Lead, OpenVQA Hub Community&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/huybinhtran">Huy Binh Tran&lt;/a>&lt;/strong> – Director of Documentation &amp;amp; Quantum Algorithms for Quantum Chemistry&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/nathan-vaneberg-33b61b184/">Nathan Vaneberg&lt;/a>&lt;/strong> – Administrator, OpenVQA GitHub Source Code&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/mohammad-tazmil-ziavoudine">Mohammad-Tazmil Ziavoudine&lt;/a>&lt;/strong> – Management &amp;amp; Organization&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/el-mehdi-karim-54b300188/">El Mehdi Karim&lt;/a>&lt;/strong> – Developer of Drug Discovery Quantum Computing Applications&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/don-isaac/">Isaac Christ Donchi Kamga&lt;/a>&lt;/strong> – Quantum Computing Algorithm Developer&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/gopald27/">Gopal Ramesh Dahale&lt;/a>&lt;/strong> – Senior Advisor in Quantum Computing Algorithms &amp;amp; Applications&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/mohammad-hajj-houssein-579546195/">Mohammad Hajj Houssein&lt;/a>&lt;/strong> – Administrator, OpenVQA GitHub Source Code&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/hussein-shiri/">Hussein Shiri&lt;/a>&lt;/strong> – Codirect Administrator, OpenVQE GitHub Source Code&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/poorav-polar">Poorav Polar&lt;/a>&lt;/strong> – AI Integration with Quantum Computing Algorithms&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/kim">Kim&lt;/a>&lt;/strong> – AI Integration with Quantum Computing Algorithms&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/youssef-metayrek-681839231/">Youssef Metayrek&lt;/a>&lt;/strong> – External Advisor&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/peerzada-tahir-m-b8896b189/">Peerzada Tahir Manzoor&lt;/a>&lt;/strong> – Advisor &amp;amp; Quantum Enthusiast&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/viet-nguyen">Viet Nguyen&lt;/a>&lt;/strong> – Quantum Enthusiast&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/guillhem-artis-6a0618161/">Guillhem Artis&lt;/a>&lt;/strong> – Machine Learning Developer&lt;/li>
-&lt;/ul>
 &lt;h2 id="roadmap">Roadmap&lt;/h2>
 &lt;p>Please find our road map as below:
 &lt;img src="http://localhost:1313/uploads/rmap.png" alt="image">&lt;/p>
 &lt;h2 id="sponsorship">Sponsorship&lt;/h2>
 &lt;p>&lt;a href="https://eviden.com/fr-fr/">Eviden Company&lt;/a> fully support our community : access to Qaptiva systems for events and hackathons, subject to case-by-case discussion.&lt;/p>
-&lt;p>&lt;img src="http://localhost:1313/uploads/Logotype_Eviden_RGB_Black.png" alt="image">&lt;/p>
-&lt;h2 id="advisors">Advisors&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/alexkhanmba/?utm_source=share&amp;amp;utm_campaign=share_via&amp;amp;utm_content=profile&amp;amp;utm_medium=android_app">Alex Khan&lt;/a>&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/mourad-telmini-77646130/?utm_source=share&amp;amp;utm_campaign=share_via&amp;amp;utm_content=profile&amp;amp;utm_medium=android_app">Mourad Telmini&lt;/a>&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/renaudbechade/?utm_source=share&amp;amp;utm_campaign=share_via&amp;amp;utm_content=profile&amp;amp;utm_medium=android_app">Renaud Béchade&lt;/a>&lt;/strong>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;p>&lt;img src="http://localhost:1313/uploads/Logotype_Eviden_RGB_Black.png" alt="image">&lt;/p></description></item></channel></rss>
