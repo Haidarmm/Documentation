@@ -2,7 +2,7 @@
 title: Sponsorship & Roadmap
 toc: true
 reading_time: false
-pager: false
+pager: true
 ---
 
 ## Roadmap
