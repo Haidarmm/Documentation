@@ -92,16 +92,4 @@ sections:
         # Card background color (CSS class)
         css_class: "bg-primary-700"
         css_style: ""
-  - block: cta-card
-    content:
-      title: "Road Map"
-      text: "Please find our road map as below:"
-      image:
-        src: "/uploads/rmap.png"
-        alt: "Road Map"
-    design:
-      card:
-        # Card background color (CSS class)
-        css_class: "bg-gray-100"
-        css_style: ""
 ---
