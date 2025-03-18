@@ -6,7 +6,7 @@ main:
     url: /
     weight: 10
   - name: Sponsor & Roadmap
-    url: Sponsorship 
+    url: community_copy
     weight: 20
   - name: Documentation
     url: docs/
