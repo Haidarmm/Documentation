@@ -16,7 +16,7 @@ Please find our road map as below:
 
 ## Sponsorship
 
-[Eviden Company](https://eviden.com/fr-fr/) fully support our community :  access to Qaptiva systems for events and hackathons, subject to case-by-case discussion.
+[Eviden Company](https://eviden.com/fr-fr/) fully support our community in the future: access to Qaptiva systems for events and hackathons, subject to case-by-case discussion.
 
 ![image](/uploads/Logotype_Eviden_RGB_Black.png)
 
