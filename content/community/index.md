@@ -43,6 +43,9 @@ Watch our community introduction video to learn more about OpenVQA and our missi
   <img src="/uploads/ev1.jpeg" alt="Event 1">
   <img src="/uploads/ev8.jpeg" alt="Event 8">
   <img src="/uploads/ev9.jpeg" alt="Event 9">
+  <img src="/uploads/ev_a.jpeg" alt="Event a">
+  <img src="/uploads/ev_b.jpeg" alt="Event b">
+
 </div>
 
 <style>

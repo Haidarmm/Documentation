@@ -14,12 +14,8 @@ last_name: Haidar
 superuser: true
 
 # Role/position/tagline
-role: Senior Quantum Researcher | PhD & Postdoc @Sorbonne | Mentor Researchers | Projects Lead- interact industrial partners in Quantum Chemistry & Physics | at Qubit Pharmaceuticals company 💊 Paris.
+role: Senior Quantum Scientist |27k+ followers|🌎 Top Quantum Speaker| PhD & Postdoc @Sorbonne | Mentor Researchers | Creator & maintanir @OpenVQE package |Projects Lead- industry |Quantum Chemistry&Physics|30yr@Paris🇫🇷.
 
-# Organizations/Affiliations to show in About widget
-organizations:
-  - name: Qubit Pharmaceuticals
-    url: https://www.qubit-pharmaceuticals.com/
 
 # Short bio (displayed in user profile at end of posts)
 #bio: My research interests include distributed robotics, mobile computing and programmable matter.

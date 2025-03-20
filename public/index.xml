@@ -3230,7 +3230,7 @@ Nakanishi, Ken M., Kosuke Mitarai, and Keisuke Fujii. "Subspace-search variation
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">235&lt;/span>&lt;span class="cl"> &lt;span class="n">iterations&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;minimum_energy_result_guess&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">opt_result&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">fun&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">236&lt;/span>&lt;span class="cl"> &lt;span class="n">iterations&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;theta_optimized_result&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">append&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">theta_optimized_result&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">237&lt;/span>&lt;span class="cl"> &lt;span class="n">result&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;CNOT&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cnot&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">238&lt;/span>&lt;span class="cl"> &lt;span class="n">result&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;len_op&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">theta_optimized_result&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">238&lt;/span>&lt;span class="cl"> &lt;span class="n">result&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;len_op&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">theta_optimized_result&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">239&lt;/span>&lt;span class="cl"> &lt;span class="n">result&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;energies_substracted_from_FCI&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">abs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">opt_result&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">fun&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">fci&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">240&lt;/span>&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">iterations&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">result&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="step-2">Step 2&lt;/h3>
@@ -4271,6 +4271,8 @@ Edward Farhi, Jeffrey Goldstone,Joshua Lapan, Andrew Lundgren, Daniel Preda. "A 
 &lt;img src="http://localhost:1313/uploads/ev1.jpeg" alt="Event 1">
 &lt;img src="http://localhost:1313/uploads/ev8.jpeg" alt="Event 8">
 &lt;img src="http://localhost:1313/uploads/ev9.jpeg" alt="Event 9">
+&lt;img src="http://localhost:1313/uploads/ev_a.jpeg" alt="Event a">
+&lt;img src="http://localhost:1313/uploads/ev_b.jpeg" alt="Event b">
 &lt;/div>
 &lt;style>
 .gallery {
@@ -4294,5 +4296,5 @@ object-fit: cover;
 &lt;p>Please find our road map as below:
 &lt;img src="http://localhost:1313/uploads/rmap.png" alt="image">&lt;/p>
 &lt;h2 id="sponsorship">Sponsorship&lt;/h2>
-&lt;p>&lt;a href="https://eviden.com/fr-fr/">Eviden Company&lt;/a> fully support our community : access to Qaptiva systems for events and hackathons, subject to case-by-case discussion.&lt;/p>
+&lt;p>&lt;a href="https://eviden.com/fr-fr/">Eviden Company&lt;/a> fully support our community in the future: access to Qaptiva systems for events and hackathons, subject to case-by-case discussion.&lt;/p>
 &lt;p>&lt;img src="http://localhost:1313/uploads/Logotype_Eviden_RGB_Black.png" alt="image">&lt;/p></description></item></channel></rss>
