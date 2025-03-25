@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quantum Program | OpenVQE</title><link>http://localhost:52473/docs/guide/</link><atom:link href="http://localhost:52473/docs/guide/index.xml" rel="self" type="application/rss+xml"/><description>Quantum Program</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>http://localhost:52473/media/logo.svg</url><title>Quantum Program</title><link>http://localhost:52473/docs/guide/</link></image><item><title>Package Structure</title><link>http://localhost:52473/docs/guide/project-structure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:52473/docs/guide/project-structure/</guid><description>&lt;h2 id="folder-structure">Folder Structure&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quantum Program | OpenVQE</title><link>http://localhost:1313/docs/guide/</link><atom:link href="http://localhost:1313/docs/guide/index.xml" rel="self" type="application/rss+xml"/><description>Quantum Program</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>http://localhost:1313/media/logo.svg</url><title>Quantum Program</title><link>http://localhost:1313/docs/guide/</link></image><item><title>Package Structure</title><link>http://localhost:1313/docs/guide/project-structure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/project-structure/</guid><description>&lt;h2 id="folder-structure">Folder Structure&lt;/h2>
 &lt;p>OpenVQE consists of &lt;strong>two main modules that are inside the &amp;ldquo;openvqe&amp;rdquo; folder:&lt;/strong>:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://openvqe.github.io/OpenVQE/_build/html/ucc_family.html">&lt;span style="color:red">UCC Family&lt;/span>&lt;/a>
@@ -17,26 +17,26 @@
 : stores all the internal functions needed to be imported for executing the two modules.&lt;/li>
 &lt;li>&lt;code>notebooks&lt;/code>: allows the user to run and test the above two modules: &lt;code>UCC Family/&lt;/code> and &lt;code>adapt/&lt;/code>.&lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="http://localhost:52473/uploads/output.jpg" alt="image">&lt;/p>
+&lt;p>&lt;img src="http://localhost:1313/uploads/output.jpg" alt="image">&lt;/p>
 &lt;h2 id="updated-second-version-package">Updated second version package&lt;/h2>
 &lt;ol>
 &lt;li>OpenVQE main diagram showing the &lt;span style="color:red">folder structure&lt;/span> of the package&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="http://localhost:52473/uploads/sketch_.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="http://localhost:1313/uploads/sketch_.png" alt="image">&lt;/p>
 &lt;ol start="2">
 &lt;li>OpenVQE code diagram showing the &lt;span style="color:red"> main structure&lt;/span> of the code and their involvement when executing VQE.&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="http://localhost:52473/uploads/sketch.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="http://localhost:1313/uploads/sketch.png" alt="image">&lt;/p>
 &lt;p>The refactoring part for &lt;a href="https://github.com/OpenVQE/OpenVQE">&lt;span style="color:red">the second version of OpenVQE&lt;/span>&lt;/a> is collabrated amongst Nathan Vaneberg and Huy Binh Tran under the guidance of Mohammad Haidar&lt;/p>
 &lt;div align="center">
-&lt;img src="http://localhost:52473/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:1313/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
 &lt;strong>Huy Binh TRAN&lt;/strong>
 &lt;br>
 &lt;em>Master 2 Quantum Devices at Institute Paris Polytechnic, France&lt;/em>
 &lt;br>
 &lt;a href="https://www.linkedin.com/in/huybinhtran/" style="color:#1E90FF;">LinkedIn&lt;/a>
-&lt;/div></description></item><item><title>Citing</title><link>http://localhost:52473/docs/guide/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:52473/docs/guide/configuration/</guid><description>&lt;p>If OpenVQE has been helpful in your research, please consider citing our relevant software papers. Your support enables us to continue dedicating time and resources to the development of OpenVQE.&lt;/p>
+&lt;/div></description></item><item><title>Citing</title><link>http://localhost:1313/docs/guide/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/configuration/</guid><description>&lt;p>If OpenVQE has been helpful in your research, please consider citing our relevant software papers. Your support enables us to continue dedicating time and resources to the development of OpenVQE.&lt;/p>
 &lt;p>The current version of OpenVQE is described in our &lt;a href="https://wires.onlinelibrary.wiley.com/doi/10.1002/wcms.1664">WIREs Computational Molecular Science&lt;/a>.&lt;/p>
 &lt;h2 id="bibtex-citation">BibTeX Citation&lt;/h2>
 &lt;p>Below are BibTeX entry for the paper:&lt;/p>
