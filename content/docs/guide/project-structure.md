@@ -42,5 +42,5 @@ The refactoring part for [<span style="color:red">the second version of OpenVQE<
   <br>
   <em>Fullstack engineer consultant at Margo, France</em>
   <br>
-  <a href="https://www.linkedin.com/in/huybinhtran/" style="color:#1E90FF;">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/nathan-vaneberg-33b61b184/" style="color:#1E90FF;">LinkedIn</a>
 </div>

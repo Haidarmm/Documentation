@@ -20,7 +20,7 @@ Watch our community introduction video to learn more about OpenVQA and our missi
 - **[Mohammad Hajj Houssein](https://www.linkedin.com/in/mohammad-hajj-houssein-579546195/)** – Administrator, OpenVQA GitHub Source Code  
 - **[Hussein Shiri](https://www.linkedin.com/in/hussein-shiri/)** – Codirect Administrator, OpenVQE GitHub Source Code  
 - **[Poorav Polar](https://www.linkedin.com/in/poorav-polar)** – AI Integration with Quantum Computing Algorithms  
-- **[Kim](https://www.linkedin.com/in/kim)** – AI Integration with Quantum Computing Algorithms  
+- **[Kim Ngo](https://www.linkedin.com/in/kim-ngo-557655225/)** – AI Integration with Quantum Computing Algorithms  
 - **[Youssef Metayrek](https://www.linkedin.com/in/youssef-metayrek-681839231/)** – External Advisor  
 - **[Peerzada Tahir Manzoor](https://www.linkedin.com/in/peerzada-tahir-m-b8896b189/)** – Advisor & Quantum Enthusiast  
 - **[Viet Nguyen](https://www.linkedin.com/in/viet-nguyen)** – Quantum Enthusiast  
