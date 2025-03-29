@@ -11,8 +11,8 @@ Watch our community introduction video to learn more about OpenVQA and our missi
 {{< youtube fenVTKUNLdQ >}}
 
 - **[Mohammad Haidar](https://www.linkedin.com/in/mohammad-haidar-phd-quantum-3930041a4/)** – Lead, OpenVQA Hub Community  
-- **[Huy Binh Tran](https://www.linkedin.com/in/huybinhtran)** – Director of Documentation
-- **[Nathan Vaneberg](https://www.linkedin.com/in/nathan-vaneberg-33b61b184/)** – Administrator, OpenVQA GitHub Source Code  
+- **[Huy Binh Tran](https://www.linkedin.com/in/huybinhtran)** – Director of Documentation & Quantum Algorithms for Quantum Chemistry Developer
+- **[Nathan Vaneberg](https://www.linkedin.com/in/nathan-vaneberg-33b61b184/)** – Administrator, OpenVQE GitHub Source Code  
 - **[Mohammad-Tazmil Ziavoudine](https://www.linkedin.com/in/mohammad-tazmil-ziavoudine)** – Management & Organization  
 - **[El Mehdi Karim](https://www.linkedin.com/in/el-mehdi-karim-54b300188/)** – Developer of Drug Discovery Quantum Computing Applications  
 - **[Isaac Christ Donchi Kamga](https://www.linkedin.com/in/don-isaac/)** – Quantum Computing Algorithm Developer  
