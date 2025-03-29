@@ -47,11 +47,11 @@ class="hb-card group"href="../guide/configuration" >
 &lt;p>&lt;img src="http://localhost:1313/uploads/sketch.png" alt="image">&lt;/p>
 &lt;p>The refactoring part for &lt;a href="https://github.com/OpenVQE/OpenVQE">&lt;span style="color:red">the second version of OpenVQE&lt;/span>&lt;/a> is collabrated amongst Nathan Vaneberg and Huy Binh Tran under the guidance of Mohammad Haidar&lt;/p>
 &lt;div align="center">
-&lt;img src="http://localhost:1313/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:1313/imagez/nathan.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
-&lt;strong>Huy Binh TRAN&lt;/strong>
+&lt;strong>Nathan Vaneberg&lt;/strong>
 &lt;br>
-&lt;em>Master 2 Quantum Devices at Institute Paris Polytechnic, France&lt;/em>
+&lt;em>Fullstack engineer consultant at Margo, France&lt;/em>
 &lt;br>
 &lt;a href="https://www.linkedin.com/in/huybinhtran/" style="color:#1E90FF;">LinkedIn&lt;/a>
 &lt;/div></description></item><item><title>Citing</title><link>http://localhost:1313/docs/guide/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/configuration/</guid><description>&lt;p>If OpenVQE has been helpful in your research, please consider citing our relevant software papers. Your support enables us to continue dedicating time and resources to the development of OpenVQE.&lt;/p>
@@ -3115,8 +3115,8 @@ Edward Farhi, Jeffrey Goldstone,Joshua Lapan, Andrew Lundgren, Daniel Preda. "A 
 &lt;/div>
 &lt;ul>
 &lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/mohammad-haidar-phd-quantum-3930041a4/">Mohammad Haidar&lt;/a>&lt;/strong> – Lead, OpenVQA Hub Community&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/huybinhtran">Huy Binh Tran&lt;/a>&lt;/strong> – Director of Documentation &amp;amp; Quantum Algorithms for Quantum Chemistry&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/nathan-vaneberg-33b61b184/">Nathan Vaneberg&lt;/a>&lt;/strong> – Administrator, OpenVQA GitHub Source Code&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/huybinhtran">Huy Binh Tran&lt;/a>&lt;/strong> – Director of Documentation &amp;amp; Quantum Algorithms for Quantum Chemistry Developer&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/nathan-vaneberg-33b61b184/">Nathan Vaneberg&lt;/a>&lt;/strong> – Administrator, OpenVQE GitHub Source Code&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/mohammad-tazmil-ziavoudine">Mohammad-Tazmil Ziavoudine&lt;/a>&lt;/strong> – Management &amp;amp; Organization&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/el-mehdi-karim-54b300188/">El Mehdi Karim&lt;/a>&lt;/strong> – Developer of Drug Discovery Quantum Computing Applications&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/don-isaac/">Isaac Christ Donchi Kamga&lt;/a>&lt;/strong> – Quantum Computing Algorithm Developer&lt;/li>
