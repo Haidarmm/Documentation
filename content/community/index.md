@@ -59,3 +59,9 @@ Watch our community introduction video to learn more about OpenVQA and our missi
   object-fit: cover;
 }
 </style>
+
+## Contacts for events & collaboration
+
+Haidar Mohammad: mohammadhaidar2016@outlook.com
+
+Mohammad-Tazmil Ziavoudine: ztazmil@gmail.com

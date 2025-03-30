@@ -53,7 +53,7 @@ class="hb-card group"href="../guide/configuration" >
 &lt;br>
 &lt;em>Fullstack engineer consultant at Margo, France&lt;/em>
 &lt;br>
-&lt;a href="https://www.linkedin.com/in/huybinhtran/" style="color:#1E90FF;">LinkedIn&lt;/a>
+&lt;a href="https://www.linkedin.com/in/nathan-vaneberg-33b61b184/" style="color:#1E90FF;">LinkedIn&lt;/a>
 &lt;/div></description></item><item><title>Citing</title><link>http://localhost:1313/docs/guide/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/configuration/</guid><description>&lt;p>If OpenVQE has been helpful in your research, please consider citing our relevant software papers. Your support enables us to continue dedicating time and resources to the development of OpenVQE.&lt;/p>
 &lt;p>The current version of OpenVQE is described in our &lt;a href="https://wires.onlinelibrary.wiley.com/doi/10.1002/wcms.1664">WIREs Computational Molecular Science&lt;/a>.&lt;/p>
 &lt;h2 id="bibtex-citation">BibTeX Citation&lt;/h2>
@@ -3124,7 +3124,7 @@ Edward Farhi, Jeffrey Goldstone,Joshua Lapan, Andrew Lundgren, Daniel Preda. "A 
 &lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/mohammad-hajj-houssein-579546195/">Mohammad Hajj Houssein&lt;/a>&lt;/strong> – Administrator, OpenVQA GitHub Source Code&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/hussein-shiri/">Hussein Shiri&lt;/a>&lt;/strong> – Codirect Administrator, OpenVQE GitHub Source Code&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/poorav-polar">Poorav Polar&lt;/a>&lt;/strong> – AI Integration with Quantum Computing Algorithms&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/kim">Kim&lt;/a>&lt;/strong> – AI Integration with Quantum Computing Algorithms&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/kim-ngo-557655225/">Kim Ngo&lt;/a>&lt;/strong> – AI Integration with Quantum Computing Algorithms&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/youssef-metayrek-681839231/">Youssef Metayrek&lt;/a>&lt;/strong> – External Advisor&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/peerzada-tahir-m-b8896b189/">Peerzada Tahir Manzoor&lt;/a>&lt;/strong> – Advisor &amp;amp; Quantum Enthusiast&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://www.linkedin.com/in/viet-nguyen">Viet Nguyen&lt;/a>&lt;/strong> – Quantum Enthusiast&lt;/li>
@@ -3160,7 +3160,10 @@ height: auto;
 border-radius: 7px;
 object-fit: cover;
 }
-&lt;/style></description></item><item><title>Sponsorship and Roadmap</title><link>http://localhost:1313/community_copy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/community_copy/</guid><description>&lt;h2 id="community-introduction">Community Introduction&lt;/h2>
+&lt;/style>
+&lt;h2 id="contacts-for-events--collaboration">Contacts for events &amp;amp; collaboration&lt;/h2>
+&lt;p>Haidar Mohammad: &lt;a href="mailto:mohammadhaidar2016@outlook.com">mohammadhaidar2016@outlook.com&lt;/a>&lt;/p>
+&lt;p>Mohammad-Tazmil Ziavoudine: &lt;a href="mailto:ztazmil@gmail.com">ztazmil@gmail.com&lt;/a>&lt;/p></description></item><item><title>Sponsorship and Roadmap</title><link>http://localhost:1313/community_copy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/community_copy/</guid><description>&lt;h2 id="community-introduction">Community Introduction&lt;/h2>
 &lt;p>Watch our community introduction video to learn more about OpenVQA and our mission:&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/fenVTKUNLdQ?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"

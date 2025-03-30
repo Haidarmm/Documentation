@@ -29,13 +29,13 @@
 &lt;p>&lt;img src="http://localhost:1313/uploads/sketch.png" alt="image">&lt;/p>
 &lt;p>The refactoring part for &lt;a href="https://github.com/OpenVQE/OpenVQE">&lt;span style="color:red">the second version of OpenVQE&lt;/span>&lt;/a> is collabrated amongst Nathan Vaneberg and Huy Binh Tran under the guidance of Mohammad Haidar&lt;/p>
 &lt;div align="center">
-&lt;img src="http://localhost:1313/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:1313/imagez/nathan.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
-&lt;strong>Huy Binh TRAN&lt;/strong>
+&lt;strong>Nathan Vaneberg&lt;/strong>
 &lt;br>
-&lt;em>Master 2 Quantum Devices at Institute Paris Polytechnic, France&lt;/em>
+&lt;em>Fullstack engineer consultant at Margo, France&lt;/em>
 &lt;br>
-&lt;a href="https://www.linkedin.com/in/huybinhtran/" style="color:#1E90FF;">LinkedIn&lt;/a>
+&lt;a href="https://www.linkedin.com/in/nathan-vaneberg-33b61b184/" style="color:#1E90FF;">LinkedIn&lt;/a>
 &lt;/div></description></item><item><title>Citing</title><link>http://localhost:1313/docs/guide/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/configuration/</guid><description>&lt;p>If OpenVQE has been helpful in your research, please consider citing our relevant software papers. Your support enables us to continue dedicating time and resources to the development of OpenVQE.&lt;/p>
 &lt;p>The current version of OpenVQE is described in our &lt;a href="https://wires.onlinelibrary.wiley.com/doi/10.1002/wcms.1664">WIREs Computational Molecular Science&lt;/a>.&lt;/p>
 &lt;h2 id="bibtex-citation">BibTeX Citation&lt;/h2>
