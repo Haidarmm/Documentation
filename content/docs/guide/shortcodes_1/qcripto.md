@@ -240,7 +240,7 @@ voter voted or even if he has voted after the election.
 
 A system of voting secretly and in writing on a particular issue. In the article [Quantum Voting Scheme Based on Conjugate Coding](https://www.ntt-review.jp/archive/ntttechnical.php?contents=ntr200801sp3.html)
 
-the authors presented a voting scheme based on conjugate coding and uses the same bases and states that the BB84 protocol which is one of the first examples of plausible Quantum Cryptography the aim is to share a secret key without any pre-shared secret (or a very small one). This voting scheme requires:
+the authors presented a voting scheme based on conjugate coding and uses the same bases and states that the BB84 protocol which is one of the first examples of plausible Quantum Cryptography the aim is to share a secret key without any pre-shared secret (or a very small one). This voting scheme requires:
 
 
 - A counter, or scrutinizer $C$. He will verify and count votes. **He needs to be trusted.**
@@ -253,63 +253,81 @@ We denote by $n$ a security parameter which is the length of a blank piece. A bl
 
 At the beginning, the administrator randomly creates a secret $K$. This secret is the choice of $n+1$bases chosen between $B_x$ and $B_z$ :
 
-                                     $K\  =\  \left( B_{1},B_{2,}...B_{n+1}\right)$  
+                                     $$K = (B_{1}, B_{2}, \ldots, B_{n+1})$$
 
 To forge a blank piece, the administrator randomly chooses $n$ bits  $b_{1},b_{2},b_{3},...b_{n}$ and $b_{n+1}$ is defined to be  $b_{n+1}=b_{1}\oplus b_{2}\oplus ...b_{n}$ . The bits ( $b_{1}...b_{n+1}$ ) re encoded into quantum states using the bases of the secret $K$
 
 For instance, if $n=2$, with $K=(B_{x},B_{z},B_{x})$. A valid blank piece would be, using $b_{1}=1$ and $b_{2}=0$
 
-                                      $\left( \  |-\rangle ,\  |0\rangle ,\  |-\rangle \  \right)$  
+                                      $$(|-\rangle, |0\rangle, |-\rangle)$$
 
 To construct a blank ballot for voter, $V_i$ , the administrator constructs $m$ blank pieces with  $r^{i}_{1},...r^{i}_{m},$
 
-                                     $r^{i}_{j}=\left( b^{i}_{j,1}\  ...,\  b^{i}_{j,\  n+1}\  \right)$  
+                                     $$r^{i}_{j} = (b^{i}_{j,1}, \ldots, b^{i}_{j,n+1})$$
 
-and  $$ $b^{i}_{j,\  n+1}=b^{i}_{j,1}\oplus ...\oplus b^{i}_{j,n}$ for $j=1,...,m.$
+and  $$ $b^{i}_{j,\  n+1}=b^{i}_{j,1}\oplus ...\oplus b^{i}_{j,n}$ for $j=1,...,m.$
 
 
 Next, one blank ballot is sent to each voter
 
-When the voter receives his ballot, he will first randomize the ballot. This step is here to preserve the anonymity of the voter. This is done as follows: for each state of each blank piece of the blank ballot, the voter will apply either the identity or the gate $\sigma_{x} \sigma_{z}$ . For the n first states of the blank piece, the gate to apply is chosen at random. For the last bit of the blank piece, the gate is the identity, if the gate $\sigma_{x} \sigma_{z}$ was applied an even number of times on the $n$  first states and  $\sigma_{x} \sigma_{z}$ if the gate  $\sigma_{x} \sigma_{z}$ was applied an odd number of times, this will make the blank piece stay valid. The gate  $\sigma_{x} \sigma_{z}$ flips the state without changing its basis (the gate may change the overall phase but this cannot be measured).
+When the voter receives his ballot, he will first randomize the ballot. This step is here to preserve the anonymity of the voter. This is done as follows: for each state of each blank piece of the blank ballot, the voter will apply either the identity or the gate $\sigma_{x} \sigma_{z}$ . For the n first states of the blank piece, the gate to apply is chosen at random. For the last bit of the blank piece, the gate is the identity, if the gate $\sigma_{x} \sigma_{z}$ was applied an even number of times on the $n$  first states and  $\sigma_{x} \sigma_{z}$ if the gate  $\sigma_{x} \sigma_{z}$ was applied an odd number of times, this will make the blank piece stay valid. The gate  $\sigma_{x} \sigma_{z}$ flips the state without changing its basis (the gate may change the overall phase but this cannot be measured).
 
-$\begin{aligned}\sigma_{x} \sigma_{z} |0\rangle =\sigma_{x} |0\rangle =|1\rangle &\\ \sigma_{x} \sigma_{z} |1\rangle =-\sigma_{x} |0\rangle =-|0\rangle &\\ \sigma_{x} \sigma_{z} |+\rangle =\sigma_{x} |-\rangle =-|-\rangle &\\ \sigma_{x} \sigma_{z} |-\rangle =\sigma_{x} |+\rangle =|+\rangle &\end{aligned}$   where $|\pm \rangle =\frac{1}{\sqrt{2} } \left( |0\rangle \pm |1\rangle \right)$  
+$$\sigma_{x} \sigma_{z} |0\rangle = \sigma_{x} |0\rangle = |1\rangle$$
+$$\sigma_{x} \sigma_{z} |1\rangle = -\sigma_{x} |0\rangle = -|0\rangle$$
+$$\sigma_{x} \sigma_{z} |+\rangle = \sigma_{x} |-\rangle = -|-\rangle$$
+$$\sigma_{x} \sigma_{z} |-\rangle = \sigma_{x} |+\rangle = |+\rangle$$
+where $$|\pm \rangle = \frac{1}{\sqrt{2}} (|0\rangle \pm |1\rangle)$$  
 
 By doing this step, the basis for each state remains the same, but the value if random. Also, the blank pieces remain valid.
 
-Now that the voter has to cast his vote. We suppose that the set of all possible votes is a subset of $\left\{ 0,1\right\}^{m}$  . To write his vote, the voter applies either the identity (if he wants to encode a $0$) or the gate $\sigma_{x} \sigma_{z}$  (if he wants to encode a 1) to the last state of each blank piece.
+Now that the voter has to cast his vote. We suppose that the set of all possible votes is a subset of $\left\{ 0,1\right\}^{m}$  . To write his vote, the voter applies either the identity (if he wants to encode a $0$) or the gate $\sigma_{x} \sigma_{z}$  (if he wants to encode a 1) to the last state of each blank piece.
 
 Finally, the voter sends his vote to the counter  $C$. Once the counter has received all votes, the administrator sends $K$ to the counter through a secure classical channel. For each ballot, he measures each piece using $K$. The value of the bit for the piece is retrieved by summing all the results. The counter $C$ verifies that the results are indeed a possible vote. If it is, the vote is counted, and if not, the vote is discarded.
 
-The security of this voting scheme relies on the fact that a malicious party cannot create a ballot with a valid choice with high probability without knowing the secret $K$. In fact, the probability for a ballot that was forged without $K$ to be accecpted is $\frac{Candidates}{2^{m}}$  . As the number of candidates is constant, the probability can be made arbitrarily small by adding pieces to the ballot.
+The security of this voting scheme relies on the fact that a malicious party cannot create a ballot with a valid choice with high probability without knowing the secret $K$. In fact, the probability for a ballot that was forged without $K$ to be accecpted is $\frac{Candidates}{2^{m}}$  . As the number of candidates is constant, the probability can be made arbitrarily small by adding pieces to the ballot.
 
-Let’s see a quick example before concluding this section. Let $n=3$  with two possible candidates: $010$ and $101$. The secret key is $K=\left( B_{z},B_{x},B_{x},B_{z}\right)$  
+Let's see a quick example before concluding this section. Let $n=3$  with two possible candidates: $010$ and $101$. The secret key is $K=\left( B_{z},B_{x},B_{x},B_{z}\right)$  
 
 The administrator A forges the ballot:
 
-$\begin{aligned}\left( |1\rangle ,|+\rangle ,|+\rangle ,|1\rangle \right)  &\\ \left( |0\rangle ,|-\rangle ,|+\rangle ,|1\rangle \right)  &\\ \left( |0\rangle ,|-\rangle ,|-\rangle ,|0\rangle \right)  &\end{aligned}$ 
+$$(|1\rangle, |+\rangle, |+\rangle, |1\rangle)$$
+$$(|0\rangle, |-\rangle, |+\rangle, |1\rangle)$$
+$$(|0\rangle, |-\rangle, |-\rangle, |0\rangle)$$
 
-$\left( i.e\  r_{1}=\left( 1,0,0,1\right)  ,\  r_{2}=\left( 0,1,0,1\right)  ,\  r_{3}=\left( 0,1,1,0\right)  \right)$  
+$$(1,0,0,1), (0,1,0,1), (0,1,1,0)$$
 
 The ballot is randomised by the voter:
 
-$\begin{aligned}\left( |1\rangle ,|+\rangle ,|+\rangle ,|1\rangle \right)  &\\ \left( |0\rangle ,|+\rangle ,|+\rangle ,-|0\rangle \right)  &\\ \left( |1\rangle ,|-\rangle ,|+\rangle ,|0\rangle \right)  &\end{aligned}$ 
+$$(|1\rangle, |+\rangle, |+\rangle, |1\rangle)$$
+$$(|0\rangle, |+\rangle, |+\rangle, -|0\rangle)$$
+$$(|1\rangle, |-\rangle, |+\rangle, |0\rangle)$$
 
 Applying the following the operators:
 
-$\begin{aligned}I\otimes I\otimes I\otimes I&\\ I\otimes \sigma_{x} \sigma_{z} \otimes I\otimes \sigma_{z} \sigma_{x} &\\ \sigma_{x} \sigma_{z} \otimes I\otimes \sigma_{x} \sigma_{z} \otimes I&\end{aligned}$ 
+$$I \otimes I \otimes I \otimes I$$
+$$I \otimes \sigma_{x} \sigma_{z} \otimes I \otimes \sigma_{z} \sigma_{x}$$
+$$\sigma_{x} \sigma_{z} \otimes I \otimes \sigma_{x} \sigma_{z} \otimes I$$
 
 The voter wants to vote for $101$ so he will flip the last states for the first and last pieces (the
 blank ballot corresponds to $000$, and the final ballot is hence
 
-$\begin{aligned}\left( |1\rangle ,|+\rangle ,|+\rangle ,-|0\rangle \right)  &\\ \left( |0\rangle ,|+\rangle ,|+\rangle ,-|0\rangle \right)  &\\ \left( |1\rangle ,|-\rangle ,|+\rangle ,|0\rangle \right)  &\end{aligned}$ 
+$$(|1\rangle, |+\rangle, |+\rangle, -|0\rangle)$$
+$$(|0\rangle, |+\rangle, |+\rangle, -|0\rangle)$$
+$$(|1\rangle, |-\rangle, |+\rangle, |0\rangle)$$
 
 Applying the following the operators:
 
-$\begin{aligned}I\otimes I\otimes I\otimes \sigma_{x} \sigma_{z} &\\ I\otimes I\otimes I\otimes I&\\ I\otimes I\otimes I\otimes \sigma_{x} \sigma_{z} &\end{aligned}$ 
+$$I \otimes I \otimes I \otimes \sigma_{x} \sigma_{z}$$
+$$I \otimes I \otimes I \otimes I$$
+$$I \otimes I \otimes I \otimes \sigma_{x} \sigma_{z}$$
 
 The counter C then makes measurements using the bases of K and finds the following results:
 
-$\begin{aligned}\left( 1,0,0,0\right)  \oplus_{2} =1&\\ \left( 0,0,0,0\right)  \oplus_{2} =0&\\ \left( 0,1,1,1\right)  \oplus_{2} =1&\end{aligned}$  where, $\oplus_{2} \$  is the sum modulo $2$ over all the results of the measurements of one piece. $C$ finds the vote  $101$ which is a correct vote and count it.
+$$(1,0,0,0) \oplus_{2} = 1$$
+$$(0,0,0,0) \oplus_{2} = 0$$
+$$(0,1,1,1) \oplus_{2} = 1$$
+
+where, $\oplus_{2} \$  is the sum modulo $2$ over all the results of the measurements of one piece. $C$ finds the vote  $101$ which is a correct vote and count it.
 
 
 
@@ -322,31 +340,28 @@ Also, the counter must be absolutely trusted. A version can remove this assumpti
 
 **[Preliminaries about the conjugate coding](https://dl.acm.org/doi/10.1145/1008908.1008920)**
 
-*Conjugate coding* is one of the most important notions of Quantum Cryptography. The term is attributed to WIESNER, who proposed the idea in an unpublished (at first) and unnoticed article written in 1970, but was published in 1983 after Quantum Cryptography became a more plausible idea .
+*Conjugate coding* is one of the most important notions of Quantum Cryptography. The term is attributed to WIESNER, who proposed the idea in an unpublished (at first) and unnoticed article written in 1970, but was published in 1983 after Quantum Cryptography became a more plausible idea .
 
 
-It is also called *quantum coding* and *quantum multiplexing*. The basic idea is that we can encode our classical bits 0 or 1 in different bases, and that a measurement in one of the basis will completely randomise the result in the other.
+It is also called *quantum coding* and *quantum multiplexing*. The basic idea is that we can encode our classical bits 0 or 1 in different bases, and that a measurement in one of the basis will completely randomise the result in the other.
 
 Consider for example the bases $B_z$ and $B_x$
 
-$\begin{cases}B_{z}=\left\{ |0\rangle ,|1\rangle \right\}  &\\ B_{x}=\left\{ |+\rangle ,|-\rangle \right\}  &\\ |\pm \rangle =\frac{|0\rangle \pm |1\rangle }{\sqrt{2} } &\end{cases}$ 
+$$B_{z} = \{|0\rangle, |1\rangle\}$$
+$$B_{x} = \{|+\rangle, |-\rangle\}$$
+$$|\pm \rangle = \frac{|0\rangle \pm |1\rangle}{\sqrt{2}}$$
 
-We have our classical bits using the following table of equivalent bits and qubits
+Now imagine you want to encode the bit. If you do so in the $B_z$ basis, you will have the state $|1\rangle$  . Now if you measure this state in the $B_z$ basis, you will always obtain $|1\rangle$  and recover the good bit as
 
-|  | $B_z$ | $B_x$ |
-| --- | --- | --- |
-| 0 | $|0\rangle$  | $|+\rangle$  |
-| 1 | $|1\rangle$  | $|-\rangle$  |
+$$|\langle 0|1\rangle|^{2} = 0$$
+$$|\langle 1|1\rangle|^{2} = 1$$
 
-Now imagine you want to encode the bit. If you do so in the $B_z$ basis, you will have the state $|1\rangle$  . Now if you measure this state in the $B_z$ basis, you will always obtain $|1\rangle$  and recover the good bit as
+But, if you make a measurement in the $B_x$ basis, you will have the state $|+\rangle$  and recover the bit $0$, so the bad one) half of the time $|-\rangle$ (and recover the good bit) the other half since
 
-$\begin{cases}\left| \left< 0|1\right>  \right|^{2}  =0&\\ \left| \left< 1|1\right>  \right|^{2}  =1&\end{cases}$ 
+$$|\langle +|1\rangle|^{2} = \frac{1}{2}$$
+$$|\langle -|1\rangle|^{2} = \frac{1}{2}$$
 
-But, if you make a measurement in the $B_x$ basis, you will have the state $|+\rangle$  and recover the bit $0$, so the bad one) half of the time $|-\rangle$ (and recover the good bit) the other half since
-
-$\begin{cases}\left| \left< +|1\right>  \right|^{2}  =\frac{1}{2} &\\ \left| \left< -|1\right>  \right|^{2}  =\frac{1}{2} &\end{cases}$ 
-
-We say that $B_z$ and $B_x$ are *conjugate* to each other.
+We say that $B_z$ and $B_x$ are *conjugate* to each other.
 
 This is the code for the BB84 protocol steps by steps:
 

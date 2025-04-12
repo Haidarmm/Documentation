@@ -24,7 +24,7 @@ To bridge the gap between quantum theory and practical applications, we develope
 
 These algorithms are implemented across a wide range of quantum programming frameworks, supported by the global industry:
 
-- **MyQLM** by Eviden (France) – [quantum.edf.fr](https://myqlm.github.io/05_demos.html)
+- **MyQLM** by Eviden (France) – [myqlm.eviden.fr](https://myqlm.github.io/05_demos.html)
 - **Qiskit** by IBM – [qiskit.org](https://qiskit.org/)
 - **Cirq** by Google Quantum AI – [quantumai.google/cirq](https://quantumai.google/cirq)
 - **Q#** by Microsoft – [Azure Quantum](https://azure.microsoft.com/en-us/products/quantum/)

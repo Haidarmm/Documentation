@@ -1,6 +1,6 @@
 ---
 title: Quantitative Finance
-linkTitle: 8- Quantitative Finance
+linkTitle: 11- Quantitative Finance
 ---
 
 #  What are the Different Types of Mathematics Found in Quantitative Finance?
@@ -1059,7 +1059,6 @@ You want to price a European, non-path-dependent contract on a basket of equitie
   <br>
   <a href="https://www.linkedin.com/in/huybinhtran/" style="color:#1E90FF;">LinkedIn</a>
 </div>
-
 
 
 

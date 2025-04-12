@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>A - OpenVQE Notebooks | OpenVQE</title><link>http://localhost:1313/docs/guide/shortcodes/</link><atom:link href="http://localhost:1313/docs/guide/shortcodes/index.xml" rel="self" type="application/rss+xml"/><description>A - OpenVQE Notebooks</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>http://localhost:1313/media/logo.svg</url><title>A - OpenVQE Notebooks</title><link>http://localhost:1313/docs/guide/shortcodes/</link></image><item><title>Circuit-based quantum programming</title><link>http://localhost:1313/docs/guide/shortcodes/quantum_circuit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/shortcodes/quantum_circuit/</guid><description>&lt;p>This is the training session for the preliminary understanding about QLM language&lt;/p>
-&lt;p>&lt;img src="http://localhost:1313/uploads/output1.png" alt="image">&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>A - OpenVQE Notebooks | OpenVQE</title><link>http://localhost:53170/docs/guide/shortcodes/</link><atom:link href="http://localhost:53170/docs/guide/shortcodes/index.xml" rel="self" type="application/rss+xml"/><description>A - OpenVQE Notebooks</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>http://localhost:53170/media/logo.svg</url><title>A - OpenVQE Notebooks</title><link>http://localhost:53170/docs/guide/shortcodes/</link></image><item><title>Circuit-based quantum programming</title><link>http://localhost:53170/docs/guide/shortcodes/quantum_circuit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:53170/docs/guide/shortcodes/quantum_circuit/</guid><description>&lt;p>This is the training session for the preliminary understanding about QLM language&lt;/p>
+&lt;p>&lt;img src="http://localhost:53170/uploads/output1.png" alt="image">&lt;/p>
 &lt;h2 id="usage">Usage&lt;/h2>
 &lt;h3 id="creating-a-bell-pair">Creating a bell pair&lt;/h3>
 &lt;div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
@@ -61,7 +61,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">sample&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">result&lt;/span>&lt;span class="p">:&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">sample&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">state&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">sample&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">intermediate_measurements&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:1313/uploads/output2.png" alt="image">&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:53170/uploads/output2.png" alt="image">&lt;/p>
 &lt;p>&lt;strong>Result&lt;/strong>&lt;/p>
 &lt;div class="highlight my-class" id="my-codeblock">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="p">|&lt;/span>11&amp;gt; &lt;span class="o">[&lt;/span>IntermediateMeasurement&lt;span class="o">(&lt;/span>&lt;span class="nv">cbits&lt;/span>&lt;span class="o">=[&lt;/span>True&lt;span class="o">]&lt;/span>, &lt;span class="nv">gate_pos&lt;/span>&lt;span class="o">=&lt;/span>1, &lt;span class="nv">probability&lt;/span>&lt;span class="o">=&lt;/span>0.4999999999999999&lt;span class="o">)]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">&lt;span class="p">|&lt;/span>00&amp;gt; &lt;span class="o">[&lt;/span>IntermediateMeasurement&lt;span class="o">(&lt;/span>&lt;span class="nv">cbits&lt;/span>&lt;span class="o">=[&lt;/span>False&lt;span class="o">]&lt;/span>, &lt;span class="nv">gate_pos&lt;/span>&lt;span class="o">=&lt;/span>1, &lt;span class="nv">probability&lt;/span>&lt;span class="o">=&lt;/span>0.4999999999999999&lt;span class="o">)]&lt;/span>
@@ -87,7 +87,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">&lt;span class="n">circ&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">display&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight my-class" id="my-codeblock">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="n">circ&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">prog&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">to_circ&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">box_routines&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">&lt;span class="n">circ&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">display&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:1313/uploads/output3.png" alt="image">&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:53170/uploads/output3.png" alt="image">&lt;/p>
 &lt;h4 id="using-typed-registers">Using typed registers&lt;/h4>
 &lt;div class="highlight my-class" id="my-codeblock">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="c1">## quantum adder&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">qat.lang.AQASM.classarith&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">add&lt;/span>
@@ -109,11 +109,11 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl">&lt;span class="n">result&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">qpu&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">submit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">circ&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">to_job&lt;/span>&lt;span class="p">())&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">sample&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">result&lt;/span>&lt;span class="p">:&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">20&lt;/span>&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">sample&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">state&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">sample&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">amplitude&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:1313/uploads/output4.png" alt="image">&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:53170/uploads/output4.png" alt="image">&lt;/p>
 &lt;h2 id="variational-computations">Variational computations&lt;/h2>
 &lt;p>framework:
 Variational Quantum Eigensolver (VQE) is to find eigenvalues of a Hamiltonian&lt;/p>
-&lt;p>&lt;img src="http://localhost:1313/uploads/stack1.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="http://localhost:53170/uploads/stack1.png" alt="image">&lt;/p>
 &lt;p>Our task: VQE on the following Ising model:&lt;/p>
 $$
 H = \sum_{i=1}^{N} a_i X_i + \sum_{i=1}^{N} \sum_{j=1}^{i-1} J_{ij} Z_i Z_j
@@ -220,7 +220,7 @@ $$
 &lt;div class="highlight my-class" id="my-codeblock">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="n">n_layers&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">4&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">&lt;span class="n">circ_Linear&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">HEA_Linear&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">nqbits&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n_layers&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">RX&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">RZ&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="n">CNOT&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">&lt;span class="n">circ_Linear&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">display&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:1313/uploads/slack2.png" alt="image">&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:53170/uploads/slack2.png" alt="image">&lt;/p>
 &lt;h3 id="variational-quantum-eigensolver">Variational Quantum Eigensolver&lt;/h3>
 &lt;div class="highlight my-class" id="my-codeblock">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">qat.plugins&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">ScipyMinimizePlugin&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="n">qpu&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">get_default_qpu&lt;/span>&lt;span class="p">()&lt;/span>
@@ -243,7 +243,7 @@ $$
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl">&lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">ylabel&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;energy&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">20&lt;/span>&lt;span class="cl">&lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">grid&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">21&lt;/span>&lt;span class="cl">&lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">savefig&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;newfigure.pdf&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:1313/uploads/slack3.png" alt="image">&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:53170/uploads/slack3.png" alt="image">&lt;/p>
 &lt;h3 id="vqe---unitary-coupled-cluster">VQE - Unitary Coupled Cluster&lt;/h3>
 &lt;p>This part is adapted from myQLM documentation demo&lt;/p>
 &lt;p>The &lt;strong>Variational Quantum Eigensolver&lt;/strong> method solves the following minimization problem:
@@ -296,7 +296,7 @@ $$
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">25&lt;/span>&lt;span class="cl">&lt;span class="n">nqbits&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">rdm1&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">shape&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">2&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">26&lt;/span>&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Number of qubits = &amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">nqbits&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>If we make the plot amongst the HF, MP2 with FCI is the reference we obtain&lt;/p>
-&lt;p>&lt;img src="http://localhost:1313/uploads/stack4.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="http://localhost:53170/uploads/stack4.png" alt="image">&lt;/p>
 &lt;p>In these such cases, methods like Hartree-Fock (HF) and Møller-Plesset perturbation theory (MP2) become less accurate compared to Full Configuration Interaction (FCI).However in this case for Hydrogen this difference is barely visible, because the HF energy is totally on the same path as FCI from the beginning till the minimum energy point then the curve begins to experience the bond dissociation when the two hydrogen molecules move far each other&lt;/p>
 &lt;p>Following to show the molecular Hamiltonian&lt;/p>
 &lt;div class="highlight my-class" id="my-codeblock">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">qat.fermion.chemistry&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">MolecularHamiltonian&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">MoleculeInfo&lt;/span>
@@ -352,7 +352,7 @@ $$
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">32&lt;/span>&lt;span class="cl">&lt;span class="n">hf_init_sp&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">recode_integer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ket_hf_init&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">get_jw_code&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">H_sp&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">nbqbits&lt;/span>&lt;span class="p">))&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">33&lt;/span>&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">34&lt;/span>&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">H_sp&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:1313/uploads/slack9.png" alt="image">&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:53170/uploads/slack9.png" alt="image">&lt;/p>
 &lt;div class="highlight my-class" id="my-codeblock">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="o">(&lt;/span>-0.09886396933545824+0j&lt;span class="o">)&lt;/span> * I^4 +
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="o">(&lt;/span>0.16862219158920938+0j&lt;span class="o">)&lt;/span> * &lt;span class="o">(&lt;/span>ZZ&lt;span class="p">|&lt;/span>&lt;span class="o">[&lt;/span>0, 1&lt;span class="o">])&lt;/span> +
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">&lt;span class="o">(&lt;/span>0.12054482205301799+0j&lt;span class="o">)&lt;/span> * &lt;span class="o">(&lt;/span>ZZ&lt;span class="p">|&lt;/span>&lt;span class="o">[&lt;/span>0, 2&lt;span class="o">])&lt;/span> +
@@ -397,10 +397,10 @@ $$
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">26&lt;/span>&lt;span class="cl">&lt;span class="n">circ&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">prog&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">to_circ&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">27&lt;/span>&lt;span class="cl">&lt;span class="n">circ&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">display&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>For the molecule $H_2$, it has double qubit excitation and by using the UCC method to simulate on this molecule, I obtain the the circuit construction as bellow with the interprobility with Qiskit and this construction is based on the staire-case algorithms&lt;/p>
-&lt;p>&lt;img src="http://localhost:1313/uploads/stack5.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="http://localhost:53170/uploads/stack5.png" alt="image">&lt;/p>
 &lt;h3 id="using-the-gradient-based-optimizer-to-solve-the-vqe">Using the Gradient Based Optimizer to solve the VQE&lt;/h3>
 &lt;p>The graphic is show:&lt;/p>
-&lt;p>&lt;img src="http://localhost:1313/uploads/stack6.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="http://localhost:53170/uploads/stack6.png" alt="image">&lt;/p>
 &lt;div class="highlight my-class" id="my-codeblock">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="n">job&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">circ&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">to_job&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">observable&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">H_sp&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">nbshots&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">qat.qpus&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">get_default_qpu&lt;/span>
@@ -426,21 +426,21 @@ $$
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">&lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">xlabel&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Steps&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl">&lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">ylabel&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Energy&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl">&lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">grid&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:1313/uploads/stack7.png" alt="image">&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:53170/uploads/stack7.png" alt="image">&lt;/p>
 &lt;h3 id="reference">&lt;strong>Reference&lt;/strong>&lt;/h3>
 &lt;a href="https://myqlm.github.io/" style="color:#1E90FF;">
 Made by Eviden "myQLM – Quantum Python Package"
 &lt;/a>
 &lt;h3 id="about-the-author">&lt;strong>About the author&lt;/strong>&lt;/h3>
 &lt;div align="center">
-&lt;img src="http://localhost:1313/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:53170/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
 &lt;strong>Huy Binh TRAN&lt;/strong>
 &lt;br>
 &lt;em>Master 2 Quantum Devices at Institute Paris Polytechnic, France&lt;/em>
 &lt;br>
 &lt;a href="https://www.linkedin.com/in/huybinhtran/" style="color:#1E90FF;">LinkedIn&lt;/a>
-&lt;/div></description></item><item><title>MyQLM-Fermion</title><link>http://localhost:1313/docs/guide/shortcodes/toggle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/shortcodes/toggle/</guid><description>&lt;p>A submodule of myQLM-fermion is specifically devoted to quantum chemistry. It provides tools for selecting active spaces
+&lt;/div></description></item><item><title>MyQLM-Fermion</title><link>http://localhost:53170/docs/guide/shortcodes/toggle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:53170/docs/guide/shortcodes/toggle/</guid><description>&lt;p>A submodule of myQLM-fermion is specifically devoted to quantum chemistry. It provides tools for selecting active spaces
 (based on natural-orbital occupation numbers), generating cluster operators (and thus, via the aforementioned Trotterization
 tools, UCC-type ansätze), and initial guesses for their variational parameters. The architecture of QLM and myQLM-fermion
 allows for experts in a given field to construct their own advanced modules with the QLM building blocks.
@@ -487,7 +487,7 @@ optimized to minimize the variational energy which can be done by a simple VQE l
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/slack4.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:53170/uploads/slack4.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;ol>
@@ -591,7 +591,7 @@ $$
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/sstack2.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:53170/uploads/sstack2.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>&lt;em>Visualization of spatial orbitals in LiH molecule uisng sto-3g basis-set: 2 HUMOs and 4 LUMOs.&lt;/em>&lt;/p>
@@ -643,7 +643,7 @@ $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/sstack3.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:53170/uploads/sstack3.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>If we make the plot with the threshold&lt;/p>
@@ -672,19 +672,19 @@ $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/sstack4.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:53170/uploads/sstack4.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h3 id="about-the-author">&lt;strong>About the author&lt;/strong>&lt;/h3>
 &lt;div align="center">
-&lt;img src="http://localhost:1313/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:53170/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
 &lt;strong>Huy Binh TRAN&lt;/strong>
 &lt;br>
 &lt;em>Master 2 Quantum Devices at Institute Paris Polytechnic, France&lt;/em>
 &lt;br>
 &lt;a href="https://www.linkedin.com/in/huybinhtran/" style="color:#1E90FF;">LinkedIn&lt;/a>
-&lt;/div></description></item><item><title>Observables</title><link>http://localhost:1313/docs/guide/shortcodes/observable/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/shortcodes/observable/</guid><description>&lt;p>This is the training session for the preliminary understanding about QLM language for mostly in Quantum Chemistry&lt;/p>
+&lt;/div></description></item><item><title>Observables</title><link>http://localhost:53170/docs/guide/shortcodes/observable/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:53170/docs/guide/shortcodes/observable/</guid><description>&lt;p>This is the training session for the preliminary understanding about QLM language for mostly in Quantum Chemistry&lt;/p>
 &lt;h3 id="class-observable">Class: Observable&lt;/h3>
 &lt;p>This can be any hermitian or non-Hermitian operators&lt;/p>
 &lt;h4 id="stores-a-list-of-pauli-chains--their-coefficients">Stores a list of Pauli chains + their coefficients&lt;/h4>
@@ -772,14 +772,14 @@ Made by Eviden "myQLM – Quantum Python Package"
 &lt;/a>
 &lt;h3 id="about-the-author">&lt;strong>About the author&lt;/strong>&lt;/h3>
 &lt;div align="center">
-&lt;img src="http://localhost:1313/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:53170/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
 &lt;strong>Huy Binh TRAN&lt;/strong>
 &lt;br>
 &lt;em>Master 2 Quantum Devices at Institute Paris Polytechnic, France&lt;/em>
 &lt;br>
 &lt;a href="https://www.linkedin.com/in/huybinhtran/" style="color:#1E90FF;">LinkedIn&lt;/a>
-&lt;/div></description></item><item><title>OpenVQE Overall</title><link>http://localhost:1313/docs/guide/shortcodes/cards/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/shortcodes/cards/</guid><description>&lt;p>A Openvqe extension to create cards. Cards can be shown as links or as plain text.&lt;/p>
+&lt;/div></description></item><item><title>OpenVQE Overall</title><link>http://localhost:53170/docs/guide/shortcodes/cards/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:53170/docs/guide/shortcodes/cards/</guid><description>&lt;p>A Openvqe extension to create cards. Cards can be shown as links or as plain text.&lt;/p>
 &lt;h2 id="usage">Usage&lt;/h2>
 &lt;div class="hb-cards mt-4 grid gap-4 not-prose" style="--hb-cols: 1;">
 &lt;a
@@ -828,7 +828,7 @@ methods( such as Hartree-Fock, CCSD and FCI):&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>*Briefing about the geometry and energy level of H20 you can visualize the geometry of the molecule on the ORCA application
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/stack8.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:53170/uploads/stack8.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>In addition to that, we define another function named as generate_cluster_ops() that takes as input the name of excitation generator user need (e.g., UCCSD, QUCCSD, UCCGSD, etc.) and internally it calls the file name generator_excitations.py
@@ -878,7 +878,7 @@ tolerance, threshold of norm () and the maximum number of adaptive iterations:&l
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/sstack1.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:53170/uploads/sstack1.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;div class="hb-steps">
@@ -1113,16 +1113,16 @@ Haidar, Mohammad, et al. "Open source variational quantum eigensolver extension 
 &lt;/a>
 &lt;h3 id="about-the-author">&lt;strong>About the author&lt;/strong>&lt;/h3>
 &lt;div align="center">
-&lt;img src="http://localhost:1313/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:53170/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
 &lt;strong>Huy Binh TRAN&lt;/strong>
 &lt;br>
 &lt;em>Master 2 Quantum Devices at Institute Paris Polytechnic, France&lt;/em>
 &lt;br>
 &lt;a href="https://www.linkedin.com/in/huybinhtran/" style="color:#1E90FF;">LinkedIn&lt;/a>
-&lt;/div></description></item><item><title>Adapt-VQE</title><link>http://localhost:1313/docs/guide/shortcodes/adapt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/shortcodes/adapt/</guid><description>&lt;p>In 2019, ADAPT-VQE was introduced in this &lt;a href="https://www.nature.com/articles/s41467-019-10988-2">paper&lt;/a> with the purpose of creating a more
+&lt;/div></description></item><item><title>Adapt-VQE</title><link>http://localhost:53170/docs/guide/shortcodes/adapt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:53170/docs/guide/shortcodes/adapt/</guid><description>&lt;p>In 2019, ADAPT-VQE was introduced in this &lt;a href="https://www.nature.com/articles/s41467-019-10988-2">paper&lt;/a> with the purpose of creating a more
 accurate, compact, and problem-customized ansatz for VQE. This version will hereby be denoted fermionic-ADAPT-VQE to distinguish it against a more recent version that will be covered shortly. The idea behind the proposal is to let the molecule in study ‘choose’ its own state preparation circuit, by creating the ansatz in a strongly system-adapted manner.&lt;/p>
-&lt;p>&lt;img src="http://localhost:1313/uploads/stack9.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="http://localhost:53170/uploads/stack9.png" alt="image">&lt;/p>
 &lt;p>The ADAPT-VQE algorithm constructs the molecular system&amp;rsquo;s wavefunction dynamically and can in principle avoid redundant terms. It is grown iteratively in the form of a disentangled UCC ansatz as given in the below equation:&lt;/p>
 $$\prod_{k=1}^{\infty} \prod_{pq} \left( e^{\theta_{pq} (k)\hat{A}_{p,q}}\prod_{rs} e^{\theta_{pqrs} (k)\hat{A}_{pq,rs}} \right) |\psi_{\mathrm{HF}} \rangle$$
 &lt;p>which is the in the form of a long product of one-body $\hat{A}_{p,q}$ and two-body $\hat{A}_{pq,rs}$ operators generated from the pool of excitations, where each of the variational parameters $\left\{ \theta_{pq} ,\theta_{pqrs} \right\}$&lt;/p>
@@ -1220,7 +1220,7 @@ $$
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">65&lt;/span>&lt;span class="cl"> &lt;span class="n">threshold_needed&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">threshold_needed&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">66&lt;/span>&lt;span class="cl"> &lt;span class="n">max_external_iterations&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">max_external_iterations&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>We make an analysed plot for the converged energy and the fidelity. It took 5 fermionic adapt iteration and the converged energy is -1.1516 Ha with the fidelity : 0.999 and 368 number of CNOT gates&lt;/p>
-&lt;p>&lt;img src="http://localhost:1313/uploads/skack1.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="http://localhost:53170/uploads/skack1.png" alt="image">&lt;/p>
 &lt;h2 id="second-version-of-openvqe-updated-code">Second version of OpenVQE (Updated code)&lt;/h2>
 &lt;h3 id="parameters">Parameters&lt;/h3>
 &lt;ul>
@@ -1292,7 +1292,7 @@ $$
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">32&lt;/span>&lt;span class="cl">&lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">tight_layout&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="c1"># Adjust layout to prevent clipping&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">33&lt;/span>&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">34&lt;/span>&lt;span class="cl">&lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">show&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:1313/uploads/x1.png" alt="image">&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:53170/uploads/x1.png" alt="image">&lt;/p>
 &lt;p>You can go to the git repo for more detail at &lt;a href="https://github.com/OpenVQE/OpenVQE/blob/main/notebooks/demo_fermionic_adapt.ipynb">GitHub&lt;/a>&lt;/p>
 &lt;h3 id="references">&lt;strong>References&lt;/strong>&lt;/h3>
 &lt;a href="https://www.nature.com/articles/s41467-019-10988-2" style="color:#1E90FF;">
@@ -1300,17 +1300,17 @@ Harper R. Grimsley, Sophia E. Economou, Edwin Barnes, Nicholas J. Mayhall. "An a
 &lt;/a>
 &lt;h3 id="about-the-author">&lt;strong>About the author&lt;/strong>&lt;/h3>
 &lt;div align="center">
-&lt;img src="http://localhost:1313/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:53170/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
 &lt;strong>Huy Binh TRAN&lt;/strong>
 &lt;br>
 &lt;em>Master 2 Quantum Devices at Institute Paris Polytechnic, France&lt;/em>
 &lt;br>
 &lt;a href="https://www.linkedin.com/in/huybinhtran/" style="color:#1E90FF;">LinkedIn&lt;/a>
-&lt;/div></description></item><item><title>Parameter-Shift Rule</title><link>http://localhost:1313/docs/guide/shortcodes/steps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/shortcodes/steps/</guid><description>&lt;p>
+&lt;/div></description></item><item><title>Parameter-Shift Rule</title><link>http://localhost:53170/docs/guide/shortcodes/steps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:53170/docs/guide/shortcodes/steps/</guid><description>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/sstack5.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:53170/uploads/sstack5.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>Let us describe below how to act the parameter-shift rules on the UCC circuit ansatz.
@@ -1439,7 +1439,7 @@ parameter shift rule for circuit gradients. Below is the code for PMRS for LiH i
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/sstack6.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:53170/uploads/sstack6.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;div class="highlight my-class" id="my-codeblock">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="n">fig&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">ax&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">subplots&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">figsize&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">11&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">7&lt;/span>&lt;span class="p">))&lt;/span>
@@ -1471,7 +1471,7 @@ parameter shift rule for circuit gradients. Below is the code for PMRS for LiH i
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/sstack7.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:53170/uploads/sstack7.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;div class="highlight my-class" id="my-codeblock">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="n">fig&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">ax&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">subplots&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">figsize&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">11&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">7&lt;/span>&lt;span class="p">))&lt;/span>
@@ -1496,24 +1496,24 @@ parameter shift rule for circuit gradients. Below is the code for PMRS for LiH i
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/sstack8.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:53170/uploads/sstack8.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>The energy
 according to the chosen optimization algorithm.&lt;/p>
 &lt;h3 id="about-the-author">&lt;strong>About the author&lt;/strong>&lt;/h3>
 &lt;div align="center">
-&lt;img src="http://localhost:1313/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:53170/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
 &lt;strong>Huy Binh TRAN&lt;/strong>
 &lt;br>
 &lt;em>Master 2 Quantum Devices at Institute Paris Polytechnic, France&lt;/em>
 &lt;br>
 &lt;a href="https://www.linkedin.com/in/huybinhtran/" style="color:#1E90FF;">LinkedIn&lt;/a>
-&lt;/div></description></item><item><title>Subspace-search variational quantum eigensolver for excited states</title><link>http://localhost:1313/docs/guide/shortcodes/ssvqe/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/shortcodes/ssvqe/</guid><description>&lt;p>
+&lt;/div></description></item><item><title>Subspace-search variational quantum eigensolver for excited states</title><link>http://localhost:53170/docs/guide/shortcodes/ssvqe/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:53170/docs/guide/shortcodes/ssvqe/</guid><description>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/sstack9.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:53170/uploads/sstack9.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>In Variational Quantum Eigensolver (VQE), the real parameters $\theta$ for the ansatz states $|\psi \left( \theta \right) \rangle $ are classically optimised with respect to the expectation value of the Hamiltonian in the equation ; it is computed using a lowdepth quantum circuit. As a result of the variational
@@ -1551,7 +1551,7 @@ We note that, in practice, the input states \( \left\{ \ket{\varphi_j} \right\}_
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/sslack1.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:53170/uploads/sslack1.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;div class="highlight my-class" id="my-codeblock">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">numpy&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">np&lt;/span>
@@ -1651,7 +1651,7 @@ We note that, in practice, the input states \( \left\{ \ket{\varphi_j} \right\}_
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/sslack2.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:53170/uploads/sslack2.png" alt="image" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>The energy levels of the Hamiltonian of H$_2$ in the STO-3g basis set: four qubits. The fidelity is close to one. It is the Overlap $\langle\Psi_j(\vec{\theta})
@@ -1664,14 +1664,14 @@ Nakanishi, Ken M., Kosuke Mitarai, and Keisuke Fujii. "Subspace-search variation
 &lt;/a>
 &lt;h3 id="about-the-author">&lt;strong>About the Author&lt;/strong>&lt;/h3>
 &lt;div align="center">
-&lt;img src="http://localhost:1313/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:53170/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
 &lt;strong>Huy Binh TRAN&lt;/strong>
 &lt;br>
 &lt;em>Master 2 Quantum Devices at Institute Paris Polytechnic, France&lt;/em>
 &lt;br>
 &lt;a href="https://www.linkedin.com/in/huybinhtran/" style="color:#1E90FF;">LinkedIn&lt;/a>
-&lt;/div></description></item><item><title>Unitary Selective Coupled Cluster</title><link>http://localhost:1313/docs/guide/shortcodes/uscc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/shortcodes/uscc/</guid><description>&lt;p>The Unitary Coupled-Cluster with Singles and Doubles (UCCSD) method parameterizes coupled-cluster variational parameters for each fermionic excitation from a reference state, whether single or double excitations. This ansatz has been successfully applied to compute accurate electronic energies for small molecules. However, for large molecules, this approach can introduce many redundant, unimportant excitations, resulting in a large number of parameters to optimize and excessively long circuits&lt;/p>
+&lt;/div></description></item><item><title>Unitary Selective Coupled Cluster</title><link>http://localhost:53170/docs/guide/shortcodes/uscc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:53170/docs/guide/shortcodes/uscc/</guid><description>&lt;p>The Unitary Coupled-Cluster with Singles and Doubles (UCCSD) method parameterizes coupled-cluster variational parameters for each fermionic excitation from a reference state, whether single or double excitations. This ansatz has been successfully applied to compute accurate electronic energies for small molecules. However, for large molecules, this approach can introduce many redundant, unimportant excitations, resulting in a large number of parameters to optimize and excessively long circuits&lt;/p>
 &lt;p>The UsCC method systematically reduces the energy error with an increasing ansatz size for a set of test molecules. A significant advantage of the UsCC method is that expanding the ansatz does not necessitate additional measurements on a quantum computer. The implementation of the UsCC method begins with the reference Hartree–Fock state. One- and two-body excitations (from occupied to unoccupied orbitals) with corresponding Hamiltonian matrix elements above a given threshold \(\epsilon\) are included in the ansatz. A Variational Quantum Eigensolver (VQE) is then performed on this ansatz until convergence, completing the first iteration. In subsequent iterations, the threshold is updated such that \(\epsilon_i = \frac{\epsilon_{i-1}}{2}\). New, higher-order excitations are generated by applying one- and two-body excitations to those already included in the ansatz. The metric to compare to the threshold for inclusion of these excitations is obtained by multiplying the parameters obtained after optimization at the previous step with the Hamiltonian matrix element corresponding to the single or double excitation added. As in previous iterations, coefficients that are above the threshold are included in the ansatz and then optimized through VQE. The optimization continues until a convergence criterion is met or sufficient excitations have been included.&lt;/p>
 &lt;p>The ansatz generation starts with the reference Hartree–Fock state, with no initial excitation amplitudes available. First, all possible single- and double-electronic excitations are generated. These excitations are expressed in spin-block notation: the occupied orbitals, from which excitations are performed, are labeled $i$, $j$, $k$, and $l$, while the virtual orbitals, to which electrons are excited, are labeled $p$, $q$, $r$, and $s$. For instance, single and double excitations are denoted as $[i, p]$ and $[i, j, p, q]$, respectively.&lt;/p>
 &lt;h3 id="usccsdtq-vqe-algorithm">UsCCSDTQ-VQE Algorithm&lt;/h3>
@@ -2212,12 +2212,12 @@ Nakanishi, Ken M., Kosuke Mitarai, and Keisuke Fujii. "Subspace-search variation
 &lt;h3 id="analytical-results">Analytical Results&lt;/h3>
 &lt;p>We test UsCCSDTQ-VQE on H$_4$ and LiH molecules using PMRS method (described in the previous section). We emulate 8 qubits in STO-3G basis set. Numerical results are shown in &lt;strong>Figure 1&lt;/strong> for H$_4$ and &lt;strong>2&lt;/strong> LiH for as below:&lt;/p>
 &lt;p align="center">
-&lt;img src="http://localhost:1313/imagez/spack1.png" alt="Image Description" width="1300"/>
+&lt;img src="http://localhost:53170/imagez/spack1.png" alt="Image Description" width="1300"/>
 &lt;br>
 &lt;em>&lt;strong>Figure 1:&lt;/strong> PMRS application on UsCCSDTQ-VQE algorithm using H&lt;sub>4&lt;/sub> molecule (&lt;strong>8 qubits&lt;/strong>) at 0.85&amp;Aring;, using BFGS optimizer: (&lt;strong>left figure&lt;/strong>) shows the energy obtained from UsCC simulations with respect to the number of selective parameters. (&lt;strong>Right figure&lt;/strong>) shows the number of function evaluations per each iteration. Error is the difference between UsCCDTQ energies and FCI. STO-3G basis set is used.&lt;/em>
 &lt;/p>
 &lt;p align="center">
-&lt;img src="http://localhost:1313/imagez/spack2.png" alt="Image Description" width="1300"/>
+&lt;img src="http://localhost:53170/imagez/spack2.png" alt="Image Description" width="1300"/>
 &lt;br>
 &lt;em>&lt;strong>Figure 2:&lt;/strong> PMRS application on UsCCSDTQ-VQE algorithm using LiH molecule (&lt;strong>12 qubits&lt;/strong>) at 1.45&amp;Aring;, using BFGS optimizer: (&lt;strong>left figure&lt;/strong>) shows the energy obtained from UsCC simulations with respect to the number of selective parameters. (&lt;strong>Right figure&lt;/strong>) shows the number of function evaluations per each iteration. Error is the difference between UsCCDTQ energies and FCI. STO-3G basis set is used.&lt;/em>
 &lt;/p>
@@ -2270,7 +2270,7 @@ Haidar, Mohammad, et al. "Open source variational quantum eigensolver extension 
 &lt;/a>
 &lt;h3 id="about-the-author">&lt;strong>About the author&lt;/strong>&lt;/h3>
 &lt;div align="center">
-&lt;img src="http://localhost:1313/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:53170/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
 &lt;strong>Huy Binh TRAN&lt;/strong>
 &lt;br>
