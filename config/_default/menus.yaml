@@ -5,21 +5,24 @@ main:
   - name: Home
     url: /
     weight: 10
+  - name: Overview
+    url: Overall/
+    weight: 20
   - name: Sponsor & Roadmap
     url: community_copy
-    weight: 20
+    weight: 30
   - name: Documentation
     url: docs/
-    weight: 30
+    weight: 40
   - name: Publications
     url: blog/
-    weight: 40
+    weight: 50
   - name: Showcase
     url: showcase/
-    weight: 50
+    weight: 60
   - name: Community
     url: community/
-    weight: 60
+    weight: 70
 
 sidebar:
   - identifier: more
