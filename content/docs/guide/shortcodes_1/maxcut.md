@@ -1,6 +1,7 @@
 ---
 title: Maxcut by Quantum annealing
-linkTitle: 9- Maxcut by Quantum annealing
+linkTitle: 10 - Maxcut by Quantum annealing
+weight: 10
 
 ---
 

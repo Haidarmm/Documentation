@@ -1,6 +1,7 @@
 ---
 title: Simulating lithium-ion batteries on quantum computers
-linkTitle: 8- Lithium-ion batteries application
+linkTitle: 9 - Lithium-ion batteries application
+weight: 9
 ---
 
 ## Introduction
@@ -208,10 +209,10 @@ energy = cost_fn(params, generators, n_qubits, ham, hf)
 This tutorial demonstrated how CS-VQE, ADAPT-VQE, and Rotoselect optimize battery material simulations using quantum computing. Each approach uniquely balances qubit requirements and accuracy, and future work could explore combining these methods with error mitigation techniques to improve results further.
 
 ## References
-1. William M Kirby, Andrew Tranter, and Peter J Love. “Contextual subspace variational quantum eigensolver”. Quantum 5 (2021), p. 456.
-2. Jonathan Romero et al. “Strategies for quantum computing molecular energies using the unitary coupled cluster ansatz”. Quantum Science and Technology 4.1 (2018), p. 014008.
-3. Mateusz Ostaszewski, Edward Grant, and Marcello Benedetti. “Structure optimization for parameterized quantum circuits”. Quantum 5 (2021), p. 391.
-4. Valentin Senicourt et al. “Tangelo: An Open-source Python Package for End-to-end Chemistry Workflows on Quantum Computers”. arXiv:2206.12424(2022). doi: 10.48550/arXiv.2206.12424. eprint: arXiv:2206.12424. url: https://arxiv.org/abs/2206.12424.
+1. William M Kirby, Andrew Tranter, and Peter J Love. "Contextual subspace variational quantum eigensolver". Quantum 5 (2021), p. 456.
+2. Jonathan Romero et al. "Strategies for quantum computing molecular energies using the unitary coupled cluster ansatz". Quantum Science and Technology 4.1 (2018), p. 014008.
+3. Mateusz Ostaszewski, Edward Grant, and Marcello Benedetti. "Structure optimization for parameterized quantum circuits". Quantum 5 (2021), p. 391.
+4. Valentin Senicourt et al. "Tangelo: An Open-source Python Package for End-to-end Chemistry Workflows on Quantum Computers". arXiv:2206.12424(2022). doi: 10.48550/arXiv.2206.12424. eprint: arXiv:2206.12424. url: https://arxiv.org/abs/2206.12424.
 5. The CUDA Quantum development team. CUDA Quantum. url: https : //github.com/NVIDIA/cuda-quantum.
 
 

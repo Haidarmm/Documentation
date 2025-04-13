@@ -1,19 +1,20 @@
 ---
 title: Quantitative Finance
-linkTitle: 11- Quantitative Finance
+linkTitle: 12 - Quantitative Finance
+weight: 12
 ---
 
 #  What are the Different Types of Mathematics Found in Quantitative Finance?
 
-The real-world subject of quantitative finance uses tools from many branches of mathematics. And financial modelling can be approached in a variety of different ways. For some strange reason the advocates of different branches of mathematics get quite emotional when discussing the merits and demerits of their methodologies and those of their ‘**opponents**.’ Is this a territorial thing? What are the pros and cons of martingales and differential equations? What is all this fuss, and will it end in tears before bedtime?
-Here’s a list of the various approaches to modelling and a selection of useful tools. The distinction between a ‘**modelling approach**’ and a ‘**tool**’ will start to become clear.
+The real-world subject of quantitative finance uses tools from many branches of mathematics. And financial modelling can be approached in a variety of different ways. For some strange reason the advocates of different branches of mathematics get quite emotional when discussing the merits and demerits of their methodologies and those of their '**opponents**.'' Is this a territorial thing? What are the pros and cons of martingales and differential equations? What is all this fuss, and will it end in tears before bedtime?
+Here's a list of the various approaches to modelling and a selection of useful tools. The distinction between a '**modelling approach**' and a '**tool**' will start to become clear.
 
 
 <span style="color:red">**Modelling approaches**</span>
 
 - **Probabilistic** : One of the main assumptions about the financial markets, at least as far as quantitative finance goes, is that asset prices are random. We tend to think of describing financial variables as following some random path, with parameters describing the growth of the asset and its degree of randomness. We effectively model the asset path via a specified rate of growth, on average, and its deviation from that average. This approach to modelling has had the greatest impact over the last 30 years, leading to the explosive growth of the derivatives markets.
 
-- **Deterministic**: The idea behind this approach is that our model will tell us everything about the future. Given enough data, and a big enough brain, we can write down some equations or an algorithm for predicting the future. Interestingly, the subjects of dynamical systems and chaos fall into this cat- egory. And, as you know, chaotic systems show such sensitivity to initial conditions that predictability is in practice impossible. This is the ‘butterfly effect,’ that a butterfly flap- ping its wings in Brazil will ‘cause’ rainfall over Manchester. (And what doesn’t!) A topic popular in the early 1990s, this has not lived up to its promises in the financial world.
+- **Deterministic**: The idea behind this approach is that our model will tell us everything about the future. Given enough data, and a big enough brain, we can write down some equations or an algorithm for predicting the future. Interestingly, the subjects of dynamical systems and chaos fall into this cat- egory. And, as you know, chaotic systems show such sensitivity to initial conditions that predictability is in practice impossible. This is the 'butterfly effect,' that a butterfly flap- ping its wings in Brazil will 'cause' rainfall over Manchester. (And what doesn't!) A topic popular in the early 1990s, this has not lived up to its promises in the financial world.
 
 - **Discrete**: difference equations: Discrete means that asset prices and/or time can only be incremented in finite chunks, whether a dollar or a cent, a year or a day.
 
@@ -24,7 +25,7 @@ For an important example: In discrete models we end up with difference equations
 
 <span style="color:red">**Usefull tools**</span>
 
-- **Simulations**: If the financial world is random then we can experiment with the future by running simulations. For example, an asset price may be represented by its average growth and its risk, so let’s simulate what could happen in the future to this random asset. If we were to take such an approach we would want to run many, many simulations. There’d be little point in running just the one; we’d like to see a range of possible future scenarios. *Simulations can also be used for non-probabilistic problems. Just because of the similarities between mathematical equations, a model derived in a deterministic framework may have a probabilistic interpretation*.
+- **Simulations**: If the financial world is random then we can experiment with the future by running simulations. For example, an asset price may be represented by its average growth and its risk, so let's simulate what could happen in the future to this random asset. If we were to take such an approach we would want to run many, many simulations. There'd be little point in running just the one; we'd like to see a range of possible future scenarios. *Simulations can also be used for non-probabilistic problems. Just because of the similarities between mathematical equations, a model derived in a deterministic framework may have a probabilistic interpretation*.
 
 - **Discretization methods**: The complement to simulation methods, and there are many types of these. The best known are the finite-difference methods which are discretizations of continu- ous models such as Black–Scholes.
 - **Approximations**: In modelling we aim to come up with a solution representing something meaningful and useful, such as an option price. Unless the model is really simple, we may not be able to solve it easily. This is where approximations come in. A complicated model may have approximate solutions. And these approximate solutions might be good enough for our purposes.
@@ -34,7 +35,7 @@ or small, or special in some way. For example, there are simple approximations f
 
 - **Series solutions**: If your equation is linear (and they almost all are in quantitative finance) then you might be able to solve a particular problem by adding together the solutions of other problems. Series solutions are when you decompose the solu- tion into a (potentially infinite) sum of simple functions, such as sines and cosines, or a power series. This is the case, for example, with barrier options having two barriers, one below the current asset price and the other above.
 
-- **Green’s functions** :  Green's functions are mathematical tools used in physics and engineering to solve differential equations that describe various physical phenomena, such as heat conduction, fluid flow, or electromagnetic fields.  This is a very special technique that only works in certain situations. The idea is that solutions to some difficult problems can be built up from solutions to special cases of a similar problem.
+- **Green's functions** :  Green's functions are mathematical tools used in physics and engineering to solve differential equations that describe various physical phenomena, such as heat conduction, fluid flow, or electromagnetic fields.  This is a very special technique that only works in certain situations. The idea is that solutions to some difficult problems can be built up from solutions to special cases of a similar problem.
 
 ## Present value and future value of money
 
@@ -164,7 +165,7 @@ This concise table provides a snapshot of the current exchange rates for some of
 <span style="color:red">What is Arbitrage ?</span>
 
 Arbitrage is making a sure profit in excess of the risk-free rate of return. In the language of quantitative finance we can say that an arbitrage opportunity is a portfolio of zero value today which is of positive value in the future with positive probability, and of negative value in the future with zero probability.
-The assumption that there are no arbitrage opportunities in the market is fundamental to classical finance theory. This idea is popularly known as ‘there’s no such thing as a free lunch.
+The assumption that there are no arbitrage opportunities in the market is fundamental to classical finance theory. This idea is popularly known as 'there's no such thing as a free lunch.
 
 **Example**: An at-the-money European call option with a strike of $100 and an expiration of six months is worth $8. A European put with the same strike and expiration is worth $6. There are no dividends on the stock and a six-month zero-coupon bond with a principal of $100 is worth $97.
 
@@ -293,7 +294,7 @@ where $\rho_{ij}$ is the correlation between the $i^{th}$ and $j^{th}$ investmen
 
 
 
-Markowitz showed how to optimize a portfolio by finding the $W’s$ giving the portfolio the greatest expected return for a prescribed level of risk. The curve in the risk-return space with the largest expected return for each level of risk is called the **efficient frontier**.
+Markowitz showed how to optimize a portfolio by finding the $W's$ giving the portfolio the greatest expected return for a prescribed level of risk. The curve in the risk-return space with the largest expected return for each level of risk is called the **efficient frontier**.
 
 ## <span style="color:red"> Markowitz-Model Implementation</span>
 
@@ -458,7 +459,7 @@ These portfolios make up the so-called ** efficient -frontier**. This is the mai
 A stock has an expected return of 15% and a volatility of 20%. But how much of that risk and return are related to the market as a whole? The less that can be attributed to the behaviour of the market, the better will that stock be for diversification purposes.
 
 ### <span style="color:red"> Explanation</span>
-CAPM simultaneously simplified Markowitz’s **Modern Portfolio Theory (MPT)**, made it more practical and introduced the idea of specific and systematic risk. Whereas MPT has arbitrary correlation between all investments, **CAPM**, in its basic form, only links investments via the market as a whole. CAPM is an example of an equilibrium model, as opposed to a no-arbitrage model such as **Black–Scholes**.
+CAPM simultaneously simplified Markowitz's **Modern Portfolio Theory (MPT)**, made it more practical and introduced the idea of specific and systematic risk. Whereas MPT has arbitrary correlation between all investments, **CAPM**, in its basic form, only links investments via the market as a whole. CAPM is an example of an equilibrium model, as opposed to a no-arbitrage model such as **Black–Scholes**.
 
 The mathematics of CAPM is very simple. We relate the random return on the ith investment, $R_i$, to the random return on the market as a whole (or some representative index),$R_M$ by
 $$R_{i}=\alpha_{i} +\beta_{i} R_{M}+\varepsilon_{i}   $$
@@ -743,9 +744,9 @@ if __name__ == '__main__':
 ![uploads](/uploads/outputf.png)
 
 
-<span style="color:red"> What is Itô’s Lemma ? </span>
+<span style="color:red"> What is Itô's Lemma ? </span>
 
-Itô’s Lemma is a theorem in stochastic calculus. It tells you that if you have a random walk, in y, say, and a function of that randomly walking variable, call it $f(y, t)$, then you can
+Itô's Lemma is a theorem in stochastic calculus. It tells you that if you have a random walk, in y, say, and a function of that randomly walking variable, call it $f(y, t)$, then you can
 easily write an expression for the random walk in $f$. A function of a random variable is itself random in general.
 
 **Example** The obvious example concerns the random walk
@@ -829,12 +830,12 @@ $S$ and time $t$.
 <span style="color:red"> Facts about the Black–Scholes equation:  </span>
 
 - The equation follows from certain assumptions and from a mathematical and financial argument that involves hedging.
-- The equation is linear and homogeneous (we say ‘there is no right-hand side,’ i.e. no non-V terms) so that you can value a portfolio of derivatives by summing the values of the individual contracts.
+- The equation is linear and homogeneous (we say 'there is no right-hand side,' i.e. no non-V terms) so that you can value a portfolio of derivatives by summing the values of the individual contracts.
 - It is a partial differential equation because it has more than one independent variable, here S and t.
 - It is of parabolic type, meaning that one of the variables, $t$, only has a first-derivative term, and the other $S$ has a second-derivative term.
-- It is of backward type, meaning that you specify a final condition representing the option payoff at expiry and then solve backwards in time to get the option value now. You can tell it’s backward by looking at the sign of the $t-$derivative term and the second $S-$derivative term, when on the same side of the equals sign they are both the same sign. If they were of opposite signs then it would be a forward equation.
+- It is of backward type, meaning that you specify a final condition representing the option payoff at expiry and then solve backwards in time to get the option value now. You can tell it's backward by looking at the sign of the $t-$derivative term and the second $S-$derivative term, when on the same side of the equals sign they are both the same sign. If they were of opposite signs then it would be a forward equation.
 The equation is an example of a diffusion equation or heat equation. Such equations have been around for nearly two hundred years and have been used to model all sorts of physical phenomena.
-- The equation requires specification of two parameters, the risk-free interest rate and the asset volatility. The interest rate is easy enough to measure, and the option value isn’t so sensitive to it anyway. But the volatility is another matter, rather harder to forecast accurately.
+- The equation requires specification of two parameters, the risk-free interest rate and the asset volatility. The interest rate is easy enough to measure, and the option value isn't so sensitive to it anyway. But the volatility is another matter, rather harder to forecast accurately.
 - Because the main uncertainty in the equation is the volatility one sometimes thinks of the equation less as a valuation tool and more as a way of understanding the relationship between options and volatility.
 - The equation is easy to solve numerically, by finite-difference or Monte Carlo methods, for example.
 - The equation can be generalized to allow for dividends, other payoffs, stochastic volatility, jumping stock prices, etc.
@@ -843,7 +844,7 @@ The equation is an example of a diffusion equation or heat equation. Such equati
 <span style="color:red"> The Black–Scholes formulæ   </span>: which are solutions of the equation in special cases, such as for calls and puts. $\frac{\partial V}{\partial t} +\frac{1}{2} \sigma^{2} S^{2}\frac{\partial^{2} V}{\partial S^{2}} +rS\frac{\partial V}{\partial S} -rV=0$
 
 The equation contains four terms:
-- $\frac{\partial V}{\partial t} $ time decay, how much the option value changes by if the stock price doesnt change
+- $\frac{\partial V}{\partial t} $ time decay, how much the option value changes by if the stock price doesn't change
 - $\frac{1}{2} \sigma^{2} S^{2}\frac{\partial^{2} V}{\partial S^{2}} $ : convexity term, how much a hedged position makes on average from stock moves
 -  $ S\frac{\partial V}{\partial S} $ : drift term allowing for the growth in the stock at the
 risk-free rate
@@ -932,14 +933,14 @@ if __name__ == '__main__':
 # Monte Carlo Simulation
 
 ### <span style="color:red"> Definition   </span>  
-Monte Carlo simulations are a way of solving probabilistic problems by numerically ‘imagining’ many possible scenarios or games so as to calculate statistical properties such as expectations, variances or probabilities of certain outcomes. In finance we use such simulations to represent the future behaviour of equities, exchange rates, interest rates, etc., so as to either study the possible future performance of a port- folio or to price derivatives.
+Monte Carlo simulations are a way of solving probabilistic problems by numerically 'imagining' many possible scenarios or games so as to calculate statistical properties such as expectations, variances or probabilities of certain outcomes. In finance we use such simulations to represent the future behaviour of equities, exchange rates, interest rates, etc., so as to either study the possible future performance of a port- folio or to price derivatives.
 
 ### <span style="color:red"> Example   </span>  
 We hold a complex portfolio of investments, we would like
 to know the probability of losing money over the next year since our bonus depends on our making a profit. We can estimate this probability by simulating how the individual components in our portfolio might evolve over the next year. This requires us to have a model for the random behaviour of each of the assets, including the relationship or correlation between them, if any.
 Some problems which are completely deterministic can also be solved numerically by running simulations, most famously finding a value for $\pi$.
 
-It is clear enough that probabilistic problems can be solved by simulations. What is the probability of tossing heads with a coin, just toss the coin often enough and you will find the answer. More on this and its relevance to finance shortly. But many deterministic problems can also be solved this way, provided you can find a probabilistic equivalent of the deterministic problem. A famous example of this is Buffon’s needle, a problem and solution dating back to 1777. Draw parallel lines on a table one inch apart. Drop a needle, also one inch long, onto this table. Simple trigonometry will show you that the probability of the needle touching one of the lines is $\frac{2}{\pi } $. So conduct many such experiments to get an approximation to $\pi$. Unfortunately because of the probabilistic nature of this method you will have to drop the needle many billions of times to find π accurate to half a dozen decimal places.
+It is clear enough that probabilistic problems can be solved by simulations. What is the probability of tossing heads with a coin, just toss the coin often enough and you will find the answer. More on this and its relevance to finance shortly. But many deterministic problems can also be solved this way, provided you can find a probabilistic equivalent of the deterministic problem. A famous example of this is Buffon's needle, a problem and solution dating back to 1777. Draw parallel lines on a table one inch apart. Drop a needle, also one inch long, onto this table. Simple trigonometry will show you that the probability of the needle touching one of the lines is $\frac{2}{\pi } $. So conduct many such experiments to get an approximation to $\pi$. Unfortunately because of the probabilistic nature of this method you will have to drop the needle many billions of times to find π accurate to half a dozen decimal places.
 
 There can also be a relationship between certain types of differential equation and probabilistic methods. Stanislaw Ulam, inspired by a card game, invented this technique while working on the Manhattan Project towards the development of nuclear weapons. The name **Monte Carlo** was given to this idea by his colleague Nicholas Metropolis.
 
@@ -1026,12 +1027,12 @@ The mean of these simulations yields the $S_{B}\left( t\right)$ path with the hi
 
 ## Which Numerical Method should I Use and When?
 
- <span style="color:red"> Definition   </span>:  The three main numerical methods in common use are **Monte Carlo, finite difference and numerical quadrature**. (I’m including the binomial method as just a simplistic version of finite differences.)  <span style="color:green"> Monte Carlo  </span>is great for complex path dependency and high dimensionality, and for problems which can not easily be written in differential equation form. Monte Carlo methods simulate the random behaviour underlying the financial models. So, in a sense they get right to the heart of the problem. Always remember, though, that when pricing you must simulate the risk-neutral random walk(s), the value of a contract is then the expected present value of all cashflows. <span style="color:green"> Finite difference  </span> is best for low dimensions and contracts with decision features such as early exercise, ones which have a differential equation formulation Since we work with a mesh, not unlike the binomial method, we will find the contract value at all points is stock price-time space. In quantitative finance that differential equation is almost always of diffusion or parabolic type.  <span style="color:green"> Numerical quadrature  </span> is for when you can write the option value as a multiple integral. To be more detail ,occasionally one can write down the solution of an **option-pricing** problem in the form of a multiple integral. This is because you can interpret the option value as an expectation of a payoff, and an expectation of the payoff is mathematically just the integral of the product of that payoff function and a probability density function. This is only possible in special cases. The option has to be European, the underlying stochastic differential equation must be explicitly integrable (so the lognormal random walk is perfect for this) and the payoff shouldn’t usually be path dependent. So if this is possible then pricing is easy... you have a formula. The only difficulty comes in turning this formula into a number. And that’s the subject of numerical integration or quadrature.
+ <span style="color:red"> Definition   </span>:  The three main numerical methods in common use are **Monte Carlo, finite difference and numerical quadrature**. (I'm including the binomial method as just a simplistic version of finite differences.)  <span style="color:green"> Monte Carlo  </span>is great for complex path dependency and high dimensionality, and for problems which can not easily be written in differential equation form. Monte Carlo methods simulate the random behaviour underlying the financial models. So, in a sense they get right to the heart of the problem. Always remember, though, that when pricing you must simulate the risk-neutral random walk(s), the value of a contract is then the expected present value of all cashflows. <span style="color:green"> Finite difference  </span> is best for low dimensions and contracts with decision features such as early exercise, ones which have a differential equation formulation Since we work with a mesh, not unlike the binomial method, we will find the contract value at all points is stock price-time space. In quantitative finance that differential equation is almost always of diffusion or parabolic type.  <span style="color:green"> Numerical quadrature  </span> is for when you can write the option value as a multiple integral. To be more detail ,occasionally one can write down the solution of an **option-pricing** problem in the form of a multiple integral. This is because you can interpret the option value as an expectation of a payoff, and an expectation of the payoff is mathematically just the integral of the product of that payoff function and a probability density function. This is only possible in special cases. The option has to be European, the underlying stochastic differential equation must be explicitly integrable (so the lognormal random walk is perfect for this) and the payoff shouldn't usually be path dependent. So if this is possible then pricing is easy... you have a formula. The only difficulty comes in turning this formula into a number. And that's the subject of numerical integration or quadrature.
 
  <span style="color:red"> Example  </span>  
 You want to price a fixed-income contract using the BGM model. Which numerical method should you use? BGM is geared up for solution by simulation, so you would use a Monte Carlo simulation.
 
-You want to price an option which is paid for in instalments, and you can stop paying and lose the option at any time if you think it’s not worth keeping up the payments. This may be one for finite-difference methods since it has a decision feature.
+You want to price an option which is paid for in instalments, and you can stop paying and lose the option at any time if you think it's not worth keeping up the payments. This may be one for finite-difference methods since it has a decision feature.
 
 You want to price a European, non-path-dependent contract on a basket of equities. This may be recast as a multiple inte- gral and so you would use a quadrature method.
 

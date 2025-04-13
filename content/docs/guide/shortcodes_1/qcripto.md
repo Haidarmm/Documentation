@@ -1,6 +1,7 @@
 ---
 title: Quantum Cryptography - Voting Scheme
-linkTitle: 10 - Quantum Cryptography
+linkTitle: 11 - Quantum Cryptography
+weight: 11
 ---
 
 ##  What we need to know about Quantum Cryptography

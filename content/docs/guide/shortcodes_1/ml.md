@@ -1,6 +1,7 @@
 ---
 title: Classical Machine Learning Tutorial 1
-linkTitle: 13- Classical Machine Learning Tutorial 1
+linkTitle: 13 - Classical Machine Learning Tutorial 1
+weight: 13
 ---
 
 ## Introduction
@@ -32,7 +33,7 @@ from mpl_toolkits.mplot3d import Axes3D
 
 
 
-Imagine biologists working in a remote research lab, deep in the heart of a dense forest. Fascinated by the plant life around,  wonder if certain physical traits of plants—specifically the size of their leaves—might reveal clues about their toxicity. To investigate, they measure the width and radius of leaves from various plant species, meticulously recording the data alongside known information about each plant’s toxicity. Their hypothesis is that larger or smaller leaves may correlate with whether a plant is safe to eat or potentially harmful. Our task is to help the biologist analyze this data, using statistical techniques to classify the plants based on their measurements. By finding a predictive link, we aim to offer the biologist a useful model for distinguishing edible plants from toxic ones, guiding safer exploration of the forest's plant diversity.
+Imagine biologists working in a remote research lab, deep in the heart of a dense forest. Fascinated by the plant life around,  wonder if certain physical traits of plants—specifically the size of their leaves—might reveal clues about their toxicity. To investigate, they measure the width and radius of leaves from various plant species, meticulously recording the data alongside known information about each plant's toxicity. Their hypothesis is that larger or smaller leaves may correlate with whether a plant is safe to eat or potentially harmful. Our task is to help the biologist analyze this data, using statistical techniques to classify the plants based on their measurements. By finding a predictive link, we aim to offer the biologist a useful model for distinguishing edible plants from toxic ones, guiding safer exploration of the forest's plant diversity.
 
 ###Data vizualization
 
@@ -110,7 +111,7 @@ One way to classify the plants could be as follows:
 - First, draw the line of constant ratio $\textrm{radius}/\textrm{width}$.
 - Then, draw the perpendicular to this line such that it separates the toxic and non-toxic leaves.
 
-Now, let’s dive into finding the line of constant ratio. What we want is a line that best fits the data points. To find this line, we perform **regression**.
+Now, let's dive into finding the line of constant ratio. What we want is a line that best fits the data points. To find this line, we perform **regression**.
 
 *How do we perform the regression?*
 
@@ -320,7 +321,7 @@ midpoint = (nontoxic_max_width + toxic_min_width) / 2  # Midpoint in width
 # Determine the y-value of the regression line at the midpoint
 y_mid = beta_0 + beta_1 * midpoint
 
-# Calculate the perpendicular line’s slope and intercept
+# Calculate the perpendicular line's slope and intercept
 perpendicular_slope = -1 / beta_1
 perpendicular_intercept = y_mid - perpendicular_slope * midpoint
 
@@ -610,7 +611,7 @@ $$ L(w, b) = \frac{1}{n} \sum_{i=1}^n \mathbb{1}_{\{(2y_i - 1)(w \cdot x_i + b) 
    The condition $(2y_i - 1)(w \cdot x_i + b) > 0$ is equivalent to the true classification $y_i = \hat{y}_i$. When this product is positive, it indicates that the prediction matches the true label, resulting in zero loss for that particular sample. Conversely, if the product is negative, the prediction does not match the true label, which contributes to the loss.
 
 2. *Normalization by Sample Size*  
-   Dividing by $n$ (the total number of samples) helps standardize the loss value across datasets of different sizes. Without normalization, datasets with more samples would inherently have larger loss values, even if the model’s classification performance remained consistent.
+   Dividing by $n$ (the total number of samples) helps standardize the loss value across datasets of different sizes. Without normalization, datasets with more samples would inherently have larger loss values, even if the model's classification performance remained consistent.
 
 3. *Discrete Nature of the Loss*  
    Due to the indicator function $\mathbb{1}$, this loss is non-differentiable, making it challenging to optimize directly. Minimizing the 0/1 loss exactly is typically impractical, and so alternative approaches—such as using differentiable approximations—are common in machine learning. This limitation is what motivates the use of functions like the **hinge loss** or **logistic loss**. These alternatives approximate the 0/1 behavior while enabling efficient optimization.
@@ -721,7 +722,7 @@ $$
 
 These derivatives provide the direction of steepest descent for the logistic loss, guiding the optimization process towards the values of $w$ and $b$ that minimize the loss and yield the best separation between toxic and non-toxic plants.
 
-In the code below, we implement logistic regression using the LogisticRegression function from the scikit-learn library. As being said, logistic regression is a powerful classification algorithm commonly used for binary classification tasks, where the goal is to predict one of two possible outcomes. By fitting a linear decision boundary to the training data, the model predicts the probability of an instance belonging to one of the classes. Scikit-learn’s LogisticRegression class automatically applies optimization techniques to find the best-fitting model parameters (weights and bias), which maximize the likelihood of correct predictions. The model output is interpreted as a probability, thanks to the sigmoid function, and we can use it to classify new data points.
+In the code below, we implement logistic regression using the LogisticRegression function from the scikit-learn library. As being said, logistic regression is a powerful classification algorithm commonly used for binary classification tasks, where the goal is to predict one of two possible outcomes. By fitting a linear decision boundary to the training data, the model predicts the probability of an instance belonging to one of the classes. Scikit-learn's LogisticRegression class automatically applies optimization techniques to find the best-fitting model parameters (weights and bias), which maximize the likelihood of correct predictions. The model output is interpreted as a probability, thanks to the sigmoid function, and we can use it to classify new data points.
 
 This implementation provides a straightforward and efficient way to train a logistic regression model, evaluate its accuracy, and visualize the decision boundary for classification tasks.
 
@@ -776,7 +777,7 @@ plt.show()
 
 There are four steps in the alogorithm:
  1. The first step is to create an instance of the logistic regression model. This is done using the `LogisticRegression()` function from scikit-learn. ```model = LogisticRegression()```
- 2. The next step is to train the model using the training data. We use the ``fit()`` method, which takes the **feature data** ($X =(\textrm{width},\textrm{radius})$) and the **target labels** ($y \in \{0,1\}$) to adjust the model’s parameters (weights and bias). ``model.fit(X,y)``
+ 2. The next step is to train the model using the training data. We use the ``fit()`` method, which takes the **feature data** ($X =(\textrm{width},\textrm{radius})$) and the **target labels** ($y \in \{0,1\}$) to adjust the model's parameters (weights and bias). ``model.fit(X,y)``
  3. After training the model, we evaluate its performance by visualizing the decision boundary. In 2D, this boundary is a line, and in higher dimensions, it is a hyperplane that separates the two classes. By plotting the decision boundary, we can visually inspect how well the model classifies the data and identify areas where it may struggle (i.e., near the boundary). This helps us assess the model's generalization ability and robustness. We can also computate the **accuracy**,
  $$ \textrm{accuracy} = \frac{\textrm{well classified data}}{\textrm{well} + \textrm{misclassified data}}.$$
 
@@ -887,7 +888,7 @@ Yet, reality is often complex, and the relationships in data are not always clea
 
 The team of biologists celebrated their groundbreaking achievement: they had successfully classified toxic and non-toxic plants using the shapes of their leaves through a linear classification model. This breakthrough promised safer ecosystems, as animals and humans could now distinguish between harmful and harmless plants with ease. The team's discovery was heralded as a triumph of science and machine learning.
 
-However, an alarming phenomenon soon emerged. Entire colonies of ants were mysteriously dying after collecting what the model identified as "non-toxic" plants. Despite the model's high accuracy in the lab, these plants wreaked havoc in the ants’ colonies. Confused and concerned, the biologists embarked on a deeper investigation.
+However, an alarming phenomenon soon emerged. Entire colonies of ants were mysteriously dying after collecting what the model identified as "non-toxic" plants. Despite the model's high accuracy in the lab, these plants wreaked havoc in the ants' colonies. Confused and concerned, the biologists embarked on a deeper investigation.
 
 To understand the mystery, the team began mapping the geographic locations of both the thriving and decimated ant colonies. Run the code below to import the data:
 
@@ -1266,7 +1267,7 @@ The boundary obtained using the polynomial kernel is influenced by the kernel pa
 In this example, the explicit feature map emphasizes radial separability with a specific quadratic term ($ 4(x_1^2 + x_2^2) $), while the polynomial kernel considers all possible quadratic combinations of the features. This subtle difference in feature representation affects the decision boundary's shape.
 
 
-Despite the slight differences in the boundary, both approaches successfully classify the two classes. However, the polynomial kernel’s **flexibility** ensures **robustness** across various data distributions, which might not always be achievable with a manually defined feature map.
+Despite the slight differences in the boundary, both approaches successfully classify the two classes. However, the polynomial kernel's **flexibility** ensures **robustness** across various data distributions, which might not always be achievable with a manually defined feature map.
 
 The differences between the two boundaries highlight the balance between flexibility and **specificity** in feature transformation. While explicit feature maps can provide elegant solutions for specific problems, kernel methods excel in generality and **adaptability**, making them a cornerstone of modern machine learning techniques.
 
