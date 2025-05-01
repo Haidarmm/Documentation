@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <!-- Content specific to donate page -->
+  <div class="donation-content">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </div>
+
+  <!-- Stripe payment form (you can style this as needed) -->
+  <form action="https://checkout.stripe.com/pay" method="POST">
+    <button type="submit">Donate</button>
+  </form>
+{{ end }}

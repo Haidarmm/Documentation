@@ -23,6 +23,9 @@ main:
   - name: Community
     url: community/
     weight: 70
+  - name: Donate
+    url: donate/
+    weight: 70
 
 sidebar:
   - identifier: more
