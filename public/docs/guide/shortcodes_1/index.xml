@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>B - Applications | OpenVQE</title><link>http://localhost:1313/docs/guide/shortcodes_1/</link><atom:link href="http://localhost:1313/docs/guide/shortcodes_1/index.xml" rel="self" type="application/rss+xml"/><description>B - Applications</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>http://localhost:1313/media/logo.svg</url><title>B - Applications</title><link>http://localhost:1313/docs/guide/shortcodes_1/</link></image><item><title>Simulating lithium-ion batteries on quantum computers</title><link>http://localhost:1313/docs/guide/shortcodes_1/battery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/shortcodes_1/battery/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>B - Applications | OpenVQE</title><link>http://localhost:44733/docs/guide/shortcodes_1/</link><atom:link href="http://localhost:44733/docs/guide/shortcodes_1/index.xml" rel="self" type="application/rss+xml"/><description>B - Applications</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>http://localhost:44733/media/logo.svg</url><title>B - Applications</title><link>http://localhost:44733/docs/guide/shortcodes_1/</link></image><item><title>Simulating lithium-ion batteries on quantum computers</title><link>http://localhost:44733/docs/guide/shortcodes_1/battery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:44733/docs/guide/shortcodes_1/battery/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Quantum computing provides a promising approach to simulate the ground state energy of battery materials, which is essential for improving battery efficiency. In this tutorial, we simulate the ground state energy of Li$_2$FeSiO$_4$, a lithium-ion battery cathode material, using Variational Quantum Eigensolver (VQE) and its variants. The structure of Li$_2$FeSiO$_4$ is shown below.&lt;/p>
 &lt;p>Conventional unit cell.
-&lt;img src="http://localhost:1313/images/unit_cell.png" alt="unit cell">&lt;/p>
+&lt;img src="http://localhost:44733/images/unit_cell.png" alt="unit cell">&lt;/p>
 &lt;p>Crystal Structure (Monoclinic)&lt;/p>
-&lt;p>&lt;img src="http://localhost:1313/images/Li2FeSiO4--crystal-toolkit.png" alt="Li2FeSiO4">&lt;/p>
+&lt;p>&lt;img src="http://localhost:44733/images/Li2FeSiO4--crystal-toolkit.png" alt="Li2FeSiO4">&lt;/p>
 &lt;h2 id="methodology">Methodology&lt;/h2>
 &lt;p>We employ the following algorithms:&lt;/p>
 &lt;ul>
@@ -84,7 +84,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">energy&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">params&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cudaq&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">vqe&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">kernel&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">ham&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">optimizer&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">parameter_count&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">num_layers&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">n_qubits&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">rel_err&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ccsd_energy&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">energy&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:1313/images/cs_vqe.png" alt="CS-VQE">&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:44733/images/cs_vqe.png" alt="CS-VQE">&lt;/p>
 &lt;h2 id="cs-adapt-vqe">CS-ADAPT-VQE&lt;/h2>
 &lt;p>CS-ADAPT-VQE adaptively selects excitations based on parameter gradients. We select excitations with the highest gradients and perform VQE with selected excitations:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Calulate the singles and doubles excitations&lt;/span>
@@ -149,8 +149,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">energy&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">params&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cudaq&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">vqe&lt;/span>&lt;span class="p">(&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">kernel&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">ham&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">optimizer&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">parameter_count&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">parameter_count&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:1313/images/adapt_circuit.png" alt="CS-ADAPT-VQE-circuit">
-&lt;img src="http://localhost:1313/images/adapt.png" alt="CS-ADAPT-VQE">&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:44733/images/adapt_circuit.png" alt="CS-ADAPT-VQE-circuit">
+&lt;img src="http://localhost:44733/images/adapt.png" alt="CS-ADAPT-VQE">&lt;/p>
 &lt;h2 id="cs-vqe-with-rotoselect-optimization">CS-VQE with Rotoselect Optimization&lt;/h2>
 &lt;p>Rotoselect dynamically selects the optimal rotation gates (X, Y, Z) for each parameter to minimize energy:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">rotoselect_cycle&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">cost&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">params&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">generators&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n_qubits&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">hamiltonian&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">hf&lt;/span>&lt;span class="p">):&lt;/span>
@@ -165,9 +165,9 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">n_steps&lt;/span>&lt;span class="p">):&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">params&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">generators&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">rotoselect_cycle&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">cost_fn&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">params&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">generators&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n_qubits&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">ham&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">hf&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">energy&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cost_fn&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">params&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">generators&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">n_qubits&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">ham&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">hf&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:1313/images/rotoselect_orig_circuit.png" alt="Rotoselect-orig-circuit">
-&lt;img src="http://localhost:1313/images/rotoselect_circuit.png" alt="Rotoselect-circuit">
-&lt;img src="http://localhost:1313/images/rotoselect.png" alt="Rotoselect">&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:44733/images/rotoselect_orig_circuit.png" alt="Rotoselect-orig-circuit">
+&lt;img src="http://localhost:44733/images/rotoselect_circuit.png" alt="Rotoselect-circuit">
+&lt;img src="http://localhost:44733/images/rotoselect.png" alt="Rotoselect">&lt;/p>
 &lt;h2 id="conclusion-and-future-directions">Conclusion and Future Directions&lt;/h2>
 &lt;p>This tutorial demonstrated how CS-VQE, ADAPT-VQE, and Rotoselect optimize battery material simulations using quantum computing. Each approach uniquely balances qubit requirements and accuracy, and future work could explore combining these methods with error mitigation techniques to improve results further.&lt;/p>
 &lt;h2 id="references">References&lt;/h2>
@@ -180,14 +180,14 @@
 &lt;/ol>
 &lt;h3 id="about-the-author">&lt;strong>About the author&lt;/strong>&lt;/h3>
 &lt;div align="center">
-&lt;img src="http://localhost:1313/images/gopal.jpeg" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:44733/images/gopal.jpeg" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
 &lt;strong>Gopal Ramesh Dahale&lt;/strong>
 &lt;br>
 &lt;em>Master's student in Quantum Science and Engineering at EPFL&lt;/em>
 &lt;br>
 &lt;a href="https://www.linkedin.com/in/gopald27" style="color:#1E90FF;">LinkedIn&lt;/a>
-&lt;/div></description></item><item><title>Maxcut by Quantum annealing</title><link>http://localhost:1313/docs/guide/shortcodes_1/maxcut/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/shortcodes_1/maxcut/</guid><description>&lt;h1 id="1-graph-definition">1. Graph definition&lt;/h1>
+&lt;/div></description></item><item><title>Maxcut by Quantum annealing</title><link>http://localhost:44733/docs/guide/shortcodes_1/maxcut/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:44733/docs/guide/shortcodes_1/maxcut/</guid><description>&lt;h1 id="1-graph-definition">1. Graph definition&lt;/h1>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">networkx&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">nx&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">itertools&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">chain&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">combinations&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">matplotlib.pyplot&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">plt&lt;/span>
@@ -224,7 +224,7 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/images/42d8e6221f9dc8947c4033331fcef141a48e39d7.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/images/42d8e6221f9dc8947c4033331fcef141a48e39d7.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h1 id="2-classical-calculation">2. Classical calculation&lt;/h1>
@@ -433,7 +433,7 @@ third execution that I obtain results.keep the largest one.&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/images/07008f6d0fa11958622abb7d543a23382f45f330.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/images/07008f6d0fa11958622abb7d543a23382f45f330.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">U_c&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">J&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">t&lt;/span>&lt;span class="p">):&lt;/span>
@@ -485,7 +485,7 @@ third execution that I obtain results.keep the largest one.&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/images/a3f9a71ff42147a5a68c072a98a04608c1b8add0.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/images/a3f9a71ff42147a5a68c072a98a04608c1b8add0.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h2 id="33-build-u_eta">3.3 Build $U_{\eta}$&lt;/h2>
@@ -516,7 +516,7 @@ third execution that I obtain results.keep the largest one.&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/images/a2369cd3ceda15300d055f3755478d5e11d1fe19.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/images/a2369cd3ceda15300d055f3755478d5e11d1fe19.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h1 id="4-post-processing-and-formatting">4 Post-processing and formatting&lt;/h1>
@@ -588,7 +588,7 @@ Set 2: []
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/images/27efae2cfc94edd0f08ea62e66371a91f8ac3005.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/images/27efae2cfc94edd0f08ea62e66371a91f8ac3005.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;pre>&lt;code>bits string: 00011
@@ -610,7 +610,7 @@ Set 2: [0, 2, 4]
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/images/4a34eba6e8c42c814bda7ba6aef24d837c86cc99.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/images/4a34eba6e8c42c814bda7ba6aef24d837c86cc99.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;pre>&lt;code>bits string: 100101
@@ -632,7 +632,7 @@ Set 2: [2, 5]
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/images/dfa257ec8121153ddb343cc9de11e87c2c5402c8.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/images/dfa257ec8121153ddb343cc9de11e87c2c5402c8.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;pre>&lt;code>bits string: 1101000
@@ -654,7 +654,7 @@ Set 2: [0, 2, 3, 5, 6]
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/images/34db132e6978526d746d393076fe3a5d46b916ba.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/images/34db132e6978526d746d393076fe3a5d46b916ba.png" alt="images" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h3 id="references">&lt;strong>References&lt;/strong>&lt;/h3>
@@ -663,14 +663,14 @@ Edward Farhi, Jeffrey Goldstone,Joshua Lapan, Andrew Lundgren, Daniel Preda. "A 
 &lt;/a>
 &lt;h3 id="about-the-author">&lt;strong>About the author&lt;/strong>&lt;/h3>
 &lt;div align="center">
-&lt;img src="http://localhost:1313/images/isaac.JPG" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:44733/images/isaac.JPG" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
 &lt;strong>Isaac Christ Donchi Kamga&lt;/strong>
 &lt;br>
 &lt;em>Ing , Msc in quantum computing and quantum engineering, France&lt;/em>
 &lt;br>
 &lt;a href="https://www.linkedin.com/in/don-isaac/" style="color:#1E90FF;">LinkedIn&lt;/a>
-&lt;/div></description></item><item><title>Quantum Cryptography - Voting Scheme</title><link>http://localhost:1313/docs/guide/shortcodes_1/qcripto/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/shortcodes_1/qcripto/</guid><description>&lt;h2 id="what-we-need-to-know-about-quantum-cryptography">What we need to know about Quantum Cryptography&lt;/h2>
+&lt;/div></description></item><item><title>Quantum Cryptography - Voting Scheme</title><link>http://localhost:44733/docs/guide/shortcodes_1/qcripto/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:44733/docs/guide/shortcodes_1/qcripto/</guid><description>&lt;h2 id="what-we-need-to-know-about-quantum-cryptography">What we need to know about Quantum Cryptography&lt;/h2>
 &lt;h2 id="back-in-time----the-beginnings">Back in Time - The beginnings&lt;/h2>
 &lt;p>Cyptography is the science, at the crossroads of mathematics, physics, and computer science, that tends to design protocols to prevent malicious third-party from reading private messages. Even if the development of computers during the 20th century made the research in cryptography explode, the use of cryptographic methods was common before. It is believed that Julius CAESAR used an encryption method, today known as &lt;strong>Caesar Cipher&lt;/strong> or &lt;strong>Alphabet Shift Cipher&lt;/strong>. The principle is very simple: imagine you want to encode the 26 letters of the Roman alphabet (A to Z), you then assign each letter a number (A is 0, B is 1, &amp;hellip;, Z is 25). You then choose a secret key which is a non-zero integer. The encrypted message is composed of letters, the code of each letter being given by the modulo 26 addition between the code of the original letter and the secret key. Basically, the alphabet is shifted by a constant:&lt;/p>
 &lt;p>&lt;span style="color:red">&lt;strong>Like PASQAL with s=3 will be SDVTDO&lt;/strong>&lt;/span>&lt;/p>
@@ -1032,7 +1032,7 @@ $$|\langle -|1\rangle|^{2} = \frac{1}{2}$$
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">qc&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">h&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">q&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">])&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">qc&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">measure&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">q&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">],&lt;/span>&lt;span class="n">c&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">])&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">qc&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">draw&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;mpl&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:1313/uploads/outputa.png" alt="uploads">&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://localhost:44733/uploads/outputa.png" alt="uploads">&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#Running on Qsasimulator&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">qiskit&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">transpile&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">qiskit.providers.aer&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">QasmSimulator&lt;/span>
@@ -1078,14 +1078,14 @@ quantum key distribution" Chinese Physics B, Volume 21, Number 8.
 &lt;/a>
 &lt;h3 id="about-the-author">&lt;strong>About the author&lt;/strong>&lt;/h3>
 &lt;div align="center">
-&lt;img src="http://localhost:1313/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:44733/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
 &lt;strong>Huy Binh TRAN&lt;/strong>
 &lt;br>
 &lt;em>Master 2 Quantum Devices at Institute Paris Polytechnic, France&lt;/em>
 &lt;br>
 &lt;a href="https://www.linkedin.com/in/huybinhtran/" style="color:#1E90FF;">LinkedIn&lt;/a>
-&lt;/div></description></item><item><title>Quantitative Finance</title><link>http://localhost:1313/docs/guide/shortcodes_1/quantitative/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/shortcodes_1/quantitative/</guid><description>&lt;h1 id="what-are-the-different-types-of-mathematics-found-in-quantitative-finance">What are the Different Types of Mathematics Found in Quantitative Finance?&lt;/h1>
+&lt;/div></description></item><item><title>Quantitative Finance</title><link>http://localhost:44733/docs/guide/shortcodes_1/quantitative/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:44733/docs/guide/shortcodes_1/quantitative/</guid><description>&lt;h1 id="what-are-the-different-types-of-mathematics-found-in-quantitative-finance">What are the Different Types of Mathematics Found in Quantitative Finance?&lt;/h1>
 &lt;p>The real-world subject of quantitative finance uses tools from many branches of mathematics. And financial modelling can be approached in a variety of different ways. For some strange reason the advocates of different branches of mathematics get quite emotional when discussing the merits and demerits of their methodologies and those of their &amp;lsquo;&lt;strong>opponents&lt;/strong>.&amp;rsquo;&amp;rsquo; Is this a territorial thing? What are the pros and cons of martingales and differential equations? What is all this fuss, and will it end in tears before bedtime?
 Here&amp;rsquo;s a list of the various approaches to modelling and a selection of useful tools. The distinction between a &amp;lsquo;&lt;strong>modelling approach&lt;/strong>&amp;rsquo; and a &amp;lsquo;&lt;strong>tool&lt;/strong>&amp;rsquo; will start to become clear.&lt;/p>
 &lt;p>&lt;span style="color:red">&lt;strong>Modelling approaches&lt;/strong>&lt;/span>&lt;/p>
@@ -1516,11 +1516,11 @@ $$\sigma_{\Pi } =\sqrt{\sum^{N}_{i=1} \sum^{N}_{j=1} W_{i}W_{j}\rho_{ij} \sigma_
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/outputb.png" alt="uploads" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/uploads/outputb.png" alt="uploads" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/outputc.png" alt="uploads" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/uploads/outputc.png" alt="uploads" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>The dots represent different &lt;strong>w&lt;/strong> weights of a given portfolio containing multiple stocks (So different porfolios ).&lt;/p>
@@ -1634,7 +1634,7 @@ $$R_{i}=\alpha_{i} +\beta_{i} R_{M}+\varepsilon_{i} $$
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/outputd.png" alt="uploads" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/uploads/outputd.png" alt="uploads" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h1 id="random-behavior-in-finance">Random Behavior in Finance&lt;/h1>
@@ -1693,7 +1693,7 @@ $$\frac{S(t)-S(t-1)}{S(t-1)} =R(t)$$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/outpute.png" alt="uploads" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/uploads/outpute.png" alt="uploads" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>And as you can see, the histogram is very, very similar to a normal distribution with
@@ -1789,7 +1789,7 @@ $$dS=\mu S\text{dt} +\sigma S\text{dW} $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/outputf.png" alt="uploads" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/uploads/outputf.png" alt="uploads" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>&lt;span style="color:red"> What is Itô&amp;rsquo;s Lemma ? &lt;/span>&lt;/p>
@@ -1848,7 +1848,7 @@ is used to model stock prices using geometric Brownian motion (GBM), which is a 
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/uploads/outputg.png" alt="uploads" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/uploads/outputg.png" alt="uploads" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h1 id="black-scholes-model">Black-Scholes Model&lt;/h1>
@@ -2076,14 +2076,14 @@ You want to price a fixed-income contract using the BGM model. Which numerical m
 &lt;/table>
 &lt;h3 id="about-the-author">&lt;strong>About the author&lt;/strong>&lt;/h3>
 &lt;div align="center">
-&lt;img src="http://localhost:1313/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:44733/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
 &lt;strong>Huy Binh TRAN&lt;/strong>
 &lt;br>
 &lt;em>Master 2 Quantum Devices at Institute Paris Polytechnic, France&lt;/em>
 &lt;br>
 &lt;a href="https://www.linkedin.com/in/huybinhtran/" style="color:#1E90FF;">LinkedIn&lt;/a>
-&lt;/div></description></item><item><title>Classical Machine Learning Tutorial 1</title><link>http://localhost:1313/docs/guide/shortcodes_1/ml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/guide/shortcodes_1/ml/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;/div></description></item><item><title>Classical Machine Learning Tutorial 1</title><link>http://localhost:44733/docs/guide/shortcodes_1/ml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:44733/docs/guide/shortcodes_1/ml/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Welcome to this introductory course on &lt;strong>Machine Learning (ML)&lt;/strong>, where we will explore the fundamental concepts and techniques that are the building blocks for more advanced fields, such as &lt;strong>Quantum Machine Learning&lt;/strong>. This course is designed with a hands-on approach, offering you the opportunity to engage with real code and solve two simple classification problems.&lt;/p>
 &lt;p>The purpose of this course is to provide a foundation in classical machine learning methods, using tools and libraries that are widely applied in the field. One such tool we&amp;rsquo;ll be using is the &lt;strong>scikit-learn&lt;/strong> library, particularly the &lt;code>PolynomialFeatures&lt;/code> class from &lt;code>sklearn.preprocessing&lt;/code>, which allows us to easily transform input data by adding polynomial features to our models. This technique is pivotal for handling non-linear relationships in data and will help us tackle problems more effectively.&lt;/p>
 &lt;p>By the end of this course, you will have gained practical experience with popular ML algorithms and tools such as &lt;strong>logistic regression&lt;/strong>, &lt;strong>SVMs&lt;/strong>, &lt;strong>polynomial classification&lt;/strong>, and &lt;strong>kernel methods&lt;/strong>, and a deeper understanding of the underlying principles that power these techniques. This knowledge will serve as a stepping stone for your journey into &lt;strong>Quantum Machine Learning&lt;/strong>, where quantum computers are used to process data in fundamentally different ways.&lt;/p>
@@ -2143,7 +2143,7 @@ You want to price a fixed-income contract using the BGM model. Which numerical m
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/imageML/1.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/imageML/1.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h3 id="a-construction-of-a-machine-learning-algoritm-by-hand">A construction of a machine learning algoritm by hand&lt;/h3>
@@ -2260,7 +2260,7 @@ $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/imageML/2.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/imageML/2.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>The Python library scikit-learn (sklearn) provides the LinearRegression function, which allows you to find the best-fit line without the need to manually derive the formulas.&lt;/p>
@@ -2297,7 +2297,7 @@ $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/imageML/3.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/imageML/3.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>Now, we draw a perpendicular line that effectively separates the toxic and non-toxic plants.&lt;/p>
@@ -2348,7 +2348,7 @@ $$ \alpha = \beta_0 + \beta_1 \cdot \text{midwidth} + \frac{\text{midwidth}}{\be
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/imageML/4.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/imageML/4.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>Step by step, we have separated the plants based on their toxicity. The perpendicular separator we defined is called the decision boundary.
@@ -2482,7 +2482,7 @@ $$
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/imageML/5.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/imageML/5.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>The decision boundary we obtained is slightly different from the one generated by our custom algorithm. This algorithm is known as Support Vector Machine (SVM), as the decision boundary is determined by only a few key data points, called support vectors. These support vectors are highlighted with circles in the figure above.&lt;/p>
@@ -2510,7 +2510,7 @@ $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/imageML/6.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/imageML/6.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>Because of the data distribution, a reasonable and effective hypothesis would be the following:&lt;/p>
@@ -2639,7 +2639,7 @@ $$ \sigma(x) = \frac{1}{1 + e^{-x}}. $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/imageML/7.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/imageML/7.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>The sigmoid function maps any real-valued input to the interval $[0, 1]$, which is useful for interpreting the output as a probability. By applying the sigmoid function to the linear expression $(2y_i - 1)(w \cdot x_i + b)$, we can smoothly approximate the classification probability of each sample.
@@ -2712,7 +2712,7 @@ $$
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/imageML/8.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/imageML/8.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>There are four steps in the alogorithm:&lt;/p>
@@ -2785,7 +2785,7 @@ Actual Test Labels: [0. 1. 0. 1. 0. 1. 0. 1.]
 &lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/imageML/9.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/imageML/9.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>After training our logistic regression model on the training dataset, we evaluate its performance using a &lt;strong>test dataset&lt;/strong>. This evaluation is crucial as it helps us understand how well the model generalizes to new, unseen data—something that is essential for ensuring its real-world applicability. Below is an overview of the key results:&lt;/p>
@@ -2847,7 +2847,7 @@ Actual Test Labels: [0. 1. 0. 1. 0. 1. 0. 1.]
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/imageML/10.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/imageML/10.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>To solve this problem using machine learning, we can leverage what we&amp;rsquo;ve learned about linear classification. However, in this case, it&amp;rsquo;s clear that no simple straight line can separate the decimated colonies (red) from the thriving colonies (blue). To overcome this, we can transform the dataset in a way that makes it linearly separable while preserving its inherent structure.&lt;/p>
@@ -2897,7 +2897,7 @@ $$ \Phi(x_1,x_2) = \left( x_1, x_2, 4(x_1^2 + x_2^2) \right) $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/imageML/11.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/imageML/11.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h3 id="support-vector-classifier-in-transformed-space">Support vector classifier in transformed space&lt;/h3>
@@ -2953,7 +2953,7 @@ $$ \Phi(x_1,x_2) = \left( x_1, x_2, 4(x_1^2 + x_2^2) \right) $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/imageML/12.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/imageML/12.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h3 id="achieving-a-nonlinear-boundary-using-a-linear-approach">Achieving a nonlinear boundary using a linear approach&lt;/h3>
@@ -3042,7 +3042,7 @@ $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/imageML/13.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/imageML/13.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>The classification results in the transformed feature space are highly successful. By mapping the data to a higher-dimensional space, we were able to achieve a clear separation between the decimated and thriving colonies. The SVM classifier identified a linear hyperplane in this new space, which corresponds to a non-linear decision boundary in the original feature space. This process showcases the effectiveness of &lt;strong>feature engineering&lt;/strong> in simplifying complex classification tasks.&lt;/p>
@@ -3103,7 +3103,7 @@ $$ K(x, y) = \exp\left(-\frac{\|x - y\|^2}{2\sigma^2}\right) $$
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/imageML/14.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/imageML/14.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>The decision boundary obtained using the polynomial kernel method exhibits slight differences compared to the one derived from the explicit feature mapping and linear classification. These differences stem from the nature of kernel methods and their underlying computations.&lt;/p>
@@ -3155,7 +3155,7 @@ $$ \mathcal{B}: \alpha_1 x_1^2 + \alpha_2 x_2^2 + \alpha_3 x_1 x_2 + \alpha_4 x_
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="http://localhost:1313/imageML/15.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="http://localhost:44733/imageML/15.png" alt="unit cell" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>As we can see, the decision boundary derived using the logistic regression model is very similar to the one obtained with the Support Vector Machine (SVM). Despite the differences in the underlying methods, both approaches successfully capture the separation between the two classes in the feature space. This is especially evident given the high accuracy achieved by the logistic regression model, which indicates that the quadratic form of the decision boundary effectively classifies the data points with a high degree of precision. The similarity between the boundaries reflects how well the quadratic separation hypothesis aligns with the true structure of the data, confirming that this method is capable of capturing the underlying patterns in a way that is comparable to more complex methods like SVMs.&lt;/p>
@@ -3200,7 +3200,7 @@ $$ \mathcal{B}: \alpha_1 x_1^2 + \alpha_2 x_2^2 + \alpha_3 x_1 x_2 + \alpha_4 x_
 &lt;/ul>
 &lt;p>The core takeaway from this exploration is not just the mastery of techniques but the underlying philosophy of machine learning. At its core, machine learning is about extracting knowledge from data. The ultimate question it addresses is how we can leverage the computational power of modern systems to uncover patterns, insights, and relationships within vast datasets, enabling us to make more informed decisions and solve complex problems that were once out of reach.&lt;/p>
 &lt;div align="center">
-&lt;img src="http://localhost:1313/imageML/Guillhem Artis.jpg" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+&lt;img src="http://localhost:44733/imageML/Guillhem Artis.jpg" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
 &lt;br>
 &lt;strong>Guillhem Artis&lt;/strong>
 &lt;br>
