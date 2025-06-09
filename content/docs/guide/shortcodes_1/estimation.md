@@ -291,7 +291,7 @@ plt.show()
   <br>
   <strong>Hamza Benkadour</strong>
   <br>
-  <em>PhD Student in Quantum Computing - ALgeria</em>
+  <em>PhD Student in Quantum Computing - Algeria</em>
   <br>
   <a href="https://www.linkedin.com/in/hamza-benkadour" style="color:#1E90FF;">LinkedIn</a>
 </div>
