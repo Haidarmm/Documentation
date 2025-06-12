@@ -74,7 +74,7 @@ circ = prog . to_circ ()
 The circuit we constructed, circ, is a variational circuit that creates a variational wavefunction.  Its parameters can be
 optimized to minimize the variational energy which can be done by a simple VQE loop with the UCC method 
 
-![image](/uploads/slack4.png)
+![image](/uploads/notebook2/slack4.png)
 
 1. A simulation starts by constructing a fermionic Hamiltonian with particularly straightforward initialization as a classical mean-field state; most often as a HF product state {{< math >}}
    $$
@@ -194,7 +194,7 @@ $$
 $$
 
 
-![image](/uploads/sstack2.png)
+![image](/uploads/notebook2/sstack2.png)
 
 *Visualization of spatial orbitals in LiH molecule uisng sto-3g basis-set: 2 HUMOs and 4 LUMOs.*
 
@@ -248,7 +248,7 @@ plt.title("UCCSD-VQE Optimization with Different Thresholds")
 plt.show()
 ```
 
-![image](/uploads/sstack3.png)
+![image](/uploads/notebook2/sstack3.png)
 
 If we make the plot with the threshold 
 
@@ -276,14 +276,14 @@ plt.grid()
 plt.title("UCCSD-VQE Optimization Error with Different Thresholds")
 plt.show()
 ```
-![image](/uploads/sstack4.png)
+![image](/uploads/notebook2/sstack4.png)
 
 ### **About the author**
 
 
 
 <div align="center">
-  <img src="/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+  <img src="/uploads/notebook2/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
   <br>
   <strong>Huy Binh TRAN</strong>
   <br>
