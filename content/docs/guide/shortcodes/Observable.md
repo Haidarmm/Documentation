@@ -146,7 +146,7 @@ Made by Eviden "myQLM – Quantum Python Package"
 
 
 <div align="center">
-  <img src="/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+  <img src="/uploads/notebook2a/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
   <br>
   <strong>Huy Binh TRAN</strong>
   <br>
