@@ -51,7 +51,7 @@ core orbitals: [0]
 active orbitals: [1, 2, 3]
 ```
 
-<img src="/images/activespace.png" alt="Active Space" style="background-color: white; padding: 4px; border-radius: 4px;" />
+<img src="/uploads/app14/first.jpg" alt="Active Space" style="background-color: white; padding: 4px; border-radius: 4px;" />
 
 ### Build the Hamiltonian
 
@@ -150,7 +150,7 @@ qml.draw_mpl(cost)(np.zeros(len(singles)+len(doubles)))
 
 ```(<Figure size 3000x900 with 1 Axes>, <Axes: >)```
 
-![Circuit](/images/circuit.png)
+![Circuit](/uploads/app14/second.jpg)
 
 ### Define the device and cost function
 
@@ -273,7 +273,7 @@ plt.yticks(fontsize=12)
 plt.show()
 ```
 
-![Plot Convergence](/images/plotconvergence.png)
+![Plot Convergence](/uploads/app14/third.jpg)
 
 ## References
 1. Peruzzo et al., *A variational eigenvalue solver on a photonic quantum processor*, *Nat. Commun.* **5**, 4213 (2014).
@@ -287,7 +287,7 @@ plt.show()
 
 
 <div align="center">
-  <img src="/images/hamza.jpg" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+  <img src="/uploads/app14/hamza.jpg" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
   <br>
   <strong>Hamza Benkadour</strong>
   <br>
