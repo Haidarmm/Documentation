@@ -432,7 +432,7 @@ qc.draw('mpl')
 ```
 
 
-![uploads](/uploads/outputa.png)
+![image](/uploads/app11/outputa.png)
 
 
 ```python
@@ -503,7 +503,7 @@ quantum key distribution" Chinese Physics B, Volume 21, Number 8.
 
 
 <div align="center">
-  <img src="/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+  <img src="/uploads/app11/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
   <br>
   <strong>Huy Binh TRAN</strong>
   <br>
