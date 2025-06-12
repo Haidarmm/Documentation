@@ -10,7 +10,7 @@ linkTitle: 4- Adapt-VQE
 In 2019, ADAPT-VQE was introduced in this [paper](https://www.nature.com/articles/s41467-019-10988-2) with the purpose of creating a more
 accurate, compact, and problem-customized ansatz for VQE. This version will hereby be denoted fermionic-ADAPT-VQE to distinguish it against a more recent version that will be covered shortly. The idea behind the proposal is to let the molecule in study ‘choose’ its own state preparation circuit, by creating the ansatz in a strongly system-adapted manner.
 
-![image](/uploads/stack9.png)
+![image](/uploads/notebook4/stack9.png)
 
 The ADAPT-VQE algorithm constructs the molecular system's wavefunction dynamically and can in principle avoid redundant terms. It is grown iteratively in the form of a disentangled UCC ansatz  as  given in the below equation:
 
@@ -121,7 +121,7 @@ We make an analysed plot for the converged energy and the fidelity. It took 5 fe
 
 
 
-![image](/uploads/skack1.png)
+![image](/uploads/notebook4/skack1.png)
 
 
 ## Second version of OpenVQE (Updated code)
@@ -206,7 +206,7 @@ plt.show()
 
 ```
 
-![image](/uploads/x1.png)
+![image](/uploads/notebook4/x1.png)
 
 You can go to the git repo for more detail at [GitHub](https://github.com/OpenVQE/OpenVQE/blob/main/notebooks/demo_fermionic_adapt.ipynb)
 
@@ -227,7 +227,7 @@ Harper R. Grimsley, Sophia E. Economou, Edwin Barnes, Nicholas J. Mayhall. "An a
 
 
 <div align="center">
-  <img src="/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+  <img src="/uploads/notebook4/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
   <br>
   <strong>Huy Binh TRAN</strong>
   <br>
