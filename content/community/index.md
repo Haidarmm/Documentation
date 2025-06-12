@@ -34,15 +34,15 @@ Watch our community introduction video to learn more about OpenVQA and our missi
 ## Group Activities
 
 <div class="gallery">
-  <img src="/uploads/ev7.jpeg" alt="Event 7">
-  <img src="/uploads/ev6.jpeg" alt="Event 6">
-  <img src="/uploads/ev5.jpeg" alt="Event 5">
-  <img src="/uploads/ev4.jpeg" alt="Event 4">
-  <img src="/uploads/ev3.jpeg" alt="Event 3">
-  <img src="/uploads/ev2.jpeg" alt="Event 2">
-  <img src="/uploads/ev1.jpeg" alt="Event 1">
-  <img src="/uploads/ev_a.jpeg" alt="Event a">
-  <img src="/uploads/ev_b.jpeg" alt="Event b">
+  <img src="/uploads/community/ev7.jpeg" alt="Event 7">
+  <img src="/uploads/community/ev6.jpeg" alt="Event 6">
+  <img src="/uploads/community/ev5.jpeg" alt="Event 5">
+  <img src="/uploads/community/ev4.jpeg" alt="Event 4">
+  <img src="/uploads/community/ev3.jpeg" alt="Event 3">
+  <img src="/uploads/community/ev2.jpeg" alt="Event 2">
+  <img src="/uploads/community/ev1.jpeg" alt="Event 1">
+  <img src="/uploads/community/ev_a.jpeg" alt="Event a">
+  <img src="/uploads/community/ev_b.jpeg" alt="Event b">
 
 </div>
 
