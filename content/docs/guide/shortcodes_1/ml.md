@@ -91,7 +91,7 @@ plt.show()
 
 ```
 
-![unit cell](/imageML/1.png)
+![unit cell](/uploads/app13/1.png)
     
 
     
@@ -245,7 +245,7 @@ plt.show()
 ```
 
 
-![unit cell](/imageML/2.png)
+![unit cell](/uploads/app13/2.png)
 
     
 
@@ -286,7 +286,7 @@ plt.savefig("3.png")
 plt.show()
 ```
 
-![unit cell](/imageML/3.png)
+![unit cell](/uploads/app13/3.png)
     
 
     
@@ -352,7 +352,7 @@ plt.show()
 ```
 
 
-![unit cell](/imageML/4.png)
+![unit cell](/uploads/app13/4.png)
 
     
 
@@ -493,7 +493,7 @@ plt.show()
     Training Accuracy: 1.0
     
 
-![unit cell](/imageML/5.png)
+![unit cell](/uploads/app13/5.png)
     
 
     
@@ -532,7 +532,7 @@ plt.show()
 ```
 
 
-![unit cell](/imageML/6.png)
+![unit cell](/uploads/app13/6.png)
 
     
 
@@ -673,7 +673,7 @@ plt.show()
 
 ```
 
-![unit cell](/imageML/7.png)
+![unit cell](/uploads/app13/7.png)
     
 
     
@@ -769,7 +769,7 @@ plt.show()
     Accuracy: 1.0
     
 
-![unit cell](/imageML/8.png)
+![unit cell](/uploads/app13/8.png)
     
 
     
@@ -851,7 +851,7 @@ plt.show()
     Actual Test Labels: [0. 1. 0. 1. 0. 1. 0. 1.]
     
 
-![unit cell](/imageML/9.png)
+![unit cell](/uploads/app13/9.png)
     
 
     
@@ -938,7 +938,7 @@ plt.show()
 ```
 
 
-![unit cell](/imageML/10.png)
+![unit cell](/uploads/app13/10.png)
 
     
 
@@ -1007,7 +1007,7 @@ plt.show()
 ```
 
 
-![unit cell](/imageML/11.png)
+![unit cell](/uploads/app13/11.png)
 
 
     
@@ -1073,7 +1073,7 @@ plt.show()
 
 ```
 
-![unit cell](/imageML/12.png)
+![unit cell](/uploads/app13/12.png)
     
 
     
@@ -1175,7 +1175,7 @@ plt.show()
 
 ```
 
-![unit cell](/imageML/13.png)
+![unit cell](/uploads/app13/13.png)
 
     
 
@@ -1250,7 +1250,7 @@ plt.savefig("14.png")
 plt.show()
 ```
 
-![unit cell](/imageML/14.png)
+![unit cell](/uploads/app13/14.png)
 
     
 
@@ -1320,7 +1320,7 @@ plt.show()
 
 ```
 
-![unit cell](/imageML/15.png)
+![unit cell](/uploads/app13/15.png)
     
 
     
@@ -1379,7 +1379,7 @@ The core takeaway from this exploration is not just the mastery of techniques bu
 
 
 <div align="center">
-  <img src="/imageML/Guillhem Artis.jpg" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+  <img src="/uploads/app13/Guillhem Artis.jpg" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
   <br>
   <strong>Guillhem Artis</strong>
   <br>
