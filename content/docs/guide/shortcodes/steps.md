@@ -3,7 +3,7 @@ title: Parameter-Shift Rule
 linkTitle: 5- Parameter-Shift Rule
 ---
 
-![image](/uploads/sstack5.png)
+![image](/uploads/notebook5/sstack5.png)
 
 
 <!--more-->
@@ -162,7 +162,7 @@ plt.show()
 
 
 
-![image](/uploads/sstack6.png)
+![image](/uploads/notebook5/sstack6.png)
 
 ```python {class="my-class" id="my-codeblock" lineNos=inline tabWidth=2}
 fig, ax = plt.subplots(figsize=(11, 7))
@@ -192,7 +192,7 @@ plt.savefig("error_LiH.pdf")
 
 plt.show()
 ```
-![image](/uploads/sstack7.png)
+![image](/uploads/notebook5/sstack7.png)
 
 
 ```python {class="my-class" id="my-codeblock" lineNos=inline tabWidth=2}
@@ -219,7 +219,7 @@ plt.show()
 
 
 
-![image](/uploads/sstack8.png)
+![image](/uploads/notebook5/sstack8.png)
 
 
 
@@ -232,7 +232,7 @@ The energy {{< math >}}{{< /math >}} according to the chosen optimization algori
 
 
 <div align="center">
-  <img src="/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+  <img src="/uploads/notebook5/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
   <br>
   <strong>Huy Binh TRAN</strong>
   <br>
