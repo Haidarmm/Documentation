@@ -5,7 +5,7 @@ linkTitle: 1- Circuit-based quantum programming
 
 This is the training session for the preliminary understanding about QLM language
 
-![image](/uploads/output1.png)
+![image](/uploads/notebook1/output1.png)
 
 <!--more-->
 
@@ -80,7 +80,7 @@ for sample in result:
     print(sample.state, sample.intermediate_measurements)
 ```
 
-![image](/uploads/output2.png)
+![image](/uploads/notebook1/output2.png)
 
 **Result**
 ```bash {class="my-class" id="my-codeblock" lineNos=inline tabWidth=2}
@@ -121,7 +121,7 @@ circ.display()
 
 ```
 
-![image](/uploads/output3.png)
+![image](/uploads/notebook1/output3.png)
 
 #### Using typed registers
 
@@ -149,7 +149,7 @@ for sample in result:
 
 ```
 
-![image](/uploads/output4.png)
+![image](/uploads/notebook1/output4.png)
 
 
 
@@ -158,7 +158,7 @@ framework:
 Variational Quantum Eigensolver (VQE) is to find eigenvalues of a Hamiltonian
 
 
-![image](/uploads/stack1.png)
+![image](/uploads/notebook1/stack1.png)
 
 Our task: VQE on the following Ising model:
 
@@ -295,7 +295,7 @@ circ_Linear = HEA_Linear(nqbits, n_layers, [RX,RZ], CNOT)
 circ_Linear.display()
 ```
 
-![image](/uploads/slack2.png)
+![image](/uploads/notebook1/slack2.png)
 
 ### Variational Quantum Eigensolver 
 
@@ -324,7 +324,7 @@ plt.savefig("newfigure.pdf")
 
 ```
 
-![image](/uploads/slack3.png)
+![image](/uploads/notebook1/slack3.png)
 
 
 ### VQE - Unitary Coupled Cluster
@@ -399,7 +399,7 @@ If we make the plot amongst the HF, MP2 with FCI is the reference we obtain
 
 
 
-![image](/uploads/stack4.png)
+![image](/uploads/notebook1/stack4.png)
 
 In these such cases, methods like Hartree-Fock (HF) and Møller-Plesset perturbation theory (MP2) become less accurate compared to Full Configuration Interaction (FCI).However in this case for Hydrogen this difference is barely visible, because the HF energy is totally on the same path as FCI from the beginning till the minimum energy point then the curve begins to experience the bond dissociation when the two hydrogen molecules move far each other
 
@@ -466,7 +466,7 @@ print(H_sp)
 
 ```
 
-![image](/uploads/slack9.png)
+![image](/uploads/notebook1/slack9.png)
 
 ```bash {class="my-class" id="my-codeblock" lineNos=inline tabWidth=2}
 (-0.09886396933545824+0j) * I^4 +
@@ -523,14 +523,14 @@ circ.display()
 
 For the molecule $H_2$, it has double qubit excitation and by using the UCC method to simulate on this molecule, I obtain the the circuit construction  as bellow  with the interprobility with Qiskit and this construction is based on the staire-case algorithms 
 
-![image](/uploads/stack5.png)
+![image](/uploads/notebook1/stack5.png)
 
 
 ### Using the Gradient Based Optimizer to solve the VQE 
 
 The graphic is show: 
 
-![image](/uploads/stack6.png)
+![image](/uploads/notebook1/stack6.png)
 
 ```python {class="my-class" id="my-codeblock" lineNos=inline tabWidth=2}
 job = circ.to_job(observable=H_sp, nbshots=0)
@@ -567,7 +567,7 @@ plt.ylabel("Energy")
 plt.grid()
 ```
 
-![image](/uploads/stack7.png)
+![image](/uploads/notebook1/stack7.png)
 
 ### **Reference**
 
