@@ -21,22 +21,22 @@ OpenVQE consists of **two main modules that are inside the "openvqe" folder:**:
 : stores all the internal functions needed to be imported for executing the two modules.
 - `notebooks`: allows the user to run and test the above two modules: `UCC Family/` and `adapt/`.
 
-![image](/uploads/output.jpg)
+![image](/uploads/projectStructure/output.jpg)
 
 
 ## Updated second version package
 1. OpenVQE main diagram showing the <span style="color:red">folder structure</span> of the package
    
-![image](/uploads/sketch_.png)
+![image](/uploads/projectStructure/sketch_.png)
 
 2. OpenVQE code diagram showing the <span style="color:red"> main structure</span> of the code and their involvement when executing VQE.
   
-![image](/uploads/sketch.png) 
+![image](/uploads/projectStructure/sketch.png) 
 
 The refactoring part for [<span style="color:red">the second version of OpenVQE</span>](https://github.com/OpenVQE/OpenVQE)  is collabrated amongst Nathan Vaneberg and Huy Binh Tran under the guidance of Mohammad Haidar
 
 <div align="center">
-  <img src="/imagez/nathan.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+  <img src="/uploads/projectStructure/nathan.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
   <br>
   <strong>Nathan Vaneberg</strong>
   <br>
