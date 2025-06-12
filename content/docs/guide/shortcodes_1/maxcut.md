@@ -512,7 +512,7 @@ Edward Farhi, Jeffrey Goldstone,Joshua Lapan, Andrew Lundgren, Daniel Preda. "A 
 
 
 <div align="center">
-  <img src="/uploads/app10/isaac.JPG" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+  <img src="/uploads/app10/isaac.jpg" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
   <br>
   <strong>Isaac Christ Donchi Kamga</strong>
   <br>
