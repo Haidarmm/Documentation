@@ -8,11 +8,11 @@ weight: 9
 Quantum computing provides a promising approach to simulate the ground state energy of battery materials, which is essential for improving battery efficiency. In this tutorial, we simulate the ground state energy of Li$_2$FeSiO$_4$, a lithium-ion battery cathode material, using Variational Quantum Eigensolver (VQE) and its variants. The structure of Li$_2$FeSiO$_4$ is shown below.
 
 Conventional unit cell.
-![unit cell](/images/unit_cell.png)
+![unit cell](/uploads/app9/unit_cell.png)
 
 Crystal Structure (Monoclinic)
 
-![Li2FeSiO4](/images/Li2FeSiO4--crystal-toolkit.png)
+![Li2FeSiO4](/uploads/app9/Li2FeSiO4--crystal-toolkit.png)
 
 ## Methodology
 We employ the following algorithms:
@@ -110,7 +110,7 @@ energy, params = cudaq.vqe(kernel, ham, optimizer,
 rel_err(ccsd_energy, energy)
 ```
 
-![CS-VQE](/images/cs_vqe.png)
+![CS-VQE](/uploads/app9/cs_vqe.png)
 
 ## CS-ADAPT-VQE
 CS-ADAPT-VQE adaptively selects excitations based on parameter gradients. We select excitations with the highest gradients and perform VQE with selected excitations:
@@ -181,8 +181,8 @@ energy, params = cudaq.vqe(
 )
 ```
 
-![CS-ADAPT-VQE-circuit](/images/adapt_circuit.png)
-![CS-ADAPT-VQE](/images/adapt.png)
+![CS-ADAPT-VQE-circuit](/uploads/app9/adapt_circuit.png)
+![CS-ADAPT-VQE](/uploads/app9/adapt.png)
 
 ## CS-VQE with Rotoselect Optimization
 Rotoselect dynamically selects the optimal rotation gates (X, Y, Z) for each parameter to minimize energy:
@@ -201,9 +201,9 @@ for i in range(n_steps):
     params, generators = rotoselect_cycle(cost_fn, params, generators, n_qubits, ham, hf)
 energy = cost_fn(params, generators, n_qubits, ham, hf)
 ```
-![Rotoselect-orig-circuit](/images/rotoselect_orig_circuit.png)
-![Rotoselect-circuit](/images/rotoselect_circuit.png)
-![Rotoselect](/images/rotoselect.png)
+![Rotoselect-orig-circuit](/uploads/app9/rotoselect_orig_circuit.png)
+![Rotoselect-circuit](/uploads/app9/rotoselect_circuit.png)
+![Rotoselect](/uploads/app9/rotoselect.png)
 
 ## Conclusion and Future Directions
 This tutorial demonstrated how CS-VQE, ADAPT-VQE, and Rotoselect optimize battery material simulations using quantum computing. Each approach uniquely balances qubit requirements and accuracy, and future work could explore combining these methods with error mitigation techniques to improve results further.
@@ -221,7 +221,7 @@ This tutorial demonstrated how CS-VQE, ADAPT-VQE, and Rotoselect optimize batter
 
 
 <div align="center">
-  <img src="/images/gopal.jpeg" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+  <img src="/uploads/app9/gopal.jpeg" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
   <br>
   <strong>Gopal Ramesh Dahale</strong>
   <br>
