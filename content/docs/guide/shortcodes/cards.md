@@ -44,7 +44,7 @@ molecule_symbol =’H2O ’, active = False , transform =’JW ’)
 ```
 
 *Briefing about the geometry and energy level of H20 you can visualize the geometry of the molecule on the ORCA application
-![image](/uploads/stack8.png)
+![image](/uploads/notebook3/stack8.png)
 
 In addition to that, we define another function named as generate_cluster_ops() that takes as input the name of excitation generator user need (e.g., UCCSD, QUCCSD, UCCGSD, etc.) and internally it calls the file name generator_excitations.py
 which allows generate_cluster_ops() to return as output the size of pool excitations, fermionic operators, and JW
@@ -107,7 +107,7 @@ The function `fermionic_adapt_vqe()` shows several steps  (1) It prepares the tr
 
 OpenVQE algorithms have targetted the following object  
 
-![image](/uploads/sstack1.png)
+![image](/uploads/notebook3/sstack1.png)
 
 {{% steps %}}
 
@@ -388,7 +388,7 @@ Haidar, Mohammad, et al. "Open source variational quantum eigensolver extension 
 
 
 <div align="center">
-  <img src="/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+  <img src="/uploads/notebook3/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
   <br>
   <strong>Huy Binh TRAN</strong>
   <br>
