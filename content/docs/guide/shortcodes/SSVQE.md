@@ -3,7 +3,7 @@ title: Subspace-search variational quantum eigensolver for excited states
 linkTitle: 6- SSVQE
 ---
 
-![image](/uploads/sstack9.png)
+![image](/uploads/notebook6/sstack9.png)
 
 
 
@@ -42,7 +42,7 @@ A particular instance of the "hardware-efficient ansatz" - the entanglement patt
 
 
 
-![image](/uploads/sslack1.png)
+![image](/uploads/notebook6/sslack1.png)
 
 
 ```python {class="my-class" id="my-codeblock" lineNos=inline tabWidth=2}
@@ -145,7 +145,7 @@ plt.show()
 
 We implement the SSVQE  on the  molecular Hamiltonians such as H$_2$ molecule ( with a fixed distance between two hydrogen atoms $r=0.85 $   at the STO-3G minimal basis set. We choose our own weight (W) for the minimization; We obtain accurate energies with height fidelity rate $\left[ 0,978\longrightarrow 0,998 \right] $. Meaning that the algorithms assures assures the orthogonality of the states at the input of the ansatz circuit
 
-![image](/uploads/sslack2.png)
+![image](/uploads/notebook6/sslack2.png)
 
 
 The energy levels of the Hamiltonian of H$_2$ in the STO-3g basis set: four qubits. The fidelity is close to one. It is the Overlap $\langle\Psi_j(\vec{\theta})
@@ -163,7 +163,7 @@ Nakanishi, Ken M., Kosuke Mitarai, and Keisuke Fujii. "Subspace-search variation
 
 
 <div align="center">
-  <img src="/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+  <img src="/uploads/notebook6/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
   <br>
   <strong>Huy Binh TRAN</strong>
   <br>
