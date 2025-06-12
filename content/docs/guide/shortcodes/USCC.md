@@ -567,13 +567,13 @@ for exc in current_excitations:
 We test UsCCSDTQ-VQE on H$_4$ and LiH molecules using PMRS method (described in the previous section). We emulate 8  qubits in STO-3G basis set. Numerical results are shown in **Figure 1** for H$_4$  and **2** LiH for  as below: 
 
 <p align="center">
-  <img src="/imagez/spack1.png" alt="Image Description" width="1300"/>
+  <img src="/uploads/notebook7/spack1.png" alt="Image Description" width="1300"/>
   <br>
   <em><strong>Figure 1:</strong> PMRS application on UsCCSDTQ-VQE algorithm using H<sub>4</sub> molecule (<strong>8 qubits</strong>) at 0.85&Aring;, using BFGS optimizer: (<strong>left figure</strong>) shows the energy obtained from UsCC simulations with respect to the number of selective parameters. (<strong>Right figure</strong>) shows the number of function evaluations per each iteration. Error is the difference between UsCCDTQ energies and FCI. STO-3G basis set is used.</em>
 </p>
 
 <p align="center">
-  <img src="/imagez/spack2.png" alt="Image Description" width="1300"/>
+  <img src="/uploads/notebook7/spack2.png" alt="Image Description" width="1300"/>
   <br>
   <em><strong>Figure 2:</strong> PMRS application on UsCCSDTQ-VQE algorithm using LiH molecule (<strong>12 qubits</strong>) at 1.45&Aring;, using BFGS optimizer: (<strong>left figure</strong>) shows the energy obtained from UsCC simulations with respect to the number of selective parameters. (<strong>Right figure</strong>) shows the number of function evaluations per each iteration. Error is the difference between UsCCDTQ energies and FCI. STO-3G basis set is used.</em>
 </p>
@@ -644,7 +644,7 @@ Haidar, Mohammad, et al. "Open source variational quantum eigensolver extension 
 
 
 <div align="center">
-  <img src="/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+  <img src="/uploads/notebook7/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
   <br>
   <strong>Huy Binh TRAN</strong>
   <br>
