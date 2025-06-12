@@ -46,7 +46,7 @@ plt.show()
 ```
 
 
-![images](/images/42d8e6221f9dc8947c4033331fcef141a48e39d7.png)
+![images](/uploads/app10/42d8e6221f9dc8947c4033331fcef141a48e39d7.png)
 
 # 2. Classical calculation 
 ``` python
@@ -253,7 +253,7 @@ circuit = U_x(n, t)
 circuit.decompose().draw("mpl")
 ```
 
-![images](/images/07008f6d0fa11958622abb7d543a23382f45f330.png)
+![images](/uploads/app10/07008f6d0fa11958622abb7d543a23382f45f330.png)
 
 
 
@@ -311,7 +311,7 @@ circuit.decompose().draw("mpl")
 ```
 
 
-![images](/images/a3f9a71ff42147a5a68c072a98a04608c1b8add0.png)
+![images](/uploads/app10/a3f9a71ff42147a5a68c072a98a04608c1b8add0.png)
 
 
 ## 3.3 Build $U_{\eta}$ 
@@ -347,7 +347,7 @@ circuit.draw
 ```
 
 
-![images](/images/a2369cd3ceda15300d055f3755478d5e11d1fe19.png)
+![images](/uploads/app10/a2369cd3ceda15300d055f3755478d5e11d1fe19.png)
 
 
 # 4 Post-processing and formatting 
@@ -425,7 +425,7 @@ for r in list_result:
     Set 2: []
 
 
-![images](/images/27efae2cfc94edd0f08ea62e66371a91f8ac3005.png)
+![images](/uploads/app10/27efae2cfc94edd0f08ea62e66371a91f8ac3005.png)
 
     bits string: 00011
     Set 1: [0, 1, 2]
@@ -448,7 +448,7 @@ for r in list_result:
     Set 2: [0, 2, 4]
 
 
-![images](/images/4a34eba6e8c42c814bda7ba6aef24d837c86cc99.png)
+![images](/uploads/app10/4a34eba6e8c42c814bda7ba6aef24d837c86cc99.png)
 
     bits string: 100101
     Set 1: [1, 2, 4]
@@ -470,7 +470,7 @@ for r in list_result:
     Set 1: [0, 1, 3, 4]
     Set 2: [2, 5]
 
-![images](/images/dfa257ec8121153ddb343cc9de11e87c2c5402c8.png)
+![images](/uploads/app10/dfa257ec8121153ddb343cc9de11e87c2c5402c8.png)
 
     bits string: 1101000
     Set 1: [2, 4, 5, 6]
@@ -492,7 +492,7 @@ for r in list_result:
     Set 1: [1, 4]
     Set 2: [0, 2, 3, 5, 6]
 
-![images](/images/34db132e6978526d746d393076fe3a5d46b916ba.png)
+![images](/uploads/app10/34db132e6978526d746d393076fe3a5d46b916ba.png)
 
 
 
@@ -512,7 +512,7 @@ Edward Farhi, Jeffrey Goldstone,Joshua Lapan, Andrew Lundgren, Daniel Preda. "A 
 
 
 <div align="center">
-  <img src="/images/isaac.JPG" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+  <img src="/uploads/app10/isaac.JPG" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
   <br>
   <strong>Isaac Christ Donchi Kamga</strong>
   <br>
