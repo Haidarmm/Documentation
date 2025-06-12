@@ -436,8 +436,8 @@ if __name__ == '__main__':
     optimum = optimize_portfolio(pweights, log_daily_returns)
 
 ```
-![uploads](/uploads/outputb.png)
-![uploads](/uploads/outputc.png)
+![uploads](/uploads/app12/outputb.png)
+![uploads](/uploads/app12/outputc.png)
 
 The dots represent different **w** weights of a given portfolio containing multiple stocks (So different porfolios ). 
 
@@ -561,7 +561,7 @@ if __name__ == '__main__':
 - Expected return:  0.09011312101583244
 
 
-![uploads](/uploads/outputd.png)
+![uploads](/uploads/app12/outputd.png)
 
 
 # Random Behavior in Finance
@@ -626,7 +626,7 @@ plt.show()
 
 
 ```
-![uploads](/uploads/outpute.png)
+![uploads](/uploads/app12/outpute.png)
 
 
 
@@ -741,7 +741,7 @@ if __name__ == '__main__':
 
 
 
-![uploads](/uploads/outputf.png)
+![uploads](/uploads/app12/outputf.png)
 
 
 <span style="color:red"> What is Itô's Lemma ? </span>
@@ -809,7 +809,7 @@ if __name__ == '__main__'
 
 ```
 
-![uploads](/uploads/outputg.png)
+![uploads](/uploads/app12/outputg.png)
 
 
 # Black-Scholes Model
@@ -1052,7 +1052,7 @@ You want to price a European, non-path-dependent contract on a basket of equitie
 
 
 <div align="center">
-  <img src="/imagez/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
+  <img src="/uploads/app12/huybinh.png" alt="Author's Photo" width="150" style="border-radius: 50%; border: 2px solid #1E90FF;">
   <br>
   <strong>Huy Binh TRAN</strong>
   <br>
